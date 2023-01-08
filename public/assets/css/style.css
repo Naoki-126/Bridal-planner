@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+p,
+div,
+span,
+img,
+a,
+table,
+tr,
+th,
+td,
+small,
+button,
+time,
+figure {
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+html {
+	line-height: 1.2;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+li,
+dd {
+	list-style-type: none;
+}
+
+header,
+footer,
+nav,
+section,
+article,
+main,
+aside,
+figure,
+figcaption {
+	display: block;
+}
+
+img {
+	border: none;
+	vertical-align: bottom;
+}
+
+a,
+button {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.is-pc {
+	display: block;
+}
+
+.is-sp {
+	display: block;
+}
+
+body {
+	color: #333;
+	font-family: "Times New Roman", "Verdana", "Geneva", "Tahoma", "sans-serif";
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.6;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+a {
+	color: inherit;
+}
+
+.l-inner {
+	margin: 0 auto;
+	max-width: 100%;
+	width: 1200px;
+}
+
+@media screen and (min-width: 1200px) {
+
+.is-sp {
+	display: none;
+}
+
+}
+
+@media screen and (max-width: 1199px) {
+
+.is-sp {
+	display: none;
+}
+
+.l-inner {
+	padding: 0 24px;
+}
+
+}
+
+@media screen and (max-width: 767px) {
+
+.is-pc {
+	display: none;
+}
+
+.l-inner {
+	padding: 0 16px;
+}
+
+}
+
