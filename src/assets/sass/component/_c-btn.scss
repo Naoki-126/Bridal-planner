@@ -1,0 +1,31 @@
+@use "../global" as global;
+
+.c-btn {
+  background: global.$accent-color;
+  font-weight: 700;
+  color: #fff;
+}
+
+.c-btn__try-header {
+  border-radius: 25px;
+  padding: 12px 26px;
+}
+
+.c-btn__try {
+  font-size: 18px;
+  padding: 18px 26px;
+  border-radius: 32.4px;
+  box-shadow: 0 4px 6px rgba(0, 0, .24);
+}
+
+.c-btn__download {
+  margin-left: 37px;
+  color: global.$accent-color;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 18px 26px;
+  background: #fff;
+  border: 2px solid global.$accent-color;
+  box-shadow: 0 4px 6px rgba(0, 0, .24);
+  border-radius: 32.4px;
+}

@@ -1,0 +1,34 @@
+@use "../global" as global;
+
+.p-top {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.p-top__contents {
+  width: calc(100% - 648px);
+  max-width: 100%;
+  margin-left: 120px;
+}
+
+.p-top__title {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.p-top__text {
+  margin-top: 24px;
+  font-size: 18px;
+}
+
+.p-top-btn {
+  margin-top: 33px;
+  display: flex;
+}
+
+.p-top__img {
+  width: 648px;
+  margin-right: 133px;
+
+}

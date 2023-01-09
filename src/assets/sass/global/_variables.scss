@@ -1,22 +1,22 @@
-$main-color: #9e9e9e;
-// $sub-color: #757575;
-$sub-color: #bdbdbd;
-$accent-color: #42a5f5;
-// $accent-color-active: #6bc4ff;
-$accent-color-active: #8cc8f9;
-$text-color: #333;
+$main-color: #EDECFC;
+$sub-color: #F9F9F9;
+$accent-color: #64629D;
+// $accent-color-active: #8cc8f9;
+$text-color: #2D2D32;
 $link-color: #1592e6;
 
 //フォント
-$ff-awesome: 'Font Awesome 5 Free', sans-serif;
-$ff-base: 'Times New Roman','Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+// $ff-awesome: 'Font Awesome 5 Free', sans-serif;
+$ff-base: 'Noto Sans JP', 'sans-serif';
+$ff-log: 'Lato', 'sans-serif';
 $fz-base: 16px;
-$fw-base: 500;
+$fw-base: 400;
 $lh-base: 1.6;
 
 // レイアウト
 $wide-width: 1920px;
-$inner-width: 1200px;
+$inner-width: 1440px;
 $sp-width: 768px;
 
 // ブレークポイント
