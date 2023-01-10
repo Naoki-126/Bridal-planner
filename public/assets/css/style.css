@@ -132,6 +132,10 @@ a {
 	padding-top: 105px;
 }
 
+.l-abuot {
+	background: #fff;
+}
+
 .c-btn {
 	background: #64629D;
 	color: #fff;
@@ -148,6 +152,13 @@ a {
 	box-shadow: 0 4px 6px rgb(0, 0, 0);
 	font-size: 18px;
 	padding: 18px 26px;
+}
+
+.c-btn__try-large {
+	border-radius: 42.2px;
+	box-shadow: 0 4px 6px rgb(0, 0, 0);
+	font-size: 24px;
+	padding: 23px 56px;
 }
 
 .c-btn__download {
@@ -220,6 +231,41 @@ a {
 .p-top__img {
 	margin-right: 133px;
 	width: 648px;
+}
+
+.p-about__title {
+	color: #9f9ec1;
+	font-size: 36px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.p-abut__subtitle {
+	color: #64629D;
+	font-size: 48px;
+	font-weight: 700;
+	margin-top: 18px;
+	text-align: center;
+}
+
+.p-about__text {
+	font-size: 18px;
+	margin-top: 29px;
+	text-align: center;
+}
+
+.p-about__text span {
+	font-weight: 700;
+}
+
+.p-about__btn {
+	font-size: 24px;
+	margin-top: 40px;
+	text-align: center;
+}
+
+.u-separate {
+	margin: 100px auto;
 }
 
 @media screen and (min-width: 1440px) {
