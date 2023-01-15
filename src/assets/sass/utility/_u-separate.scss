@@ -3,3 +3,25 @@
 .u-separate {
   margin: 100px auto;
 }
+
+.u-separate__light {
+  background: #f9f9f9;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.u-separate__title {
+  color: #9f9ec1;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.u-separate__subtitle {
+  margin-top: 18px;
+  color: global.$accent-color;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+

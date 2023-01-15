@@ -36,3 +36,23 @@
   box-shadow: 0 4px 6px rgba(0, 0, .24);
   border-radius: 32.4px;
 }
+
+.c-btn__price {
+  background: #fff;
+  color: global.$text-color;
+  border: 2px solid global.$text-color;
+  padding: 14px 41px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 50px;
+}
+
+.c-btn__price-basic {
+  background: global.$accent-color;
+  border: 2px solid #fff;
+  color:#fff;
+  padding: 14px 41px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 50px;
+}

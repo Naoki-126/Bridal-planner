@@ -1,0 +1,19 @@
+@use "../global" as global;
+
+.p-about__text {
+  margin-top: 29px;
+  font-size: 18px;
+  text-align: center;
+
+  span {
+    font-weight: 700;
+  }
+
+}
+
+.p-about__btn {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 24px;
+
+}

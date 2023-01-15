@@ -1,0 +1,25 @@
+@use "../global" as global;
+
+.l-footer {
+  background: #000;
+  color:#fff;
+}
+
+.l-footer__inner {
+  width: global.$inner-width;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 27px 0;
+  display: flex;
+}
+
+.l-footer__left {
+  width: 1183px;
+  padding-left: 120px;
+
+}
+
+.l-footer__right {
+  width: calc(100% - 1183px);
+  padding-top: 20px;
+}

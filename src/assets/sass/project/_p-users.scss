@@ -1,0 +1,22 @@
+@use "../global" as global;
+
+.p-users {
+  margin: 40px 200px 0;
+}
+
+.p-users__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+  .p-users__item {
+  margin-right: 40px;
+  margin-top: 50px;
+
+  &:nth-child( 4n ) {
+    margin-right: 0;
+  }
+
+  &:nth-child( -n+4 ) {
+    margin-top: 0;
+  }
+}
