@@ -1,0 +1,68 @@
+@use "../global" as global;
+
+.p-flow {
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+}
+
+.p-flow__01 {
+  width: 280px;
+  margin-top: 16px;
+}
+
+.p-flow__img {
+  background: url(/public/assets/img/Rectangle\ 21.png)no-repeat;
+  width: 280px;
+  height: 191px;
+  position: relative;
+}
+
+.p-flow__img img {
+  content: "";
+  position: absolute;
+  background: url(/public/assets/img/01\ img.png) no-repeat center center /cover;
+  width: 199px;
+  height: 148px;
+}
+
+.p-flow__content {
+  margin-top: 16px;
+}
+
+.p-flow__title {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.p-flow__text {
+  margin-top: 8px;
+
+}
+
+.p-flow__omission {
+  margin-left: 115px;
+  position: relative;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: url(/public/assets/img/Polygon\ 1.png) no-repeat;
+    width: 25px;
+    height: 60px;
+    top: 25%;
+    left: 120%;
+    transform: translateY(-25%);
+  }
+
+  &:last-child {
+    &::after {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@use "../global" as global;
+
+
+.p-question {
+  margin: 60px 260px 0;
+  max-width: 100%;
+
+
+.p-question__q {
+  background: global.$accent-color;
+  border-radius: 10px;
+  height: 62px;
+  color: #fff;
+  padding: 18px 56px;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+
+  &::before {
+    content: "Q";
+    position: absolute;
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    }
+  }
+
+  &:nth-child( n+2 ) {
+    margin-top: 24px;
+  }
+}
+
+.p-questions__a {
+  margin-top: 14px;
+  max-width: 100%;
+  background: #fff;
+  color: global.$text-color;
+  padding: 18px 21px 18px 56px;
+  font-size: 18px;
+  position: relative;
+
+  &::before {
+    content: "A";
+    position: absolute;
+    left: 22px;
+    top: 25%;
+    transform: translateY(-25%);
+  }
+}

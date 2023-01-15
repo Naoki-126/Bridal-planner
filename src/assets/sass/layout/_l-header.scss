@@ -5,6 +5,7 @@
   margin: 0 auto;
   background: #fff;
   position: fixed;
+  z-index: 20;
 
   @include global.mq(tab) {
     padding: 0 24px;
@@ -25,4 +26,3 @@
   margin-right: 133px;
   display: flex;
 }
-
