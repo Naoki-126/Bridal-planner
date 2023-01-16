@@ -1,7 +1,9 @@
 @use "../global" as global;
 
 .p-footer {
-
+  @include global.mq(sp) {
+    margin-top: 32px;
+  }
 }
 
 .p-footer__label {
@@ -12,12 +14,22 @@
 .p-footer__nav {
   margin-top: 19px;
   display: inline-flex;
+
+  @include global.mq(sp) {
+    display: block;
+    margin-top: 0;
+  }
 }
 
 .p-footer__item {
   font-size: 14px;
   font-weight: 700;
   margin-right: 14px;
+
+  @include global.mq(sp) {
+    margin-right: 0px;
+    margin-top: 14px;
+  }
 }
 
 .p-footer__copylight {
@@ -27,6 +39,19 @@
 
   p {
     margin-right: 14px;
+  }
+
+  @include global.mq(sp) {
+    display: block;
+    margin-top: 28px;
+
+    p {
+      margin-right: 0;
+
+      &:nth-child(2) {
+        margin-top: 10px;
+      }
+    }
   }
 }
 

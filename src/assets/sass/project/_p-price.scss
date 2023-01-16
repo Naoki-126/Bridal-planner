@@ -2,6 +2,10 @@
 
 .p-price {
   margin: 0 210px;
+
+  @include global.mq(sp) {
+    display: none;
+  }
 }
 
 .p-price__lists {
@@ -31,8 +35,6 @@
   text-align: center;
   font-size: 24px;
   font-weight: 700;
-
-
 }
 
 .p-price__price {
@@ -53,7 +55,7 @@
 }
 
 .p-price__items {
-  width: 100%;
+  max-width: 100%;
 
 }
 
@@ -64,7 +66,6 @@
   margin-left: 0;
   background: global.$main-color;
   align-items: center;
-
 }
 
 .p-price__subject {
@@ -100,4 +101,14 @@
 .p-price__btn-box {
   width: 260px;
   text-align: center;
+}
+
+.p-price__sp {
+  display: none;
+
+  @include global.mq(sp) {
+    display: block;
+    width: 100%;
+    height: auto
+  }
 }

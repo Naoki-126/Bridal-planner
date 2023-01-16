@@ -6,6 +6,23 @@
   height: 72px;
   display: flex;
   align-items: center;
+
+  @include global.mq(sp) {
+    height: 52px;
+  }
+}
+
+.p-header__logo {
+  font-family: 'Lato';
+  color: global.$accent-color;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: .05em;
+
+  @include global.mq(sp) {
+    font-size: 24px;
+  }
 }
 
 .p-header__nav {
@@ -17,10 +34,5 @@
   margin-right: 16px;
   font-size: 14px;
   font-weight: 700;
-  letter-spacing: .03;
-
-  &:last-child {
-    margin-right: 40px;
-  }
-
+  letter-spacing: .03em;
 }

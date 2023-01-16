@@ -2,4 +2,92 @@
 
 .p-drawer {
   display: none;
+
+  @include global.mq(sp) {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    transition: transform .3s ease;
+    z-index: 23;
+  }
+}
+
+.p-drawer__menu {
+  margin-right: 0;
+  font-size: 6px;
+  font-weight: 700;
+  text-align: right;
+
+  &.is-open {
+    display: none;
+  }
+}
+
+.p-drawer__content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 52px;
+  right: 0;
+  background: global.$main-color;
+  z-index: 22;
+  transform: translateX(105%);
+  transition: transform .5s ease 0s;
+
+  &.is-open {
+    transform: translateX(0);
+  }
+}
+
+.p-drawer__lists {
+  margin-top: 82px;
+  margin-left: 64px;
+}
+
+.p-drawer__lists li {
+  margin-top: 40px;
+  margin-left: 41px;
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: .03em;;
+  color: global.$text-color;
+  position: relative;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &::before {
+    content: "◇";
+    position: absolute;
+    color: global.$accent-color;
+    width: 20px;
+    height: 20px;
+    left: -32px;
+    top: 25%;
+    transform: translateY(-50%);
+  }
+}
+
+.p-drawer__button {
+  margin-top: 64px;
+  text-align: center;
+}
+
+.p-drawer__background {
+  position: fixed;
+  top: 52px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: global.$sub-color;
+  opacity: 0.9;
+  z-index: 21;
+  display: none;
+
+  &.is-open {
+    display: block;
+  }
 }

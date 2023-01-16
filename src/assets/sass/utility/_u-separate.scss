@@ -2,19 +2,32 @@
 
 .u-separate {
   margin: 100px auto;
+
+  @include global.mq(sp) {
+    margin: 60px auto;
+  }
 }
 
 .u-separate__light {
   background: #f9f9f9;
   margin: 0 auto;
   padding: 100px 0;
+
+  @include global.mq(sp) {
+    padding: 60px 0;
+  }
 }
 
 .u-separate__title {
+  font-family: 'Futura';
   color: #9f9ec1;
   font-size: 36px;
   font-weight: 700;
   text-align: center;
+
+  @include global.mq(sp) {
+    font-size: 22px;
+  }
 }
 
 .u-separate__subtitle {
@@ -23,5 +36,11 @@
   font-size: 48px;
   font-weight: 700;
   text-align: center;
-}
 
+  @include global.mq(sp) {
+    margin-top: 12px;
+    font-size: 30px;
+    line-height: 1.4;
+    letter-spacing: .05em;
+  }
+}
