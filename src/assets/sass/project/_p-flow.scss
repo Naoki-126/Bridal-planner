@@ -4,6 +4,11 @@
   margin-top: 55px;
   display: flex;
   justify-content: center;
+
+  @include global.mq(sp) {
+    margin-top: 64px;
+    display: block;
+  }
 }
 
 .p-flow__01 {
@@ -61,6 +66,20 @@
   }
 
   &:last-child {
+    &::after {
+      display: none;
+    }
+  }
+
+  @include global.mq(sp) {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+
+    &:nth-child(n + 2) {
+      margin-top: 84px;
+    }
+
     &::after {
       display: none;
     }

@@ -3,6 +3,11 @@
 .l-top {
   background: global.$main-color;
   margin: 0 auto;
-  padding-top: 105px;
+  padding-top: 72px;
   padding-bottom: 33px;
+
+  @include global.mq(sp) {
+    padding-top: 52px;
+    padding-bottom: 60px;
+  }
 }

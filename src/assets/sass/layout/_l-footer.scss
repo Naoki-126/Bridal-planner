@@ -11,15 +11,32 @@
   margin: 0 auto;
   padding: 27px 0;
   display: flex;
+
+  @include global.mq(sp) {
+    // display: block;
+    padding: 40px 0;
+    flex-direction: column-reverse;
+  }
 }
 
 .l-footer__left {
   width: 1183px;
   padding-left: 120px;
 
+  @include global.mq(sp) {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+
 }
 
 .l-footer__right {
   width: calc(100% - 1183px);
   padding-top: 20px;
+
+  @include global.mq(sp) {
+    width: 100%;
+    text-align: center;
+  }
 }
