@@ -1,0 +1,69 @@
+@use "../global" as global;
+
+.p-reports {
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+
+
+.p-reports__title {
+  margin-left: 118px;
+  position: relative;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.4;
+  font-family: global.$ff-en;
+  letter-spacing: .1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: global.$main-color;
+      width: 35px;
+      height: 35px;
+      top: -9px;
+      left: -18px;
+      z-index: -1;
+    }
+  }
+
+  .p-reports__subTitle {
+    margin-left: 48px;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: global.$ff-logo;
+  }
+
+.p-reports__planners {
+
+}
+
+.p-reports__planner {
+
+}
+
+.p-reports__planner-title {
+
+}
+
+.p-reports__profile {
+
+}
+
+.p-reports__img {
+
+}
+
+.p-reports__contents {
+
+}
+
+.p-reports__name {
+
+}
+
+.p-reports__area {
+
+}
