@@ -1,12 +1,12 @@
 @use "../global" as global;
 
 .l-header {
-  width: 100%;
-  max-width: 100%;
   margin: 0 auto;
-  background: #fff;
-  position: fixed;
+  max-width: 100%;
   z-index: 20;
+  position: fixed;
+  top: 0;
+  right: 0;
 
   @include global.mq(tab) {
     padding: 0 24px;
@@ -19,20 +19,7 @@
   }
 }
 
-.l-header__left {
-  margin-left: 120px;
-
-  @include global.mq(sp) {
-    margin-left: 0px;
-  }
-}
-
-.l-header__right {
-  margin-left: auto;
-  margin-right: 133px;
+.l-header__nav {
   display: flex;
-
-  @include global.mq(sp) {
-    display: none;
-  }
+  flex-direction: column;
 }

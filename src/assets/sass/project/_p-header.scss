@@ -1,2 +1,87 @@
 @use "../global" as global;
 
+.p-header {
+  width: inherit;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  background: global.$main-color;
+  top: 0;
+  right: 0;
+}
+
+.p-header__beginner {
+  width: inherit;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border: 1px solid global.$main-color;
+  top: 0px;
+  right: 0;
+  position: relative;
+
+  &::before {
+    background: url(/public/assets/img/beginner.png)no-repeat center center /contain;
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 32px;
+    top: 21px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.p-header__text {
+  margin-top: 58px;
+  font-size: 12px;
+  text-align: center;
+}
+
+
+.p-header__login {
+  width: inherit;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border: 1px solid global.$main-color;
+  top: 0px;
+  right: 0;
+  position: relative;
+
+  &::before {
+    background: url(/public/assets/img/login.png)no-repeat center center /contain;
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 32px;
+    top: 21px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.p-header__likes {
+  width: inherit;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border: 1px solid global.$main-color;
+  top: 0px;
+  right: 0;
+  position: relative;
+
+  &::before {
+    background: url(/public/assets/img/likes.png)no-repeat center center /contain;
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 32px;
+    top: 21px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

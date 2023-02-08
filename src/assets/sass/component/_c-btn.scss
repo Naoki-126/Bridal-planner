@@ -1,7 +1,42 @@
 @use "../global" as global;
 
+.c-btn__plan {
+  width: 367px;
+  height: auto;
+  background: global.$text-color;
+  color: #fff;
+  padding: 8px 10px;
+  border: 1px solid #fff;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: .08;
+  
+}
 
+.c-btn__accent {
+  font-size: 20px;
+  font-weight: 500;
 
+  span {
+    font-family: global.$ff-logo;
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
 
+  .c-btn__area {
+    width: 367px;
+    height: auto;
+    background: global.$main-color;
+    color: #fff;
+    padding: 8px 10px;
+    border: 1px solid #fff;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: .08;
 
-
+      span {
+        font-size: 24px;
+        font-weight: 700;
+      }
+}
