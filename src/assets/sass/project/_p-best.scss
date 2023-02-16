@@ -1,0 +1,81 @@
+@use "../global" as global;
+
+  .p-best {
+    margin-top: 76px;
+    text-align: center;
+    font-family: global.$ff-logo;
+    font-size: 36px;
+    line-height: 1.667;
+    letter-spacing: .1;
+
+    span {
+      font-size: 48px;
+      color: global.$main-color;
+    }
+  }
+
+  .p-best__content {
+    margin-top: 8px;
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: transparent url(/public/assets/img/background-logo.png) no-repeat;
+      width: 1047px;
+      height: 565px;
+      top: 0;
+      right: 2px;
+    }
+  }
+
+  .p-best__text {
+    padding-top: 48px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 2.222;
+    letter-spacing: .05;
+    text-align: center;
+  }
+
+  .p-best__footer {
+    margin: 54px auto 0;
+    text-align: center;
+  }
+
+  .p-best__footer-text {
+    display: inline-block;
+    color: global.$main-color;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -16px;
+      border-left: 1px solid global.$main-color;
+      height: 21px;
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -16px;
+      border-left: 1px solid global.$main-color;
+      height: 21px;
+      transform: rotate(45deg);
+    }
+  }
+
+  .p-best__button {
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  .p-best__gallery {
+    margin: 54px auto 0;
+    width: 100%;
+    // display: flex;
+  }

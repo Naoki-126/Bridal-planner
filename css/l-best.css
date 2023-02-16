@@ -1,0 +1,26 @@
+.is-pc {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .is-pc {
+    display: none;
+  }
+}
+
+.is-sp {
+  display: block;
+}
+@media screen and (max-width: 1439px) {
+  .is-sp {
+    display: none;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .is-sp {
+    display: none;
+  }
+}
+
+.l-best {
+  margin: 73px auto;
+}

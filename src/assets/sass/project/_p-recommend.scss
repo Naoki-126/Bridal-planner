@@ -1,0 +1,155 @@
+@use "../global" as global;
+
+.p-recommend {
+  margin: 64px auto 70px;
+  width: 1240px;
+  max-width: 100%;
+  height: 390px;
+  background: global.$sub-color;
+}
+
+.p-recommend__box {
+  margin-left: 34px;
+  padding-top: 59px;
+  width: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.p-recommend__plan {
+  margin-right: 70px;
+  width: 342px;
+  height: 125px;
+  display: flex;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: calc(342px - 7px*2);
+    height: calc(125px - 7px*2);
+    top: 7px;
+    left: 7px;
+    border: 1px solid #fff;
+    z-index: 1;
+  }
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   background: #D684B8;
+  //   width: 41px;
+  //   height: 41px;
+  //   top: -16px;
+  //   left: -13px;
+  // }
+
+  &:nth-child(n + 4) {
+    margin-top: 42px;
+  }
+
+  &:nth-child(4) {
+    margin-right: 81px;
+  }
+}
+
+.p-recommend__ribbon {
+  content: "";
+    position: absolute;
+    background: #D684B8;
+    width: 41px;
+    height: 41px;
+    top: -16px;
+    left: -13px;
+}
+
+.p-recommend__ribbon2 {
+  content: "";
+    position: absolute;
+    background: #84B6D6;
+    width: 41px;
+    height: 41px;
+    top: -16px;
+    left: -13px;
+}
+
+.p-recommend__ribbon3 {
+  content: "";
+    position: absolute;
+    background: #F1B04E;
+    width: 41px;
+    height: 41px;
+    top: -16px;
+    left: -13px;
+}
+
+.p-recommend__ribbon4 {
+  content: "";
+    position: absolute;
+    background: #D6BF84;
+    width: 41px;
+    height: 41px;
+    top: -16px;
+    left: -13px;
+}
+
+.p-recommend__ribbon5 {
+  content: "";
+    position: absolute;
+    background: #ABD07B;
+    width: 41px;
+    height: 41px;
+    top: -16px;
+    left: -13px;
+}
+
+
+
+
+
+
+.p-recommend__img {
+  width: 125px;
+  height: inherit;
+}
+
+.p-recommend__content {
+  width: calc(342px - 125px);
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid global.$text-color;
+    width: 45px;
+    bottom: 16px;
+    right: 16px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid global.$text-color;
+    width: 10px;
+    bottom: 19px;
+    right: 14px;
+    transform: rotate(45deg);
+
+
+  }
+}
+
+.p-recommend__text {
+
+}
+
+.p-recommend__footer {
+  margin-bottom: 16px;
+  margin-right: 16px;
+}

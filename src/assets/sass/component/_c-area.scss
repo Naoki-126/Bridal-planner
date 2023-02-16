@@ -1,0 +1,10 @@
+@use "../global" as global;
+
+.c-area {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: global.$main-color;
+  padding: 4px 7px;
+  border: 1px solid global.$main-color;
+}
