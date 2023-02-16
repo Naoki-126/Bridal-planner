@@ -1,0 +1,17 @@
+@use "../global" as global;
+
+.c-category__green {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 2px 8px;
+  background: #ABD07B;
+  color: #fff;
+}
+
+.c-category__orange {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 2px 8px;
+  background: #F1B04E;
+  color: #fff;
+}

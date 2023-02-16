@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bridal</title>
     <style>@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');</style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
 
@@ -79,77 +80,527 @@
             </a>
           </div>
         </div>
-
       </div>
     </section>
     <section class="l-reports">
       <div class="l-inner">
-        <div class="p-reports c-subColor">
-          <!-- 背景とテキストの間に疑似要素を入れたい -->
-          <div class="p-reports__title">Recent Planner and Reports</div>
-          <div class="p-reports__subTitle">最近見たレポートとプランナー</div>
+        <div class="u-separate__section">
+          <div class="u-separate__sectionTitle">Recent Planner and Reports</div>
+          <div class="u-separate__sectionSub">最近見たレポートとプランナー</div>
         </div>
-        <div class="p-reports__planners">
-          <div class="p-reports__planner">
-            <div class="p-reports__planner-title"><span>Planner</span>プランナー</div>
-            <div class="p-reports__profile">
-              <img src="" alt="" class="p-reports__img">
+        <div class="p-reports">
+          <div class="p-reports__title">Planner<span>プランナー</span></div>
+        </div>
+      </div>
+      <div class="swiper swipe1">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="p-reports__planner">
+              <img src="./assets/img/sasakiyui.png" alt="sasakiyui" class="p-reports__img">
               <div class="p-reports__contents">
-                <div class="p-reports__name">佐々木 結<br>オリオンウェディング</div>
-                <div class="p-reports__area">東京 神奈川 千葉 埼玉 長野 愛知<br>岡山 大阪 広島 福岡 沖縄 海外</div>
+                <div class="p-reports__name">佐々木 結</div>
+                <div class="p-reports__company">オリオンウェディング</div>
+                <div class="p-reports__area">
+                  <div class="p-reports__label c-area">エリア</div>
+                  <div class="p-reports__place">
+                    <span>東京</span>
+                    <span>神奈川</span>
+                    <span>千葉</span>
+                    <span>埼玉</span>
+                    <span>長野</span>
+                    <span>愛知</span>
+                    <span>岡山</span>
+                    <span>大阪</span>
+                    <span>広島</span>
+                    <span>福岡</span>
+                    <span>沖縄</span>
+                    <span>海外</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="p-reports__profile">
-              <img src="" alt="" class="p-reports__img">
+          </div>
+          <div class="swiper-slide">
+            <div class="p-reports__planner">
+              <img src="./assets/img/suzukinaoko.png" alt="suzukinaoko" class="p-reports__img">
               <div class="p-reports__contents">
-                <div class="p-reports__name">鈴木 直子<br>Orange wedding</div>
-                <div class="p-reports__area">東京 神奈川 千葉 埼玉 長野 愛知<br>岡山 大阪 広島 福岡 沖縄 海外</div>
+                <div class="p-reports__name">鈴木 直子</div>
+                <div class="p-reports__company">Orange wedding</div>
+                <div class="p-reports__area">
+                  <div class="p-reports__label c-area">エリア</div>
+                  <div class="p-reports__place">
+                    <span>東京</span>
+                    <span>神奈川</span>
+                    <span>千葉</span>
+                    <span>埼玉</span>
+                    <span>長野</span>
+                    <span>愛知</span>
+                    <span>岡山</span>
+                    <span>大阪</span>
+                    <span>広島</span>
+                    <span>福岡</span>
+                    <span>沖縄</span>
+                    <span>海外</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="p-reports__profile">
-              <img src="" alt="" class="p-reports__img">
+          </div>
+          <div class="swiper-slide">
+            <div class="p-reports__planner">
+              <img src="./assets/img/katoumirei.png" alt="katomirei" class="p-reports__img">
               <div class="p-reports__contents">
-                <div class="p-reports__name">加藤 美玲<br>株式会社best wedding</div>
-                <div class="p-reports__area">東京 神奈川 千葉 埼玉 長野 愛知<br>岡山 大阪 広島 福岡 沖縄 海外</div>
+                <div class="p-reports__name">加藤 美玲</div>
+                <div class="p-reports__company">株式会社best wedding</div>
+                <div class="p-reports__area">
+                  <div class="p-reports__label c-area">エリア</div>
+                  <div class="p-reports__place">
+                    <span>東京</span>
+                    <span>神奈川</span>
+                    <span>千葉</span>
+                    <span>埼玉</span>
+                    <span>長野</span>
+                    <span>愛知</span>
+                    <span>岡山</span>
+                    <span>大阪</span>
+                    <span>広島</span>
+                    <span>福岡</span>
+                    <span>沖縄</span>
+                    <span>海外</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="p-reports__reports">
-          <div class="p-reports__report">
-            <div class="p-reports__head">
-              <img src="" alt="" class="p-reports__r-img">
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <!-- <div class="p-reports__planners">
+        <div class="p-reports__planner">
+          <img src="./assets/img/sasakiyui.png" alt="sasakiyui" class="p-reports__img">
+          <div class="p-reports__contents">
+            <div class="p-reports__name">佐々木 結</div>
+            <div class="p-reports__company">オリオンウェディング</div>
+            <div class="p-reports__area">
+              <div class="p-reports__label c-area">エリア</div>
+              <div class="p-reports__place">
+                <span>東京</span>
+                <span>神奈川</span>
+                <span>千葉</span>
+                <span>埼玉</span>
+                <span>長野</span>
+                <span>愛知</span>
+                <span>岡山</span>
+                <span>大阪</span>
+                <span>広島</span>
+                <span>福岡</span>
+                <span>沖縄</span>
+                <span>海外</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-reports__planner">
+          <img src="./assets/img/suzukinaoko.png" alt="suzukinaoko" class="p-reports__img">
+          <div class="p-reports__contents">
+            <div class="p-reports__name">鈴木 直子</div>
+            <div class="p-reports__company">Orange wedding</div>
+            <div class="p-reports__area">
+              <div class="p-reports__label c-area">エリア</div>
+              <div class="p-reports__place">
+                <span>東京</span>
+                <span>神奈川</span>
+                <span>千葉</span>
+                <span>埼玉</span>
+                <span>長野</span>
+                <span>愛知</span>
+                <span>岡山</span>
+                <span>大阪</span>
+                <span>広島</span>
+                <span>福岡</span>
+                <span>沖縄</span>
+                <span>海外</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-reports__planner">
+          <img src="./assets/img/katoumirei.png" alt="katomirei" class="p-reports__img">
+          <div class="p-reports__contents">
+            <div class="p-reports__name">加藤 美玲</div>
+            <div class="p-reports__company">株式会社best wedding</div>
+            <div class="p-reports__area">
+              <div class="p-reports__label c-area">エリア</div>
+              <div class="p-reports__place">
+                <span>東京</span>
+                <span>神奈川</span>
+                <span>千葉</span>
+                <span>埼玉</span>
+                <span>長野</span>
+                <span>愛知</span>
+                <span>岡山</span>
+                <span>大阪</span>
+                <span>広島</span>
+                <span>福岡</span>
+                <span>沖縄</span>
+                <span>海外</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="l-inner">
+        <div class="p-reports__head">
+          <div class="p-reports__title">Report<span>レポート</span></div>
+        </div>
+      </div>
+      <div class="swiper swipe2 ">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="p-reports__card">
+              <div class="p-reports__card-row">
+                <div class="p-reports__c-img">
+                  <img src="" alt="report1">
+                </div>
+                <div class="p-reports__body">
+                  <p class="p-reports__comment">ペットと一緒に思い出の石垣島で叶えるウェディング</p>
+                  <div class="p-reports__category">
+                    <div class="p-reports__meta c-category__green">リゾート・ビーチ・アウトドアウェディング</div>
+                  </div>
+                  <div class="p-reports__area-tag">
+                    <div class="c-area">エリア</div>
+                    <div class="p-reports__place">
+                      <div class="p-reports__spot">軽井沢</div>
+                    </div>
+                  </div>
+                  <div class="p-reports__tag">
+                    <div class="c-tag">#国内</div>
+                    <div class="c-tag">＃フォトウェディング</div>
+                    <div class="c-tag">＃前撮り</div>
+                    <div class="c-tag">＃アウトドアウェディング</div>
+                    <div class="c-tag">＃家族婚</div>
+                  </div>
+                </div>
+                <div class="p-reports__footer"></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="p-reports__card">
+              <div class="p-reports__card-row">
+                <div class="p-reports__c-img">
+                  <img src="../public/assets/img/naturalWedding.png" alt="report2">
+                </div>
+                <div class="p-reports__body">
+                  <p class="p-reports__comment">緑に囲まれたナチュラルガーデンウェディング</p>
+                  <div class="p-reports__category">
+                    <div class="p-reports__meta c-category__green">リゾート・ビーチ・アウトドアウェディング</div>
+                  </div>
+                  <div class="p-reports__area-tag">
+                    <div class="c-area">エリア</div>
+                    <div class="p-reports__place">
+                      <div class="p-reports__spot">軽井沢</div>
+                    </div>
+                  </div>
+                  <div class="p-reports__tag">
+                    <div class="c-tag">#国内</div>
+                    <div class="c-tag">＃フォトウェディング</div>
+                    <div class="c-tag">＃前撮り</div>
+                    <div class="c-tag">＃アウトドアウェディング</div>
+                    <div class="c-tag">＃家族婚</div>
+                  </div>
+                </div>
+                <div class="p-reports__footer"></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="p-reports__card">
+              <div class="p-reports__card-row">
+                <div class="p-reports__c-img">
+                  <img src="" alt="report3">
+                </div>
+                <div class="p-reports__body">
+                  <p class="p-reports__comment">美しい紅葉と和装フォトウェディング</p>
+                  <div class="p-reports__category">
+                    <div class="p-reports__meta c-category__orange">フォトアウェディング</div>
+                  </div>
+                  <div class="p-reports__area-tag">
+                    <div class="c-area">エリア</div>
+                    <div class="p-reports__place">
+                      <div class="p-reports__spot">関西</div>
+                    </div>
+                  </div>
+                  <div class="p-reports__tag">
+                    <div class="c-tag">#国内</div>
+                    <div class="c-tag">＃フォトウェディング</div>
+                    <div class="c-tag">＃前撮り</div>
+                    <div class="c-tag">＃和婚</div>
+                  </div>
+                </div>
+                <div class="p-reports__footer"></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="p-reports__card">
+              <div class="p-reports__card-row">
+                <div class="p-reports__c-img">
+                  <img src="" alt="report3">
+                </div>
+                <div class="p-reports__body">
+                  <p class="p-reports__comment">思い出の海辺で二人だけのウェディング</p>
+                  <div class="p-reports__category">
+                    <div class="p-reports__meta c-category__orange">フォトアウェディング</div>
+                  </div>
+                  <div class="p-reports__area-tag">
+                    <div class="c-area">エリア</div>
+                    <div class="p-reports__place">
+                      <div class="p-reports__spot">関東</div>
+                    </div>
+                  </div>
+                  <div class="p-reports__tag">
+                    <div class="c-tag">#国内</div>
+                    <div class="c-tag">＃フォトウェディング</div>
+                    <div class="c-tag">＃家族婚</div>
+                    <div class="c-tag">＃アウトドアウェディング</div>
+                  </div>
+                </div>
+                <div class="p-reports__footer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <!-- <div class="p-reports__cards">
+        <div class="p-reports__card">
+          <div class="p-reports__card-row">
+            <div class="p-reports__c-img">
+              <img src="" alt="report1">
+            </div>
+            <div class="p-reports__body">
               <p class="p-reports__comment">ペットと一緒に思い出の石垣島で叶えるウェディング</p>
+              <div class="p-reports__category">
+                <div class="p-reports__meta c-category__green">リゾート・ビーチ・アウトドアウェディング</div>
+              </div>
+              <div class="p-reports__area-tag">
+                <div class="c-area">エリア</div>
+                <div class="p-reports__place">
+                  <div class="p-reports__spot">軽井沢</div>
+                </div>
+              </div>
+              <div class="p-reports__tag">
+                <div class="c-tag">#国内</div>
+                <div class="c-tag">＃フォトウェディング</div>
+                <div class="c-tag">＃前撮り</div>
+                <div class="c-tag">＃アウトドアウェディング</div>
+                <div class="c-tag">＃家族婚</div>
+              </div>
+            </div>
+            <div class="p-reports__footer"></div>
+          </div>
+        </div>
+        <div class="p-reports__card">
+          <div class="p-reports__card-row">
+            <div class="p-reports__c-img">
+              <img src="../public/assets/img/naturalWedding.png" alt="report2">
             </div>
             <div class="p-reports__body">
-              <div class="p-reports__category">リゾート・ビーチ・アウトドアウェディング</div>
-              <div class="p-reports__text">軽井沢</div>
-              <div class="p-reports__tag">#国内</div>
-              <div class="p-reports__tag">＃フォトウェディング</div>
-              <div class="p-reports__tag">＃家族婚</div>
-              <div class="p-reports__tag">＃アウトドアウェディング</div>
-            </div>
-            <div class="p-reports__footer">Read more</div>
-          </div>
-          <div class="p-reports__report">
-            <div class="p-reports__head">
-              <img src="" alt="" class="p-reports__r-img">
               <p class="p-reports__comment">緑に囲まれたナチュラルガーデンウェディング</p>
+              <div class="p-reports__category">
+                <div class="p-reports__meta c-category__green">リゾート・ビーチ・アウトドアウェディング</div>
+              </div>
+              <div class="p-reports__area-tag">
+                <div class="c-area">エリア</div>
+                <div class="p-reports__place">
+                  <div class="p-reports__spot">軽井沢</div>
+                </div>
+              </div>
+              <div class="p-reports__tag">
+                <div class="c-tag">#国内</div>
+                <div class="c-tag">＃フォトウェディング</div>
+                <div class="c-tag">＃前撮り</div>
+                <div class="c-tag">＃アウトドアウェディング</div>
+                <div class="c-tag">＃家族婚</div>
+              </div>
+            </div>
+            <div class="p-reports__footer"></div>
+          </div>
+        </div>
+        <div class="p-reports__card">
+          <div class="p-reports__card-row">
+            <div class="p-reports__c-img">
+              <img src="" alt="report3">
             </div>
             <div class="p-reports__body">
-              <div class="p-reports__category">リゾート・ビーチ・アウトドアウェディング</div>
-              <div class="p-reports__text">軽井沢</div>
-              <div class="p-reports__tag">#国内</div>
-              <div class="p-reports__tag">＃フォトウェディング</div>
-              <div class="p-reports__tag">＃家族婚</div>
-              <div class="p-reports__tag">＃アウトドアウェディング</div>
+              <p class="p-reports__comment">美しい紅葉と和装フォトウェディング</p>
+              <div class="p-reports__category">
+                <div class="p-reports__meta c-category__orange">フォトアウェディング</div>
+              </div>
+              <div class="p-reports__area-tag">
+                <div class="c-area">エリア</div>
+                <div class="p-reports__place">
+                  <div class="p-reports__spot">関西</div>
+                </div>
+              </div>
+              <div class="p-reports__tag">
+                <div class="c-tag">#国内</div>
+                <div class="c-tag">＃フォトウェディング</div>
+                <div class="c-tag">＃前撮り</div>
+                <div class="c-tag">＃和婚</div>
+              </div>
             </div>
-            <div class="p-reports__footer">Read more</div>
+            <div class="p-reports__footer"></div>
           </div>
+        </div>
+        <div class="p-reports__card">
+          <div class="p-reports__card-row">
+            <div class="p-reports__c-img">
+              <img src="" alt="report3">
+            </div>
+            <div class="p-reports__body">
+              <p class="p-reports__comment">思い出の海辺で二人だけのウェディング</p>
+              <div class="p-reports__category">
+                <div class="p-reports__meta c-category__orange">フォトアウェディング</div>
+              </div>
+              <div class="p-reports__area-tag">
+                <div class="c-area">エリア</div>
+                <div class="p-reports__place">
+                  <div class="p-reports__spot">関東</div>
+                </div>
+              </div>
+              <div class="p-reports__tag">
+                <div class="c-tag">#国内</div>
+                <div class="c-tag">＃フォトウェディング</div>
+                <div class="c-tag">＃家族婚</div>
+                <div class="c-tag">＃アウトドアウェディング</div>
+              </div>
+            </div>
+            <div class="p-reports__footer"></div>
+          </div>
+        </div>
+      </div> -->
+    </section>
+    <section class="l-best">
+      <div class="l-inner">
+        <div class="u-separate__section">
+          <div class="u-separate__sectionTitle">What’s Best Planner ?</div>
+          <div class="u-separate__sectionSub">ベストプランナーとは</div>
+        </div>
+        <p class="p-best"><span>結</span>婚式を創るのはヒト。<br>ふたりの理想の結婚式を一緒に創ってくれる<br>ヒトから探しませんか。</p>
+        <div class="p-best__content">
+          <div class="p-best__text">ふたりの理想を叶えてくれるプランナーを<br>
+            自分達の目で見てお願いしたい。<br>
+            海外では当たり前のことが、日本では式場からが基本になっています。<br><br>
+            ふたりの希望に寄り添い、しっかり受け止めて、<br>
+            親身に叶えようとしてくれるプランナーがいます。<br><br>
+            そして、<br>
+            「自分たちにとって最高の結婚式だった！」<br>
+            「この方にお願いして本当に良かった！」<br>
+            こんな声を増やしていきたいと思っています。
+          </div>
+          <div class="p-best__footer">
+            <div class="p-best__footer-text">初めてご利用される方へ</div>
+          </div>
+          <div class="p-best__button">
+            <button class="c-btn__best">ベストプランナーの使い方をみる</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-best__gallery">
+        <div class="swiper slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./assets/img/sasakiyui.png" alt="yui"></div>
+            <div class="swiper-slide"><img src="./assets/img/hogehogeko.png" alt="hogeko"></div>
+            <div class="swiper-slide"><img src="./assets/img/hogehogeo.png" alt="hogeo"></div>
+            <div class="swiper-slide"><img src="./assets/img/suzukinaoko.png" alt="naoko"></div>
+            <div class="swiper-slide"><img src="./assets/img/katoumirei.png" alt="mirei"></div>
+            <div class="swiper-slide"><img src="./assets/img/sasakiyui.png" alt="yui"></div>
+            <div class="swiper-slide"><img src="./assets/img/hogehogeko.png" alt="hogeko"></div>
+            <div class="swiper-slide"><img src="./assets/img/hogehogeo.png" alt="hogeo"></div>
+            <div class="swiper-slide"><img src="./assets/img/suzukinaoko.png" alt="naoko"></div>
+            <div class="swiper-slide"><img src="./assets/img/katoumirei.png" alt="mirei"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="l-recommend">
+      <div class="l-inner">
+        <div class="u-separate__section">
+          <div class="u-separate__sectionTitle">Reccomend Plan</div>
+          <div class="u-separate__sectionSub">おすすめのプランからプランナーを探す</div>
+        </div>
+        <div class="p-recommend">
+          <div class="p-recommend__box">
+            <div class="p-recommend__plan">
+              <span class="p-recommend__ribbon"></span>
+              <div class="p-recommend__img"><img src="./assets/img/kokunai.png" alt="kokunai"></div>
+              <div class="p-recommend__content">
+                <div class="p-recommend__text">国内<br>挙式・披露宴</div>
+                <div class="p-recommend__footer"></div>
+              </div>
+            </div>
+            <div class="p-recommend__plan">
+              <span class="p-recommend__ribbon2"></span>
+              <div class="p-recommend__img"><img src="./assets/img/oversea.png" alt="oversea"></div>
+              <div class="p-recommend__content">
+                <div class="p-recommend__text">海外<br>ウェディング</div>
+                <div class="p-recommend__footer"></div>
+              </div>
+            </div>
+            <div class="p-recommend__plan">
+              <span class="p-recommend__ribbon3"></span>
+              <div class="p-recommend__img"><img src="./assets/img/photo.png" alt="photo"></div>
+              <div class="p-recommend__content">
+                <div class="p-recommend__text">フォト<br>ウェディング</div>
+                <div class="p-recommend__footer"></div>
+              </div>
+            </div>
+            <div class="p-recommend__plan">
+              <span class="p-recommend__ribbon4"></span>
+              <div class="p-recommend__img"><img src="./assets/img/kazoku.png" alt="kazoku"></div>
+              <div class="p-recommend__content">
+                <div class="p-recommend__text">家族・少人数<br>ウェディング</div>
+                <div class="p-recommend__footer"></div>
+              </div>
+            </div>
+            <div class="p-recommend__plan">
+              <span class="p-recommend__ribbon5"></span>
+              <div class="p-recommend__img"><img src="./assets/img/resort.png" alt="resort"></div>
+              <div class="p-recommend__content">
+                <div class="p-recommend__text">リゾート・ビーチ<br>アウトドア<br>ウェディング</div>
+                <div class="p-recommend__footer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="l-popular">
+      <div class="l-inner">
+        <div class="u-separate__section">
+          <div class="u-separate__sectionTitle">Populer Reports</div>
+          <div class="u-separate__sectionSub">人気のウェディングレポート</div>
+        </div>
+        <div class="u-separate__sub">
+          <div class="u-separate__sub-title">Ranking<span>人気レポートランキング</span></div>
         </div>
 
       </div>
+
     </section>
+
+
 
     <footer class="l-footer">
       <div class="l-inner">
@@ -194,6 +645,7 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

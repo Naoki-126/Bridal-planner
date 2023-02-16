@@ -10,7 +10,7 @@
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: .08;
-  
+
 }
 
 .c-btn__accent {
@@ -39,4 +39,13 @@
         font-size: 24px;
         font-weight: 700;
       }
+}
+
+.c-btn__best {
+  background: global.$main-color;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: .08;
+  text-align: center;
+  padding: 16px 64px;
 }

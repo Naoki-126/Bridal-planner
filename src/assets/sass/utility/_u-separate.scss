@@ -44,3 +44,128 @@
     letter-spacing: .05em;
   }
 }
+
+.swiper {
+  width: 100%;
+  margin-top: 24px;
+  // overflow: hidden;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+.swiper-slide {
+  overflow: hidden;
+  transition: .7s;
+}
+
+.swiper-button-prev {
+  widthh: 40px;
+  heigt: 40px;
+  margin-top: -20px;
+  left: 50px;
+  background: transparent url(/public/assets/img/green_cercle.png) no-repeat center center /contain;
+
+  &::after {
+    font-size: 10px;
+    color: #fff;
+  }
+}
+
+.swiper-button-next {
+  widthh: 40px;
+  heigt: 40px;
+  margin-top: -20px;
+  right: 50px;
+  background: transparent url(/public/assets/img/green_cercle.png) no-repeat center center /contain;
+
+  &::after {
+    font-size: 10px;
+    color: #fff;
+  }
+}
+
+.slider .swiper-slide {
+  margin-right: 3px;
+
+  img {
+    width: 235px;
+    height: 235px;
+  }
+}
+
+.u-separate__section {
+  align-items: center;
+  display: flex;
+}
+
+.u-separate__sectionTitle {
+  margin-left: 118px;
+  position: relative;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.4;
+  font-family: global.$ff-en;
+  letter-spacing: .1;
+  z-index: 2;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: global.$main-color;
+      width: 35px;
+      height: 35px;
+      top: -9px;
+      left: -18px;
+      z-index: -1;
+    }
+  }
+
+  .u-separate__sectionSub {
+    margin-left: 48px;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: global.$ff-logo;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -24px;
+      border-left: 1px solid global.$main-color;
+      width: 1px;
+      height: 40px;
+    }
+  }
+
+  .u-separate__sub {
+    margin-top: 64px;
+    margin-left: 146px;
+  }
+
+  .u-separate__sub-title {
+    font-family: global.$ff-en;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    color: global.$main-color;
+    position: relative;
+
+    span {
+      margin-left: 8px;
+      color: global.$text-color;
+      font-family: global.$ff-logo;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      top: 50%;
+      left: -16px;
+      transform: translateY(-50%);
+      background: #d9d9d9;
+    }
+  }
