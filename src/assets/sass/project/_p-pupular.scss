@@ -1,0 +1,261 @@
+@use "../global" as global;
+
+.p-popular {
+  margin: 25px 130px 64px;
+
+  &:nth-child(n + 2) {
+    margin-top: 25px;
+    display: flex;
+  }
+}
+
+.p-popular__ranking {
+  padding: 40px 0 30px;
+  width: 1180px;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  background: #fff;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: calc(100% - 18px * 2);
+    height: calc(100% - 14px * 2 );
+    border: 1px solid global.$main-color;
+    top: 14px;
+    left: 18px;
+  }
+}
+
+.p-popular__head {
+  margin-left: 51px;
+  display: flex;
+}
+
+.p-popular__img {
+  img {
+    width: 540px;
+    height: auto;
+  }
+}
+
+.p-popular__titles {
+  width: calc(100% - 540px - 51px);
+  margin: 26px  49px 0 32px;
+  position: relative;
+}
+
+.p-popular__title {
+  font-size: 22px;
+  font-family: global.$ff-logo;
+  margin-bottom: 30px;
+}
+
+.p-popular__category {
+  display: inline;
+}
+
+.p-popular__area-tag {
+  width: 100%;
+  margin-top: 11px;
+  display: flex;
+  align-items: center;
+}
+
+.p-popular__place {
+  width: calc(332px - 91px);
+  margin-left: 8px;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 4px;
+}
+
+.p-popular__tag {
+  margin: 25px auto;
+  margin-right: 220px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.p-popular__body {
+  margin: 16px 72px 0;
+  border-top: 1px solid global.$text-color;
+}
+
+.p-popular__comment {
+  margin-top: 8px;
+  color: global.$main-color;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.p-popular__text {
+  margin-top: 8px;
+  height: 47px;
+  overflow: hidden;
+}
+
+.p-popular__footer {
+  margin-top: 12px;
+  width: 100%;
+  display: flex;
+}
+
+.p-popular__thumbnail {
+  width: 50%;
+}
+
+.p-popular__readmore {
+  margin-top: 42px;
+  width: 50%;
+  margin-right: 46px;
+  text-align: right;
+}
+
+.p-popular__gold {
+  content: "";
+  position: absolute;
+  background: url(/public/assets/img/gold.png) no-repeat;
+  width: 46px;
+  height: 60px;
+  top: 0;
+  left: 24px;
+}
+
+.p-popular__like {
+  content: "";
+  position: absolute;
+  top: 26px;
+  right: 36px;
+}
+
+.p-popular__left {
+  width: 50%;
+  margin-right: 6px;
+}
+
+.p-popular__right {
+  width: 50%;
+  margin-left: 6px;
+}
+
+.p-popular__ranking-2 {
+  padding: 34px 0 30px;
+  width: calc(549px + 14px * 2);
+  max-width: 100%;
+  height: calc(514px + 14px *2);
+  max-height: 100%;
+  background: #fff;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 549px;
+    height: 514px;
+    border: 1px solid global.$main-color;
+    top: 14px;
+    left: 14px;
+  }
+}
+
+.p-popular__head-2 {
+  margin-left: 40px;
+  display: flex;
+}
+
+.p-popular__img-2 {
+  img {
+    width: 236px;
+    height: 226px;
+  }
+}
+
+.p-popular__titles-2 {
+  margin: 0px 24px;
+  width: calc(100% - 236px - 44px);
+}
+
+.p-popular__title-2 {
+  margin: 13px 0;
+  font-size: 20px;
+  font-family: global.$ff-logo;
+}
+
+.p-popular__place-2 {
+  width: calc(100% - 88px);
+  margin-left: 8px;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 4px;
+}
+
+.p-popular__tag-2 {
+  margin: 24px auto 0;
+  margin-right: 110px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.p-popular__body-2 {
+  margin: 27px 41px 40px;
+  border-top: 1px solid global.$text-color;
+}
+
+.p-popular__comment-2 {
+  margin-top: 8px;
+  color: global.$main-color;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.p-popular__text-2 {
+  margin-top: 8px;
+  height: 54px;
+  overflow: hidden;
+}
+
+.p-popular__readmore-2 {
+  margin-top: 40px;
+  width: 50%;
+  margin-right: 30px;
+  text-align: right;
+}
+
+.p-popular__silver {
+  content: "";
+  position: absolute;
+  background: url(/public/assets/img/silver.png) no-repeat;
+  width: 46px;
+  height: 60px;
+  top: 0;
+  left: 24px;
+}
+
+.p-popular__like-2 {
+  content: "";
+  position: absolute;
+  top: 26px;
+  right: 25px;
+}
+
+.p-popular__btn {
+  margin: 64px auto 58px;
+  text-align: center;
+}
+
+.p-popular__blonde {
+  content: "";
+  position: absolute;
+  background: url(/public/assets/img/blonde.png) no-repeat;
+  width: 46px;
+  height: 60px;
+  top: 0;
+  left: 24px;
+}

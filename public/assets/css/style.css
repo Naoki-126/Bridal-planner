@@ -165,6 +165,12 @@ a {
 	padding: 73px 0 70px;
 }
 
+.l-popular {
+	background: #F4F4F4;
+	margin: 0 auto;
+	padding: 73px 0 64px;
+}
+
 .c-btn__plan {
 	background: #757676;
 	border: 1px solid #fff;
@@ -212,6 +218,36 @@ a {
 	letter-spacing: 0.08;
 	padding: 16px 64px;
 	text-align: center;
+}
+
+.c-btn__more {
+	background: #757676;
+	color: #fff;
+	font-family: "Tsukushi B Round Gothic", "sans-serif";
+	font-size: 20px;
+	padding: 16px 24px;
+	padding-right: 115px;
+	position: relative;
+}
+
+.c-btn__more::before {
+	border-top: 1px solid #fff;
+	content: "";
+	position: absolute;
+	right: 28px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 27px;
+}
+
+.c-btn__more::after {
+	border-bottom: 1px solid #fff;
+	content: "";
+	position: absolute;
+	right: 27px;
+	top: 43%;
+	transform: rotate(45deg);
+	width: 12px;
 }
 
 .c-drawer {
@@ -286,6 +322,14 @@ a {
 	padding: 2px 8px;
 }
 
+.c-category__pink {
+	background: #D684B8;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 500;
+	padding: 2px 8px;
+}
+
 .c-tag {
 	background: #84D6D6;
 	border-radius: 45px;
@@ -293,6 +337,187 @@ a {
 	font-size: 12px;
 	font-weight: 500;
 	padding: 2px 6px 2px 4px;
+}
+
+.c-tag__like {
+	background: url(/public/assets/img/ellipse.png) no-repeat;
+	height: 26px;
+	position: relative;
+	width: 26px;
+}
+
+.c-tag__like::after {
+	background: url(/public/assets/img/heart.png) no-repeat;
+	content: "";
+	height: 11.39px;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-55%, -50%);
+	width: 12.72px;
+}
+
+.c-thumbnail {
+	display: flex;
+	position: relative;
+}
+
+.c-thumbnail::before {
+	background: #84D6D6;
+	content: "";
+	height: 19px;
+	left: -2px;
+	position: absolute;
+	top: -3px;
+	width: 19px;
+}
+
+.c-thumbnail-2 {
+	display: flex;
+	position: relative;
+}
+
+.c-thumbnail-2::before {
+	background: #84D6D6;
+	content: "";
+	height: 19px;
+	left: -7px;
+	position: absolute;
+	top: -3.75px;
+	width: 19px;
+}
+
+.c-thumbnail__img img {
+	height: 68px;
+	width: 68px;
+}
+
+.c-thumbnail__img-2 img {
+	height: 65px;
+	width: 65px;
+}
+
+.c-thumbnail__content {
+	margin-left: 16px;
+	margin-top: 3px;
+}
+
+.c-thumbnail__post {
+	font-size: 10px;
+	font-weight: 500;
+}
+
+.c-thumbnail__name {
+	color: #000;
+	font-weight: 500;
+	margin-top: 2px;
+}
+
+.c-thumbnail__job {
+	color: #000;
+	font-size: 12px;
+	font-weight: 500;
+	margin-top: 2px;
+}
+
+.c-readmore {
+	font-family: "Avenir", "sans-serif";
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.4;
+	position: relative;
+}
+
+.c-readmore::before {
+	border-bottom: 1px solid #757676;
+	bottom: -4px;
+	content: "";
+	position: absolute;
+	right: -56px;
+	width: 135px;
+}
+
+.c-readmore::after {
+	border-bottom: 1px solid #757676;
+	bottom: 3px;
+	content: "";
+	position: absolute;
+	right: -58px;
+	transform: rotate(45deg);
+	width: 18px;
+}
+
+.c-readmore-2 {
+	font-family: "Avenir", "sans-serif";
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.4;
+	position: relative;
+}
+
+.c-readmore-2::before {
+	border-top: 1px solid #757676;
+	bottom: -4px;
+	content: "";
+	position: absolute;
+	right: -34px;
+	width: 115px;
+}
+
+.c-readmore-2::after {
+	border-bottom: 1px solid #757676;
+	bottom: 3px;
+	content: "";
+	position: absolute;
+	right: -37px;
+	transform: rotate(45deg);
+	width: 18px;
+}
+
+.c-readmore-plan {
+	font-family: "Avenir", "sans-serif";
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.4;
+	position: relative;
+}
+
+.c-readmore-plan::before {
+	border-top: 1px solid #757676;
+	bottom: -4px;
+	content: "";
+	position: absolute;
+	right: 0px;
+	width: 135px;
+}
+
+.c-readmore-plan::after {
+	border-bottom: 1px solid #757676;
+	bottom: 3px;
+	content: "";
+	position: absolute;
+	right: 0px;
+	transform: rotate(45deg);
+	width: 18px;
+}
+
+.c-ranking {
+	color: #fff;
+	font-family: "Tsukushi B Round Gothic", "sans-serif";
+	font-size: 20px;
+	margin-top: 15px;
+	position: relative;
+	text-align: center;
+}
+
+.c-ranking::before {
+	content: "No.";
+	font-family: "Tsukushi B Round Gothic", "sans-serif";
+	font-size: 12px;
+	left: 50%;
+	position: absolute;
+	top: -11px;
+	transform: translateX(-50%);
 }
 
 .p-header {
@@ -811,24 +1036,11 @@ a {
 	position: relative;
 }
 
-.p-reports__c-img::before {
-	background: url(/public/assets/img/ellipse.png) no-repeat;
+.p-reports__like {
 	content: "";
-	height: 26px;
 	position: absolute;
 	right: 12px;
 	top: 36px;
-	width: 26px;
-}
-
-.p-reports__c-img::after {
-	background: url(/public/assets/img/heart.png) no-repeat;
-	content: "";
-	height: 11.39px;
-	position: absolute;
-	right: 18.74px;
-	top: 43.87px;
-	width: 12.72px;
 }
 
 .p-reports__body {
@@ -1088,6 +1300,396 @@ a {
 	margin-right: 16px;
 }
 
+.p-popular {
+	margin: 25px 130px 64px;
+}
+
+.p-popular:nth-child(n+2) {
+	display: flex;
+	margin-top: 25px;
+}
+
+.p-popular__ranking {
+	background: #fff;
+	height: auto;
+	max-height: 100%;
+	max-width: 100%;
+	padding: 40px 0 30px;
+	position: relative;
+	width: 1180px;
+}
+
+.p-popular__ranking::before {
+	border: 1px solid #84D6D6;
+	content: "";
+	height: calc(100% - 28px);
+	left: 18px;
+	position: absolute;
+	top: 14px;
+	width: calc(100% - 36px);
+}
+
+.p-popular__head {
+	display: flex;
+	margin-left: 51px;
+}
+
+.p-popular__img img {
+	height: auto;
+	width: 540px;
+}
+
+.p-popular__titles {
+	margin: 26px 49px 0 32px;
+	position: relative;
+	width: calc(100% - 540px - 51px);
+}
+
+.p-popular__title {
+	font-family: "Tsukushi B Round Gothic", "sans-serif";
+	font-size: 22px;
+	margin-bottom: 30px;
+}
+
+.p-popular__category {
+	display: inline;
+}
+
+.p-popular__area-tag {
+	align-items: center;
+	display: flex;
+	margin-top: 11px;
+	width: 100%;
+}
+
+.p-popular__place {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 14px;
+	gap: 8px 4px;
+	margin-left: 8px;
+	width: 241px;
+}
+
+.p-popular__tag {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+	margin: 25px auto;
+	margin-right: 220px;
+}
+
+.p-popular__body {
+	border-top: 1px solid #757676;
+	margin: 16px 72px 0;
+}
+
+.p-popular__comment {
+	color: #84D6D6;
+	font-size: 20px;
+	font-weight: 500;
+	margin-top: 8px;
+}
+
+.p-popular__text {
+	height: 47px;
+	margin-top: 8px;
+	overflow: hidden;
+}
+
+.p-popular__footer {
+	display: flex;
+	margin-top: 12px;
+	width: 100%;
+}
+
+.p-popular__thumbnail {
+	width: 50%;
+}
+
+.p-popular__readmore {
+	margin-right: 46px;
+	margin-top: 42px;
+	text-align: right;
+	width: 50%;
+}
+
+.p-popular__gold {
+	background: url(/public/assets/img/gold.png) no-repeat;
+	content: "";
+	height: 60px;
+	left: 24px;
+	position: absolute;
+	top: 0;
+	width: 46px;
+}
+
+.p-popular__like {
+	content: "";
+	position: absolute;
+	right: 36px;
+	top: 26px;
+}
+
+.p-popular__left {
+	margin-right: 6px;
+	width: 50%;
+}
+
+.p-popular__right {
+	margin-left: 6px;
+	width: 50%;
+}
+
+.p-popular__ranking-2 {
+	background: #fff;
+	height: 542px;
+	max-height: 100%;
+	max-width: 100%;
+	padding: 34px 0 30px;
+	position: relative;
+	width: 577px;
+}
+
+.p-popular__ranking-2::before {
+	border: 1px solid #84D6D6;
+	content: "";
+	height: 514px;
+	left: 14px;
+	position: absolute;
+	top: 14px;
+	width: 549px;
+}
+
+.p-popular__head-2 {
+	display: flex;
+	margin-left: 40px;
+}
+
+.p-popular__img-2 img {
+	height: 226px;
+	width: 236px;
+}
+
+.p-popular__titles-2 {
+	margin: 0px 24px;
+	width: calc(100% - 236px - 44px);
+}
+
+.p-popular__title-2 {
+	font-family: "Tsukushi B Round Gothic", "sans-serif";
+	font-size: 20px;
+	margin: 13px 0;
+}
+
+.p-popular__place-2 {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 14px;
+	gap: 8px 4px;
+	margin-left: 8px;
+	width: calc(100% - 88px);
+}
+
+.p-popular__tag-2 {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+	margin: 24px auto 0;
+	margin-right: 110px;
+}
+
+.p-popular__body-2 {
+	border-top: 1px solid #757676;
+	margin: 27px 41px 40px;
+}
+
+.p-popular__comment-2 {
+	color: #84D6D6;
+	font-size: 20px;
+	font-weight: 500;
+	margin-top: 8px;
+}
+
+.p-popular__text-2 {
+	height: 54px;
+	margin-top: 8px;
+	overflow: hidden;
+}
+
+.p-popular__readmore-2 {
+	margin-right: 30px;
+	margin-top: 40px;
+	text-align: right;
+	width: 50%;
+}
+
+.p-popular__silver {
+	background: url(/public/assets/img/silver.png) no-repeat;
+	content: "";
+	height: 60px;
+	left: 24px;
+	position: absolute;
+	top: 0;
+	width: 46px;
+}
+
+.p-popular__like-2 {
+	content: "";
+	position: absolute;
+	right: 25px;
+	top: 26px;
+}
+
+.p-popular__btn {
+	margin: 64px auto 58px;
+	text-align: center;
+}
+
+.p-popular__blonde {
+	background: url(/public/assets/img/blonde.png) no-repeat;
+	content: "";
+	height: 60px;
+	left: 24px;
+	position: absolute;
+	top: 0;
+	width: 46px;
+}
+
+.p-plan {
+	background: #fff;
+	margin: 0 auto;
+	padding: 64px 20px;
+	width: 1240px;
+}
+
+.p-plan__sub {
+	margin-left: 20px;
+}
+
+.p-plan__items {
+	background: #EEF9F8;
+	display: flex;
+	height: auto;
+	margin-top: 65px;
+	max-width: 100%;
+	padding: 82px 0;
+	padding-left: 47px;
+}
+
+.p-plan__item {
+	margin-left: 30px;
+	width: 348px;
+}
+
+.p-plan__item:first-child {
+	margin-left: 0;
+}
+
+.p-plan__label {
+	background: #D684B8;
+	height: 30px;
+	margin-left: 76px;
+	position: relative;
+	width: 31px;
+}
+
+.p-plan__label.-orange {
+	background: #F1B04E;
+}
+
+.p-plan__label.-green {
+	background: #ABD07B;
+}
+
+.p-plan__title {
+	content: "";
+	font-family: "Tsukushi B Round Gothic", "sans-serif";
+	font-size: 18px;
+	left: 21px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 200px;
+}
+
+.p-plan__card {
+	background: #fff;
+	height: 552px;
+	margin-top: 26px;
+	position: relative;
+	width: inherit;
+}
+
+.p-plan__card::before {
+	border: 1px solid #84D6D6;
+	content: "";
+	height: calc(100% - 9px - 14px);
+	left: 13px;
+	position: absolute;
+	top: 9px;
+	width: calc(100% - 26px);
+}
+
+.p-plan__img {
+	padding-top: 20px;
+	text-align: center;
+}
+
+.p-plan__img img {
+	height: 202px;
+	width: 302px;
+}
+
+.p-plan___like {
+	content: "";
+	position: absolute;
+	right: 36px;
+	top: 27px;
+}
+
+.p-plan__body {
+	margin: 8px 29px 33px;
+}
+
+.p-plan__body-title {
+	font-family: "Tsukushi B Round Gothic", "sans-serif";
+	font-size: 18px;
+}
+
+.p-plan__area-tag {
+	align-items: center;
+	display: flex;
+	margin-top: 10px;
+}
+
+.p-plan__place {
+	margin-left: 8px;
+}
+
+.p-plan__tag {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+	margin: 12px auto 0;
+	margin-right: 50px;
+}
+
+.p-plan__profile {
+	margin-left: 8px;
+	margin-top: 20px;
+}
+
+.p-plan__footer {
+	margin-left: 160px;
+	margin-top: 23px;
+}
+
+.p-plan__btn {
+	margin-top: 64px;
+	text-align: center;
+}
+
 .u-separate {
 	margin: 100px auto;
 }
@@ -1215,7 +1817,7 @@ a {
 .u-separate__sub-title {
 	color: #84D6D6;
 	font-family: "Avenir", "sans-serif";
-	font-size: 20px;
+	font-size: 24px;
 	font-weight: 400;
 	line-height: 1.5;
 	position: relative;
@@ -1224,6 +1826,7 @@ a {
 .u-separate__sub-title span {
 	color: #757676;
 	font-family: "Tsukushi B Round Gothic", "sans-serif";
+	font-size: 20px;
 	margin-left: 8px;
 }
 

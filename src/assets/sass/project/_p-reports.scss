@@ -161,27 +161,15 @@
   max-width: 100%;
   height: auto;
   position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    background: url(/public/assets/img/ellipse.png)no-repeat;
-    width: 26px;
-    height: 26px;
-    top: 36px;
-    right: 12px;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    background: url(/public/assets/img/heart.png)no-repeat;
-    width: 12.72px;
-    height: 11.39px;
-    top: calc(36px + 7.87px);
-    right: calc(12px + 6.74px);
-  }
 }
+
+.p-reports__like {
+  content: "";
+  position: absolute;
+  top: 36px;
+  right: 12px;
+}
+
 
 .p-reports__body {
   content: "";
