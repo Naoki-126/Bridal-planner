@@ -1,0 +1,68 @@
+@use "../global" as global;
+
+.c-thumbnail {
+  display: flex;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: global.$main-color;
+    width: 19px;
+    height: 19px;
+    top: -3px;
+    left: -2px;
+  }
+}
+
+.c-thumbnail-2 {
+  display: flex;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: global.$main-color;
+    width: 19px;
+    height: 19px;
+    top: -3.75px;
+    left: -7px;
+  }
+}
+
+.c-thumbnail__img {
+  img {
+    width: 68px;
+    height: 68px;
+  }
+}
+
+.c-thumbnail__img-2 {
+  img {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+.c-thumbnail__content {
+  margin-left: 16px;
+  margin-top: 3px;
+}
+
+.c-thumbnail__post {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.c-thumbnail__name {
+  margin-top: 2px;
+  color: #000;
+  font-weight: 500;
+}
+
+.c-thumbnail__job {
+  margin-top: 2px;
+  color: #000;
+  font-size: 12px;
+  font-weight: 500;
+}

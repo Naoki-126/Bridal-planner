@@ -1,0 +1,82 @@
+@use "../global" as global;
+
+.c-readmore {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 500;
+  font-family: global.$ff-en;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid global.$text-color;
+    width: 135px;
+    bottom: -4px;
+    right: -56px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid global.$text-color;
+    width: 18px;
+    bottom: 3px;
+    right: -58px;
+    transform: rotate(45deg);
+  }
+}
+
+.c-readmore-2 {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 500;
+  font-family: global.$ff-en;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-top: 1px solid global.$text-color;
+    width: 115px;
+    bottom: -4px;
+    right: -34px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid global.$text-color;
+    width: 18px;
+    bottom: 3px;
+    right: -37px;
+    transform: rotate(45deg);
+  }
+}
+
+.c-readmore-plan {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 500;
+  font-family: global.$ff-en;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-top: 1px solid global.$text-color;
+    width: 135px;
+    bottom: -4px;
+    right: 0px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid global.$text-color;
+    width: 18px;
+    bottom: 3px;
+    right: 0px;
+    transform: rotate(45deg);
+  }
+}

@@ -147,12 +147,13 @@
   .u-separate__sub-title {
     font-family: global.$ff-en;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.5;
     color: global.$main-color;
     position: relative;
 
     span {
+      font-size: 20px;
       margin-left: 8px;
       color: global.$text-color;
       font-family: global.$ff-logo;

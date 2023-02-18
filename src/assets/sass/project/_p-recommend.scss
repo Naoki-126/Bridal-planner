@@ -35,16 +35,6 @@
     z-index: 1;
   }
 
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   background: #D684B8;
-  //   width: 41px;
-  //   height: 41px;
-  //   top: -16px;
-  //   left: -13px;
-  // }
-
   &:nth-child(n + 4) {
     margin-top: 42px;
   }
@@ -104,11 +94,6 @@
     left: -13px;
 }
 
-
-
-
-
-
 .p-recommend__img {
   width: 125px;
   height: inherit;
@@ -140,13 +125,7 @@
     bottom: 19px;
     right: 14px;
     transform: rotate(45deg);
-
-
   }
-}
-
-.p-recommend__text {
-
 }
 
 .p-recommend__footer {
