@@ -60,7 +60,8 @@
 .p-plan__card {
   margin-top: 26px;
   background: #fff;
-  width: inherit;
+  // width: inherit;
+  width: 348px;
   height: 552px;
   position: relative;
 
@@ -134,5 +135,5 @@
 .p-plan__btn {
   margin-top: 64px;
   text-align: center;
-
 }
+

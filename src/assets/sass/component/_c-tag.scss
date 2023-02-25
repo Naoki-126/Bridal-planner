@@ -9,6 +9,15 @@
   border-radius: 45px;
 }
 
+.c-tag__l {
+  font-size: 16px;
+  font-weight: 500;
+  background: global.$main-color;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 45px;
+}
+
 .c-tag__like {
   background: url(/public/assets/img/ellipse.png) no-repeat;
   width: 26px;
@@ -21,6 +30,24 @@
     background: url(/public/assets/img/heart.png) no-repeat;
     width: 12.72px;
     height: 11.39px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -50%);
+  }
+}
+
+.c-tag__good {
+  background: url(/public/assets/img/star1.png) no-repeat;
+  width: 26px;
+  height: 26px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: url(/public/assets/img/star.png) no-repeat;
+    width: 15px;
+    height: 15px;
     top: 50%;
     left: 50%;
     transform: translate(-55%, -50%);

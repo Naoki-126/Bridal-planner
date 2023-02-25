@@ -59,6 +59,10 @@
   padding-right: 115px;
   position: relative;
 
+  &.-planner {
+  padding-right: 103px;
+}
+
   &::before {
     content: "";
     position: absolute;
@@ -78,5 +82,64 @@
     right: 27px;
     transform: rotate(45deg);
   }
+}
 
+.c-btn__voice {
+  background: global.$text-color;
+  color: #fff;
+  font-size: 20px;
+  font-family: global.$ff-logo;
+  padding: 16px 24px;
+  padding-right: 105px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 28px;
+    transform: translateY(-50%);
+    border-top: 1px solid #fff;
+    width: 27px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #fff;
+    width: 12px;
+    top: 43%;
+    right: 27px;
+    transform: rotate(45deg);
+  }
+}
+
+.c-btn__login {
+  background: global.$text-color;
+  color: #fff;
+  font-size: 20px;
+  font-family: global.$ff-logo;
+  padding: 16px 24px;
+  padding-right: 103px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 28px;
+    transform: translateY(-50%);
+    border-top: 1px solid #fff;
+    width: 27px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #fff;
+    width: 12px;
+    top: 43%;
+    right: 27px;
+    transform: rotate(45deg);
+  }
 }

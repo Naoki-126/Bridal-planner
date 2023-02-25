@@ -1,0 +1,170 @@
+@use "../global" as global;
+
+.p-new {
+  margin: 32px auto 64px;
+  width: 1243px;
+  height: 504px;
+  background: global.$sub-color;
+}
+
+.p-new__sectionTitle {
+  margin-left: 117px;
+}
+
+.p-new__items {
+  padding-top: 49px;
+  width: 100%;
+  display: flex;
+  // overflow: hidden;
+}
+
+.p-new__card {
+  width: 397px;
+  max-width: 100%;
+  height: 412px;
+  max-height: 100%;
+  background: #fff;
+  margin-right: 35px;
+  // padding: 0 30px;
+}
+
+.p-new__head {
+  width: inherit;
+  padding-top: 28px;
+  margin-left: 30px;
+  display: flex;
+}
+
+.p-new__img {
+  width: 140px;
+  position: relative;
+
+  img {
+    width: 140px;
+    height: 160px;
+  }
+}
+
+.p-new___good {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.p-new__name {
+  margin-top: 18px;
+  font-size: 22px;
+  line-height: 1.1;
+  font-family: global.$ff-logo;
+  color: #000;
+}
+
+.p-new__job {
+  margin-top: 2px;
+  font-size: 12px;
+  color: #000;
+}
+
+.p-new-content {
+  width: calc(100% - 140px - 30px);
+  margin-left: 9px;
+}
+
+.p-new__title {
+  margin-top: 2px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 1.33;
+  font-family: global.$ff-logo;
+}
+
+.p-new__area {
+  margin-top: 18px;
+  width: 100%;
+}
+
+.p-new__label {
+  display: inline;
+  background: #fff;
+}
+
+.p-new__place {
+  margin-top:4px;
+  width: inherit;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.p-new__tag {
+  width: 100%;
+  padding-right: 27px;
+  margin: 8px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.p-new__body {
+  margin-top: 16px;
+  margin-bottom: 33px;
+}
+
+.p-new__points {
+  margin: 0 auto;
+  width: 336px;
+  height: 93px;
+  max-width: 100%;
+  background: #75767624;
+}
+
+.p-new__text {
+  color: #000;
+  padding-top: 11px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.p-new__textLeft {
+  width: 30px;
+  margin-left: 42px;
+}
+
+.p-new__point {
+  font-size: 12px;
+  line-height: 1.5;
+  font-family: global.$ff-logo;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url(/public/assets/img/horn.png) no-repeat;
+    width: 13px;
+    height: 13px;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%);
+  }
+}
+
+.p-new__textRight {
+  width: calc(100% - 30px);
+  margin-left: 8px;
+
+  li {
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 16px;
+    list-style: disc;
+    line-height: 1.8;
+    font-family: global.$ff-base;
+  }
+}
+
+.p-new__btn {
+  margin-top: 64px;
+  text-align: center;
+}

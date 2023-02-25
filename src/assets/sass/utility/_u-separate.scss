@@ -45,56 +45,6 @@
   }
 }
 
-.swiper {
-  width: 100%;
-  margin-top: 24px;
-  // overflow: hidden;
-}
-
-.swiper-wrapper {
-  transition-timing-function: linear;
-}
-
-.swiper-slide {
-  overflow: hidden;
-  transition: .7s;
-}
-
-.swiper-button-prev {
-  widthh: 40px;
-  heigt: 40px;
-  margin-top: -20px;
-  left: 50px;
-  background: transparent url(/public/assets/img/green_cercle.png) no-repeat center center /contain;
-
-  &::after {
-    font-size: 10px;
-    color: #fff;
-  }
-}
-
-.swiper-button-next {
-  widthh: 40px;
-  heigt: 40px;
-  margin-top: -20px;
-  right: 50px;
-  background: transparent url(/public/assets/img/green_cercle.png) no-repeat center center /contain;
-
-  &::after {
-    font-size: 10px;
-    color: #fff;
-  }
-}
-
-.slider .swiper-slide {
-  margin-right: 3px;
-
-  img {
-    width: 235px;
-    height: 235px;
-  }
-}
-
 .u-separate__section {
   align-items: center;
   display: flex;

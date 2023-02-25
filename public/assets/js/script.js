@@ -52,7 +52,7 @@ const swipe2 = new Swiper('.swipe2', {
 const slider = new Swiper('.slider', {
   loop: true,
 
-  slidesPerView: 2, // 一度に表示する枚数
+  slidesPerView: 6, // 一度に表示する枚数
   spaceBetween: 3,
   speed: 10000, // ループの時間
   allowTouchMove: false, // スワイプ無効
@@ -61,12 +61,50 @@ const slider = new Swiper('.slider', {
     disableOnInteraction: false,
   },
 
-  //768px以上
+  //1440px以上
   breakpoints: {
-    768: {
-      slidesPerView: 6,
+    1441: {
+      slidesPerView: 8,
       // slidesPerView: 8,
       spaceBetween: 3,
     }
   }
+
+});
+
+const swipe3 = new Swiper('.swipe3', {
+  loop: true,
+  slidesPerView: 3.76,
+  // slidesPerView: 1,
+    spaceBetween: 10,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+  const swipe4 = new Swiper('.swipe4', {
+    loop: true,
+    slidesPerView: 2.8,
+    spaceBetween: 10,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+  const swipe5 = new Swiper('.swipe5', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 });

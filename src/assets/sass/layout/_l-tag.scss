@@ -1,0 +1,7 @@
+@use "../global" as global;
+
+.l-tag {
+  background: global.$sub-color;
+  margin: 0 auto;
+  padding: 73px 0 128px;
+}
