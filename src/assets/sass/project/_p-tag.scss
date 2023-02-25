@@ -1,0 +1,84 @@
+@use "../global" as global;
+
+.p-tag {
+  margin: 64px auto 0;
+  width: 1240px;
+  height: 320px;
+  background: #fff;
+}
+
+.p-tag__items {
+  width: 100%;
+  display: flex;
+}
+
+
+.p-tag__item {
+  text-align: center;
+  margin-top: 36px;
+  margin-bottom: 22px;
+
+  &.-place {
+    width: 30%;
+  }
+
+  &.-style {
+    width: 34.2%;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      border-left: 1px solid global.$text-color;
+      height: 192px;
+      top: 47px;
+      left: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      border-left: 1px solid global.$text-color;
+      height: 192px;
+      top: 47px;
+      right: 0;
+    }
+  }
+
+  &.-form {
+    width: 35.8%;
+  }
+}
+
+.p-tag__title {
+  display: inline-block;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-left: 1px solid global.$main-color;
+    height: 30px;
+    left: -64px;
+    transform: rotate(-45deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-left: 1px solid global.$main-color;
+    height: 30px;
+    right: -64px;
+    transform: rotate(45deg);
+  }
+
+}
+
+.p-tag__body {
+  margin-top: 40px;
+  width: 100%;
+  padding: 0 60px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}

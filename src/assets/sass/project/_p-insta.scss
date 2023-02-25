@@ -1,0 +1,26 @@
+@use "../global" as global;
+
+.p-insta {
+  margin: 64px auto 74px;
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.p-insta__img {
+
+  img {
+    margin-right: 40px;
+    width: 260px;
+    height: 260px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(n + 5) {
+      margin-top: 37px;
+    }
+  }
+}

@@ -17,4 +17,9 @@
     left:50%;
     transform: translateX(-50%);
   }
+
+  &.-card {
+    margin-top: 12px;
+    font-size: 18px;
+  }
 }
