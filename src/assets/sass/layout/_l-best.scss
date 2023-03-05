@@ -2,4 +2,8 @@
 
 .l-best {
   margin: 73px auto 64px;
+
+  @include global.mq(sp) {
+    margin: 69px auto 8px;
+  }
 }

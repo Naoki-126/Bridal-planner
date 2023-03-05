@@ -1,14 +1,19 @@
 @use "../global" as global;
 
 .p-header {
-  width: inherit;
   margin: 0 auto;
   width: 100px;
   height: 100px;
   background: global.$main-color;
   top: 0;
   right: 0;
+
+  @include global.mq(sp) {
+    width: 60px;
+    height: 60px;
+  }
 }
+
 
 .p-header__beginner {
   width: inherit;
@@ -31,12 +36,20 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  @include global.mq(sp) {
+    display: none;
+  }
 }
 
 .p-header__text {
   margin-top: 58px;
   font-size: 12px;
   text-align: center;
+
+  @include global.mq(sp) {
+    display: none;
+  }
 }
 
 
@@ -61,6 +74,10 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  @include global.mq(sp) {
+    display: none;
+  }
 }
 
 .p-header__likes {
@@ -83,5 +100,9 @@
     top: 21px;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  @include global.mq(sp) {
+    display: none;
   }
 }

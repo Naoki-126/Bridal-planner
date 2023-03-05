@@ -7,10 +7,22 @@
     font-size: 36px;
     line-height: 1.667;
     letter-spacing: .1;
+    color: #202020;
 
     span {
       font-size: 48px;
       color: global.$main-color;
+    }
+
+    @include global.mq(sp) {
+      margin-top: 45px;
+      font-size: 21px;
+      line-height: 1.9;
+
+      span {
+        font-size: 33px;
+        line-height: 1.2;
+      }
     }
   }
 
@@ -19,15 +31,30 @@
     width: 100%;
     height: auto;
     position: relative;
+    color: #202020;
 
     &::before {
       content: "";
       position: absolute;
       background: transparent url(/public/assets/img/background-logo.png) no-repeat;
       width: 1047px;
+      max-width: 100%;
       height: 565px;
       top: 0;
       right: 2px;
+    }
+
+    @include global.mq(sp) {
+      margin-top: 0;
+
+      &::before {
+        background: transparent url(/public/assets/img/backlogo-sp.png) no-repeat;
+        width: 398px;
+        height: 215px;
+        top: 304px;
+        left: 7px;
+        overflow: hidden;
+      }
     }
   }
 
@@ -38,6 +65,12 @@
     line-height: 2.222;
     letter-spacing: .05;
     text-align: center;
+
+    @include global.mq(sp) {
+      padding-top: 24px;
+      font-size: 16px;
+      line-height: 2.5;
+    }
   }
 
   .p-best__footer {
@@ -78,4 +111,8 @@
     margin: 54px auto 0;
     width: 100%;
     // display: flex;
+
+    @include global.mq(sp) {
+      margin-top: 47px;
+    }
   }

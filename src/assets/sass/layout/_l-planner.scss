@@ -2,13 +2,37 @@
 
 .l-planner {
   margin: 73px auto 64px;
+
+  @include global.mq(sp) {
+    margin: 69px auto 128px;
+  }
 }
 
 .l-planner__title {
   margin-top: 60px;
   margin-left: 103px;
+
+  @include global.mq(sp) {
+    margin-top: 24px;
+    margin-left: 26px;
+
+  }
 }
 
 .l-planner__new {
-  margin: 64px auto;
+  margin: 64px auto 0;
+
+  @include global.mq(sp) {
+    margin-top: 51px;
+  }
+}
+
+.l-planner__inner {
+  margin: 0 auto;
+  width: global.$inner-width;
+  max-width: 100%;
+
+  @include global.mq(sp) {
+    width: global.$sp-width;
+  }
 }

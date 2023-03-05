@@ -4,8 +4,9 @@
 
 }
 
-swiper {
+.swiper {
   width: 100%;
+  max-width: 100%;
   margin-top: 24px;
   // overflow: hidden;
 }
@@ -30,6 +31,9 @@ swiper {
     font-size: 10px;
     color: #fff;
   }
+  @include global.mq(sp) {
+    left: 15px
+  }
 }
 
 .swiper-button-next {
@@ -43,6 +47,10 @@ swiper {
     font-size: 10px;
     color: #fff;
   }
+
+  @include global.mq(sp) {
+    right: 15px;
+  }
 }
 
 .slider .swiper-slide {
@@ -52,12 +60,25 @@ swiper {
     width: 235px;
     height: 235px;
   }
+
+  @include global.mq(sp) {
+    img {
+      width: 110px;
+      height: 110px;
+    }
+  }
+}
+
+.swiper .swiper-slide {
+  @include global.mq(sp) {
+    width: 80%;
+
+  }
 }
 
 .swipe3 .swiper-slide  {
   width: 348px;
   width: calc(348px + 32px);
-  // margin-right: 32px;
 }
 
 .swipe4 .swiper-button-prev {
@@ -78,6 +99,62 @@ swiper {
   margin-top: -20px;
   right: 11px;
   background: rgba(117, 118, 118, .35);
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+
+  &::after {
+    font-size: 10px;
+    color: #fff;
+  }
+}
+
+.swipe6 .swiper-button-prev {
+  margin-top: -20px;
+  left: 11px;
+  background: rgba(207, 207, 207, 1);
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+
+  &::after {
+    font-size: 10px;
+    color: #fff;
+  }
+}
+
+.swipe6 .swiper-button-next {
+  margin-top: -20px;
+  right: 11px;
+  background: rgba(117, 118, 118, .35);
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+
+  &::after {
+    font-size: 10px;
+    color: #fff;
+  }
+}
+
+.swipe7 .swiper-button-prev {
+  margin-top: -20px;
+  left: 11px;
+  background: rgba(207, 207, 207, 1);
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+
+  &::after {
+    font-size: 10px;
+    color: #fff;
+  }
+}
+
+.swipe7 .swiper-button-next {
+  margin-top: -20px;
+  right: 11px;
+  background: rgba(207, 207, 207, 1);
   width: 40px;
   height: 40px;
   border-radius: 20px;

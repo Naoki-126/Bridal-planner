@@ -15,9 +15,7 @@
   display: flex;
 
   @include global.mq(sp) {
-    display: block;
-    padding: 40px 0 64px;
-    flex-direction: column-reverse;
+    padding: 40px 0 48px;
   }
 }
 
@@ -27,20 +25,20 @@
 
 
   @include global.mq(sp) {
-    width: 100%;
-    padding-left: 0;
+    width: 50%;
+    padding-left: 36px;
     text-align: center;
   }
-
 }
 
 .l-footer__right {
   width: calc(100% - 760px);
-  margin-top: 24px;
+  margin-top: 19px;
 
 
   @include global.mq(sp) {
-    width: 100%;
-    text-align: center;
+    width: 50%;
+    margin-top: 0;
+    margin-left: 27px;
   }
 }

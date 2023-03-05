@@ -3,4 +3,8 @@
 .l-reports {
   background: global.$sub-color;
   padding: 73px 0;
+
+  @include global.mq(sp) {
+    padding: 69px 0 21px;
+  }
 }

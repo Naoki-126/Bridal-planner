@@ -2,16 +2,15 @@
 
 .l-header {
   margin: 0 auto;
+  width: global.$wide-width;
   max-width: 100%;
-
-  @include global.mq(tab) {
-    padding: 0 24px;
-    width: 100%;
-  }
+  position: relative;
 
   @include global.mq(sp) {
-    padding: 0 20px;
-    width: 100%;
+    width: global.$sp-width;
+    height: 60px;
+    background: #fff;
+    z-index: 10;
   }
 }
 
@@ -19,7 +18,21 @@
   z-index: 20;
   position: fixed;
   top: 0;
-  right: 0;
+  right: 0px;
   display: flex;
   flex-direction: column;
+}
+
+.l-header__logo {
+  content: "";
+  position: absolute;
+  display: none;
+
+  @include global.mq(sp) {
+    display: block;
+    width: 132px;
+    height: 42px;
+    top: 8px;
+    left: 16px;
+  }
 }

@@ -20,14 +20,20 @@ $('#js-drawer').on('click', function(e) {
   return false;
 });
 
-
 /* swiper
 =========================== */
 const swipe1 = new Swiper('.swipe1', {
   loop: true,
-  slidesPerView: 2.64,
-  // slidesPerView: 3.6,
-    spaceBetween: 10,
+  slidesPerView: "auto",
+  spaceBetween: 10,
+
+  breakpoints: {
+    // when window width is >= 767px
+    768: {
+      slidesPerView: 2.64,
+      spaceBetween: 20
+    },
+  },
 
   // Navigation arrows
   navigation: {
@@ -38,9 +44,16 @@ const swipe1 = new Swiper('.swipe1', {
 
 const swipe2 = new Swiper('.swipe2', {
   loop: true,
-  slidesPerView: 3.25,
-  // slidesPerView: 4.5,
+  slidesPerView: "auto",
     spaceBetween: 10,
+
+    breakpoints: {
+      // when window width is >= 767px
+      768: {
+        slidesPerView: 3.25,
+        spaceBetween: 20
+      },
+    },
 
   // Navigation arrows
   navigation: {
@@ -52,7 +65,7 @@ const swipe2 = new Swiper('.swipe2', {
 const slider = new Swiper('.slider', {
   loop: true,
 
-  slidesPerView: 6, // 一度に表示する枚数
+  slidesPerView: 3.5, // 一度に表示する枚数
   spaceBetween: 3,
   speed: 10000, // ループの時間
   allowTouchMove: false, // スワイプ無効
@@ -61,8 +74,13 @@ const slider = new Swiper('.slider', {
     disableOnInteraction: false,
   },
 
-  //1440px以上
+  //768px以上
   breakpoints: {
+    768: {
+      slidesPerView: 6,
+      spaceBetween: 3
+    },
+
     1441: {
       slidesPerView: 8,
       // slidesPerView: 8,
@@ -74,10 +92,16 @@ const slider = new Swiper('.slider', {
 
 const swipe3 = new Swiper('.swipe3', {
   loop: true,
-  slidesPerView: 3.76,
-  // slidesPerView: 1,
-    spaceBetween: 10,
+  slidesPerView: 1,
+    // spaceBetween: 10,
 
+    breakpoints: {
+      // when window width is >= 767px
+      768: {
+        slidesPerView: 3.76,
+        spaceBetween: 10
+      },
+    },
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
@@ -87,8 +111,21 @@ const swipe3 = new Swiper('.swipe3', {
 
   const swipe4 = new Swiper('.swipe4', {
     loop: true,
-    slidesPerView: 2.8,
+    slidesPerView: "auto",
     spaceBetween: 10,
+
+    breakpoints: {
+      // when window width is >= 767px
+      768: {
+        slidesPerView: 3.2,
+        spaceBetween: 10
+      },
+
+      1440: {
+        slidesPerView: 4.2,
+        spaceBetween: 10
+      },
+    },
 
   // Navigation arrows
   navigation: {
@@ -100,9 +137,44 @@ const swipe3 = new Swiper('.swipe3', {
   const swipe5 = new Swiper('.swipe5', {
     loop: true,
     slidesPerView: 1,
-    spaceBetween: 10,
+    // spaceBetween: 10,
 
   // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+
+const swipe6 = new Swiper('.swipe6', {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 10,
+
+// Navigation arrows
+navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+},
+});
+
+const swipe7 = new Swiper('.swipe7', {
+  loop: true,
+  slidesPerView: "auto",
+  spaceBetween: 10,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+const swipe8 = new Swiper('.swipe8', {
+  loop: true,
+  slidesPerView: "auto",
+  spaceBetween: 10,
+
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

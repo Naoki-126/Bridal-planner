@@ -1,15 +1,15 @@
 @use "../global" as global;
 
 .l-inner {
+  margin: 0 auto;
   width: global.$inner-width;
   max-width: 100%;
-  margin: 0 auto;
 
   @include global.mq(tab) {
     padding: 0 24px;
   }
 
   @include global.mq(sp) {
-    padding: 0 20px;
+    padding: 0 16px;
   }
 }

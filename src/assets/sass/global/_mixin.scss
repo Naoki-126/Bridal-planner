@@ -22,9 +22,9 @@
 .is-sp {
   display: block;
 
-  @include mq('tab') {
-    display: none;
-  }
+  // @include mq('tab') {
+  //   display: none;
+  // }
 
   @include mq('pc') {
     display: none;

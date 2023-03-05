@@ -80,3 +80,30 @@
     transform: rotate(45deg);
   }
 }
+
+.c-readmore3 {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 500;
+  font-family: global.$ff-en;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid global.$text-color;
+    width: 135px;
+    bottom: -4px;
+    right: 24px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid global.$text-color;
+    width: 18px;
+    bottom: 3px;
+    right: 22px;
+    transform: rotate(45deg);
+  }
+}

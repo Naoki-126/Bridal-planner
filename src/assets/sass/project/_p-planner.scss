@@ -1,9 +1,24 @@
 @use "../global" as global;
 
 .p-planner {
-  margin-top: 32px;
+  margin: 32px auto 0;
   display: flex;
   justify-content: center;
+
+  @include global.mq(sp) {
+    display: none;
+  }
+}
+
+.p-planner__sp {
+  display: none;
+
+
+  @include global.mq(sp) {
+    display: block;
+    margin: 0 auto;
+}
+
 }
 
 .p-planner__card {
@@ -14,6 +29,11 @@
   max-height: 100%;
   background: global.$sub-color;
   position: relative;
+
+  @include global.mq(sp) {
+    width: 297px;
+    height: 645px;
+  }
 }
 
 .p-planner__gold {
@@ -39,6 +59,12 @@
   margin-top: 40px;
   margin-left: 32px;
   display: flex;
+
+  @include global.mq(sp) {
+    margin-top: 0;
+    margin-left: 8px;
+    padding-top: 45px;
+  }
 }
 
 .p-planner__img {
@@ -48,6 +74,15 @@
   img {
     width: 140px;
     height: 160px;
+  }
+
+  @include global.mq(sp) {
+    width: 134px;
+
+    img {
+      width: 134px;
+      height: 164px;
+    }
   }
 }
 
@@ -64,6 +99,11 @@
   line-height: 1.1;
   font-family: global.$ff-logo;
   color: #000;
+
+  @include global.mq(sp) {
+    margin-top: 5.5px;
+    font-size: 20px;
+  }
 }
 
 .p-planner__job {
@@ -75,12 +115,21 @@
 .p-planner-content {
   width: calc(100% - 140px - 15px);
   margin-left: 8px;
+
+  @include global.mq(sp) {
+    width: calc(100% - 134px - 8px);
+  }
 }
 
 .p-planner__title {
   font-size: 18px;
   line-height: 1.33;
   font-family: global.$ff-logo;
+
+  @include global.mq(sp) {
+    font-size: 16px;
+    margin-top: 30px;
+  }
 }
 
 .p-planner__area {
@@ -100,6 +149,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
+
+  @include global.mq(sp) {
+    font-size: 12px;
+  }
 }
 
 .p-planner__tag {
@@ -109,17 +162,35 @@
   gap: 4px;
 }
 
+.p-planner__tag-sp {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
 .p-planner__body {
   margin-top: 20px;
   margin-bottom: 32px;
+
+  @include global.mq(sp) {
+    margin-top: 10px;
+    margin-bottom: 48px;
+  }
 }
 
-.p-planner__points{
+.p-planner__points {
   margin: 0 auto;
   width: 336px;
   height: 93px;
   max-width: 100%;
   background: #fff;
+
+  @include global.mq(sp) {
+    width: 271px;
+    height: auto;
+    padding-bottom: 12px;
+  }
 }
 
 .p-planner__text {
@@ -127,11 +198,20 @@
   padding-top: 11px;
   display: flex;
   align-items: flex-start;
+
+  @include global.mq(sp) {
+    display: block;
+    padding-top: 10px;
+  }
 }
 
 .p-planner__textLeft {
   width: 30px;
   margin-left: 42px;
+
+  @include global.mq(sp) {
+    margin-left: 32px;
+  }
 }
 
 .p-planner__point {
@@ -164,6 +244,11 @@
     line-height: 1.8;
     font-family: global.$ff-base;
   }
+
+  @include global.mq(sp) {
+    margin-top: 10px;
+    margin-left: 16px;
+  }
 }
 
 .p-planner__garally {
@@ -183,11 +268,20 @@
     left: -14px;
     transform: translateY(-50%);
   }
+
+  @include global.mq(sp) {
+    margin-top: 8px;
+    margin-left: 26px;
+  }
 }
 
 .p-planner__pics {
   margin-top: 8px;
   display: flex;
+
+  @include global.mq(sp) {
+    justify-content: center;
+  }
 }
 
 .p-planner__pic {
@@ -200,5 +294,18 @@
   img {
     width: 159px;
     height: 111px;
+  }
+
+  @include global.mq(sp) {
+    margin: 0 auto;
+
+    &:nth-child(n + 2) {
+      margin-left: 8px;
+    }
+
+    img {
+      width: 131px;
+      height: 97px;
+    }
   }
 }
