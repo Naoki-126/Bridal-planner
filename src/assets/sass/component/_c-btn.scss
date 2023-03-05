@@ -1,16 +1,65 @@
 @use "../global" as global;
 
 .c-btn__plan {
-  width: 367px;
-  height: auto;
+  width: calc(367px + 16px * 2);
+  height: calc(102px + 15px * 2);
   background: global.$text-color;
   color: #fff;
-  padding: 8px 10px;
-  border: 1px solid #fff;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border: 1px solid #fff;
+    width: 367px;
+    height: 102px;
+    top: 15px;
+    left: 16px;
+    }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: url(/public/assets/img/arrow-next.png) no-repeat center center /contain;
+    width: 44px;
+    height: 24px;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @include global.mq(sp) {
+    width: 287px;
+    height: 86px;
+    max-width: 100%;
+
+      &::before {
+        width: calc(100% - 5px * 2);
+        height: calc(100% - 6px * 2);
+        top: 6px;
+        left: 5px;
+      }
+
+    &::after {
+      width: 28px;
+      height: 14px;
+      right: 7px;
+    }
+  }
+}
+
+.c-btn__text {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: .08;
 
+  @include global.mq(sp) {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: .05;
+
+  }
 }
 
 .c-btn__accent {
@@ -22,24 +71,64 @@
     font-size: 24px;
     font-weight: 700;
   }
+
+  @include global.mq(sp) {
+    font-size: 14px;
+
+    span {
+      font-size: 16px;
+    }
+  }
 }
 
   .c-btn__area {
-    width: 367px;
-    height: auto;
-    background: global.$main-color;
-    color: #fff;
-    padding: 8px 10px;
-    border: 1px solid #fff;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: .08;
+  width: calc(367px + 16px * 2);
+  height: calc(102px + 15px * 2);
+  background: global.$main-color;
+  color: #fff;
+  position: relative;
 
-      span {
-        font-size: 24px;
-        font-weight: 700;
+  &::before {
+    content: "";
+    position: absolute;
+    border: 1px solid #fff;
+    width: 367px;
+    height: 102px;
+    top: 16px;
+    left: 15px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: url(/public/assets/img/arrow-next.png) no-repeat center center /contain;
+      width: 44px;
+      height: 24px;
+      right: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    @include global.mq(sp) {
+      width: 287px;
+      height: 86px;
+      max-width: 100%;
+
+        &::before {
+          width: calc(100% - 5px * 2);
+          height: calc(100% - 6px * 2);
+          top: 6px;
+          left: 5px;
+        }
+
+        &::after {
+          width: 28px;
+          max-width: 100%;
+        height: 14px;
+        right: 7px;
       }
-}
+    }
+  }
 
 .c-btn__best {
   background: global.$main-color;
@@ -48,6 +137,11 @@
   letter-spacing: .08;
   text-align: center;
   padding: 16px 64px;
+
+  @include global.mq(sp) {
+    font-size: 16px;
+    padding: 16px 32px;
+  }
 }
 
 .c-btn__more {
@@ -60,8 +154,8 @@
   position: relative;
 
   &.-planner {
-  padding-right: 103px;
-}
+    padding-right: 103px;
+  }
 
   &::before {
     content: "";
@@ -81,6 +175,26 @@
     top: 43%;
     right: 27px;
     transform: rotate(45deg);
+  }
+
+  @include global.mq(sp) {
+    width: 315px;
+    height: 80px;
+    padding-right: 48px;
+    font-size: 16px;
+    text-align-last: left;
+
+    &.-plan {
+      width: 298px;
+    }
+
+    &.-new {
+      width: 235px;
+    }
+
+    &.-planner {
+      width: 255px;
+    }
   }
 }
 
@@ -112,6 +226,10 @@
     right: 27px;
     transform: rotate(45deg);
   }
+
+  @include global.mq(sp) {
+    padding-right: 99px;
+  }
 }
 
 .c-btn__login {
@@ -141,5 +259,10 @@
     top: 43%;
     right: 27px;
     transform: rotate(45deg);
+  }
+
+  @include global.mq(sp) {
+    font-size: 18px;
+    
   }
 }

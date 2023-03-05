@@ -9,17 +9,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
-
   <body>
     <header class="l-header">
+      <div class="l-header__logo"><img src="./assets/img/logo-sp.png" alt="logo"></div>
       <div class="l-header__nav">
         <div class="p-header">
           <div id="js-drawer" class="p-drawer">
-            <div class="c-drawer">
-              <span class="c-drawer__line"></span>
-              <span class="c-drawer__line"></span>
-              <span class="c-drawer__line"></span>
-            </div>
             <div class="p-drawer__content">
               <div class="p-drawer__box">
                 <ul class="p-drawer__lists">
@@ -45,6 +40,26 @@
                   </div>
                 </div>
               </div>
+              <div class="p-drawer__box-sp">
+                <ul class="p-drawer__lists">
+                    <li><a href="#">プランナーを探す</a></li>
+                    <li><a href="#">シンデレラレポ</a></li>
+                    <li><a href="#">お気に入りレポート</a></li>
+                    <li><a href="#">初めてご利用される方へ</a></li>
+                    <li><a href="#">よくあるご質問</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                    <div class="p-drawer__button">
+                      <button class="c-btn__login">ログイン</button>
+                    </div>
+                </ul>
+                <div class="p-drawer__footer">
+                  <div class="p-drawer__nav">
+                    <div class="p-drawer__item">運営会社</div>
+                    <div class="p-drawer__item">プライバシーポリシー</div>
+                    <div class="p-drawer__item">利用規約</div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="p-drawer__background">
             </div>
@@ -59,24 +74,57 @@
         <a href="#" class="p-header__likes">
           <div class="p-header__text">お気に入り<br>レポート</div>
         </a>
-
       </div>
     </header>
-
     <section class="l-top">
-      <div class="l-inner p-top">
-        <img src="./assets/img/mv.png" alt="top">
+      <div class="p-top">
+        <div class="p-top__img">
+          <img src="./assets/img/mv.png" alt="top">
+        </div>
         <div class="p-top__contents">
           <p class="p-top__subtitle">You can meet<br><span>the best wedding planner.</span></p>
           <p class="p-top__title"><span>誰</span>と作るか<br>から<br>始める結婚式</p>
           <div class="p-top__logo">
-            <img src="./assets/img/ロゴ２ 1.svg" alt="logo">
+            <img src="./assets/img/logo.svg" alt="logo">
           </div>
         </div>
         <div class="p-top__btn">
           <div class="p-top__btn-plan">
             <a href="#">
-              <button class="c-btn__plan">おすすめの<br><div class="c-btn__accent"><span>プラン</span>から</div>プランナーを探す</button>
+              <button class="c-btn__plan">
+                <div class="c-btn__text">
+                  おすすめの<br><div class="c-btn__accent"><span>プラン</span>から</div>プランナーを探す
+                </div>
+              </button>
+            </a>
+          </div>
+          <div class="p-top__btn-area">
+            <a href="#">
+              <button class="c-btn__area">
+                <div class="c-btn_text">
+                  希望の<br><div class="c-btn__accent"><span>エリア</span>から</div>プランナーを探す
+                </div>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="p-top is-sp">
+        <div class="p-top__img is-sp">
+          <img src="./assets/img/mv-sp.png" alt="top-sp">
+        </div>
+        <div class="p-top__contents is-sp">
+          <p class="p-top__subtitle">You can meet<br>the best wedding planner.</p>
+          <p class="p-top__title"><span>誰</span>と作るか<br>から<br>始める結婚式</p>
+        </div>
+        <div class="p-top__btn-sp">
+          <div class="p-top__btn-plan">
+            <a href="#">
+              <button class="c-btn__plan">
+                <div class="c-btn__text">
+                  おすすめの<br><div class="c-btn__accent"><span>プラン</span>から</div>プランナーを探す
+                </div>
+              </button>
             </a>
           </div>
           <div class="p-top__btn-area">
@@ -195,7 +243,7 @@
                   <div class="p-reports__like">
                     <div class="c-tag__like"></div>
                   </div>
-                  <img src="" alt="report1">
+                  <img src="./assets/img/Ishigaki.png" alt="report1">
                 </div>
                 <div class="p-reports__body">
                   <p class="p-reports__comment">ペットと一緒に思い出の石垣島で叶えるウェディング</p>
@@ -203,7 +251,9 @@
                     <div class="p-reports__meta c-category__green">リゾート・ビーチ・アウトドアウェディング</div>
                   </div>
                   <div class="p-reports__area-tag">
-                    <div class="c-area">エリア</div>
+                    <div class="p-reports__card-a">
+                      <div class="c-area">エリア</div>
+                    </div>
                     <div class="p-reports__place">
                       <div class="p-reports__spot">軽井沢</div>
                     </div>
@@ -216,7 +266,9 @@
                     <div class="c-tag">＃家族婚</div>
                   </div>
                 </div>
-                <div class="p-reports__footer"></div>
+              </div>
+              <div class="p-reports__footer">
+                <div class="c-readmore3">Read more</div>
               </div>
             </div>
           </div>
@@ -235,7 +287,9 @@
                     <div class="p-reports__meta c-category__green">リゾート・ビーチ・アウトドアウェディング</div>
                   </div>
                   <div class="p-reports__area-tag">
-                    <div class="c-area">エリア</div>
+                    <div class="p-reports__card-a">
+                      <div class="c-area">エリア</div>
+                    </div>
                     <div class="p-reports__place">
                       <div class="p-reports__spot">軽井沢</div>
                     </div>
@@ -248,7 +302,9 @@
                     <div class="c-tag">＃家族婚</div>
                   </div>
                 </div>
-                <div class="p-reports__footer"></div>
+              </div>
+              <div class="p-reports__footer">
+                <div class="c-readmore3">Read more</div>
               </div>
             </div>
           </div>
@@ -259,7 +315,7 @@
                   <div class="p-reports__like">
                     <div class="c-tag__like"></div>
                   </div>
-                  <img src="" alt="report3">
+                  <img src="../public/assets/img/toyokawa.png" alt="report2">
                 </div>
                 <div class="p-reports__body">
                   <p class="p-reports__comment">美しい紅葉と和装フォトウェディング</p>
@@ -267,7 +323,9 @@
                     <div class="p-reports__meta c-category__orange">フォトアウェディング</div>
                   </div>
                   <div class="p-reports__area-tag">
-                    <div class="c-area">エリア</div>
+                    <div class="p-reports__card-a">
+                      <div class="c-area">エリア</div>
+                    </div>
                     <div class="p-reports__place">
                       <div class="p-reports__spot">関西</div>
                     </div>
@@ -279,7 +337,9 @@
                     <div class="c-tag">＃和婚</div>
                   </div>
                 </div>
-                <div class="p-reports__footer"></div>
+              </div>
+              <div class="p-reports__footer">
+                <div class="c-readmore3">Read more</div>
               </div>
             </div>
           </div>
@@ -290,7 +350,7 @@
                   <div class="p-reports__like">
                     <div class="c-tag__like"></div>
                   </div>
-                  <img src="" alt="report3">
+                  <img src="./assets/img/resort-sp.png" alt="report3">
                 </div>
                 <div class="p-reports__body">
                   <p class="p-reports__comment">思い出の海辺で二人だけのウェディング</p>
@@ -298,7 +358,9 @@
                     <div class="p-reports__meta c-category__orange">フォトアウェディング</div>
                   </div>
                   <div class="p-reports__area-tag">
-                    <div class="c-area">エリア</div>
+                    <div class="p-reports__card-a">
+                      <div class="c-area">エリア</div>
+                    </div>
                     <div class="p-reports__place">
                       <div class="p-reports__spot">関東</div>
                     </div>
@@ -310,7 +372,9 @@
                     <div class="c-tag">＃アウトドアウェディング</div>
                   </div>
                 </div>
-                <div class="p-reports__footer"></div>
+              </div>
+              <div class="p-reports__footer">
+                <div class="c-readmore3">Read more</div>
               </div>
             </div>
           </div>
@@ -329,9 +393,9 @@
         <div class="p-best__content">
           <div class="p-best__text">ふたりの理想を叶えてくれるプランナーを<br>
             自分達の目で見てお願いしたい。<br>
-            海外では当たり前のことが、日本では式場からが基本になっています。<br><br>
-            ふたりの希望に寄り添い、しっかり受け止めて、<br>
-            親身に叶えようとしてくれるプランナーがいます。<br><br>
+            海外では当たり前のことが、<br class="is-sp">日本では式場からが基本になっています。<br><br>
+            ふたりの希望に寄り添い、<br class="is-sp">しっかり受け止めて、<br>
+            親身に叶えようとしてくれる<br class="is-sp">プランナーがいます。<br><br>
             そして、<br>
             「自分たちにとって最高の結婚式だった！」<br>
             「この方にお願いして本当に良かった！」<br>
@@ -366,7 +430,7 @@
       <div class="l-inner">
         <div class="u-separate__section">
           <div class="u-separate__sectionTitle">Reccomend Plan</div>
-          <div class="u-separate__sectionSub">おすすめのプランからプランナーを探す</div>
+          <div class="u-separate__sectionSub">おすすめのプランから探す</div>
         </div>
         <div class="p-recommend">
           <div class="p-recommend__box">
@@ -413,7 +477,6 @@
           </div>
         </div>
       </div>
-
     </section>
     <section class="l-popular">
       <div class="l-inner">
@@ -574,8 +637,159 @@
             </div>
           </div>
         </div>
+        <div class="p-popular__sp">
+        <div class="swiper swipe6">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="p-popular__card-sp">
+                <div class="p-popular__label-sp">
+                  <div class="c-ranking -card">01</div>
+                </div>
+                <div class="p-popular__head-sp">
+                  <div class="p-popular__like">
+                    <div class="c-tag__like"></div>
+                  </div>
+                  <div class="p-popular__img-sp"><img src="./assets/img/popular1.png" alt="popular1"></div>
+                </div>
+                <div class="p-popular__body-sp">
+                  <p class="p-popular__comment-sp">ペットと一緒に思い出の石垣島で叶えるウェディング</p>
+                  <div class="p-popular__category-sp">
+                    <div class="p-popular__meta-sp c-category__green">リゾート・ビーチ・アウトドアウェディング</div>
+                  </div>
+                  <div class="p-popular__area-tagSp">
+                    <div class="p-popular__card-aSp">
+                      <div class="c-area">エリア</div>
+                    </div>
+                    <div class="p-popular__place">
+                      <div class="p-popular__spot">軽井沢</div>
+                    </div>
+                  </div>
+                  <div class="p-popular__tagSp">
+                    <div class="c-tag">#国内</div>
+                    <div class="c-tag">＃フォトウェディング</div>
+                    <div class="c-tag">＃前撮り</div>
+                    <div class="c-tag">＃家族婚</div>
+                    <div class="c-tag">＃アウトドアウェディング</div>
+                  </div>
+                </div>
+                <div class="p-popular__profile-sp">
+                  <div class="c-thumbnail-2">
+                    <div class="c-thumbnail__img-2"><img src="./assets/img/katoumirei.png" alt="mirei"></div>
+                    <div class="c-thumbnail__content">
+                      <div class="c-thumbnail__post">担当プランナー</div>
+                      <div class="c-thumbnail__name">鈴木 咲</div>
+                      <div class="c-thumbnail__job">株式会社p-wedding</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-popular__footer-sp">
+                  <div class="c-readmore3">Read more</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="p-popular__card-sp">
+                <div class="p-popular__label-sp -silver">
+                  <div class="c-ranking -card">02</div>
+                </div>
+                <div class="p-popular__head-sp">
+                  <div class="p-popular__like">
+                    <div class="c-tag__like"></div>
+                  </div>
+                  <div class="p-popular__img-sp"><img src="./assets/img/popular2.png" alt="popular2"></div>
+                </div>
+                <div class="p-popular__body-sp">
+                  <p class="p-popular__comment-sp">大好きなペットと一緒にガーデンウェディング</p>
+                  <div class="p-popular__category-sp">
+                    <div class="p-popular__meta-sp c-category__pink">国内挙式・披露宴</div>
+                  </div>
+                  <div class="p-popular__area-tagSp">
+                    <div class="p-popular__card-aSp">
+                      <div class="c-area">エリア</div>
+                    </div>
+                    <div class="p-popular__place">
+                      <div class="p-popular__spot">軽井沢</div>
+                    </div>
+                  </div>
+                  <div class="p-popular__tagSp">
+                    <div class="c-tag">#国内</div>
+                    <div class="c-tag">＃フォトウェディング</div>
+                    <div class="c-tag">＃前撮り</div>
+                    <div class="c-tag">＃家族婚</div>
+                    <div class="c-tag">＃アウトドアウェディング</div>
+                  </div>
+                </div>
+                <div class="p-popular__profile-sp">
+                  <div class="c-thumbnail-2">
+                    <div class="c-thumbnail__img-2"><img src="./assets/img/hogehogeo.png" alt="hogeo"></div>
+                    <div class="c-thumbnail__content">
+                      <div class="c-thumbnail__post">担当プランナー</div>
+                      <div class="c-thumbnail__name">鈴木 直子</div>
+                      <div class="c-thumbnail__job">株式会社Orange wedding</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-popular__footer-sp">
+                  <div class="c-readmore3">Read more</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="p-popular__card-sp">
+                <div class="p-popular__label-sp -blonde">
+                  <div class="c-ranking -card">03</div>
+                </div>
+                <div class="p-popular__head-sp">
+                  <div class="p-popular__like">
+                    <div class="c-tag__like"></div>
+                  </div>
+                  <div class="p-popular__img-sp"><img src="./assets/img/popular3.png" alt="popular3"></div>
+                </div>
+                <div class="p-popular__body-sp">
+                  <p class="p-popular__comment-sp">最高のロケーションで<br>フォトウェディング</p>
+                  <div class="p-popular__category-sp">
+                    <div class="p-popular__meta-sp c-category__orange">フォトウェディング</div>
+                  </div>
+                  <div class="p-popular__area-tagSp">
+                    <div class="p-popular__card-aSp">
+                      <div class="c-area">エリア</div>
+                    </div>
+                    <div class="p-popular__place">
+                      <div class="p-popular__spot">軽井沢</div>
+                    </div>
+                  </div>
+                  <div class="p-popular__tagSp">
+                    <div class="c-tag">#国内</div>
+                    <div class="c-tag">＃フォトウェディング</div>
+                    <div class="c-tag">＃前撮り</div>
+                    <div class="c-tag">＃家族婚</div>
+                    <div class="c-tag">＃アウトドアウェディング</div>
+                  </div>
+                </div>
+                <div class="p-popular__profile-sp">
+                  <div class="c-thumbnail-2">
+                    <div class="c-thumbnail__img-2"><img src="./assets/img/katoyui.png" alt="yui"></div>
+                    <div class="c-thumbnail__content">
+                      <div class="c-thumbnail__post">担当プランナー</div>
+                      <div class="c-thumbnail__name">鈴木 咲</div>
+                      <div class="c-thumbnail__job">株式会社p-wedding</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-popular__footer-sp">
+                  <div class="c-readmore3">Read more</div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
         <div class="p-popular__btn">
-          <button class="c-btn__more">人気レポートランキングをもっとみる</button>
+          <button class="c-btn__more">人気レポートランキングを<br class= "is-sp" >もっとみる</button>
         </div>
         <div class="p-plan">
           <div class="p-plan__sub">
@@ -602,9 +816,9 @@
                   <div class="p-plan__tag">
                     <div class="c-tag">#国内</div>
                     <div class="c-tag">＃フォトウェディング</div>
-                    <div class="c-tag">＃前撮り</div>
-                    <div class="c-tag">＃和婚</div>
-                    <div class="c-tag">＃前撮り</div>
+                    <div class="c-tag">＃軽井沢</div>
+                    <div class="c-tag">＃家族婚</div>
+                    <div class="c-tag">＃アウトドアウェディング</div>
                   </div>
                   <div class="p-plan__profile">
                     <div class="c-thumbnail-2">
@@ -702,6 +916,10 @@
                 </div>
               </div>
             </div>
+            <div class="p-plan__btnSp">
+              <button class="c-btn__more -plan">プラン別人気レポートを<br>もっとみる</button>
+            </div>
+
           </div>
           <div class="p-plan__btn">
             <button class="c-btn__more">プラン別人気レポートをもっとみる</button>
@@ -867,13 +1085,12 @@
                 </div>
               </div>
             </div>
-
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
           </div>
         </div>
         <div class="p-newReport__btn">
-          <button class="c-btn__more">新着レポートをもっとみる</button>
+          <button class="c-btn__more -new">新着レポートを<br class="is-sp">もっとみる</button>
         </div>
       </div>
     </section>
@@ -1074,247 +1291,485 @@
             </div>
           </div>
         </div>
-        <div class="l-planner__new">
+        <div class="p-planner__sp">
+          <div class="swiper swipe7">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="p-planner__card">
+                  <div class="p-planner__gold">
+                    <div class="c-ranking">01</div>
+                  </div>
+                  <div class="p-planner__head">
+                    <div class="p-planner__img"><img src="./assets/img/suzukinaoko.png" alt="naoko">
+                      <div class="p-plan___good">
+                        <div class="c-tag__good"></div>
+                      </div>
+                      <div class="p-planner__name">鈴木 直子</div>
+                      <div class="p-planner__job">株式会社mirage</div>
+                    </div>
+                    <div class="p-planner-content">
+                      <div class="p-planner__title">心に残る<br>ウェディングを</div>
+                      <div class="p-planner__area">
+                        <div class="p-planner__label c-area">エリア</div>
+                        <div class="p-planner__place">
+                          <span>東京</span>
+                          <span>神奈川</span>
+                          <span>千葉</span>
+                          <span>埼玉</span>
+                          <span>長野</span>
+                          <span>愛知</span>
+                          <span>岡山</span>
+                          <span>大阪</span>
+                          <span>広島</span>
+                          <span>福岡</span>
+                          <span>沖縄</span>
+                          <span>海外</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-planner__body">
+                    <div class="p-planner__tag-sp">
+                      <div class="c-tag">#国内</div>
+                      <div class="c-tag">#海外</div>
+                      <div class="c-tag">#レストラン</div>
+                      <div class="c-tag">#海外</div>
+                      <div class="c-tag">＃リゾートウェディング</div>
+                      <div class="c-tag">#海外</div>
+                      <div class="c-tag">＃アウトドア</div>
+                    </div>
+                    <div class="p-planner__points">
+                      <div class="p-planner__text">
+                        <div class="p-planner__textLeft">
+                          <p class="p-planner__point"> Point</p>
+                        </div>
+                        <ul class="p-planner__textRight">
+                          <li>オンライン相談OK</li>
+                          <li>担当挙式数200組以上</li>
+                          <li>アウトドアウェディングが得意</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="p-planner__garally">Photo Garally</div>
+                    <div class="p-planner__pics">
+                      <div class="p-planner__pic"><img src="./assets/img/naoko1.png" alt="naoko1"></div>
+                      <div class="p-planner__pic"><img src="./assets/img/naoko2.png" alt="naoko2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-planner__card">
+                  <div class="p-planner__gold -silver">
+                    <div class="c-ranking">02</div>
+                  </div>
+                  <div class="p-planner__head">
+                    <div class="p-planner__img"><img src="./assets/img/katoumirei.png" alt="mirei">
+                      <div class="p-plan___good">
+                        <div class="c-tag__good"></div>
+                      </div>
+                      <div class="p-planner__name">加藤 美玲</div>
+                      <div class="p-planner__job">株式会社Pwedding</div>
+                    </div>
+                    <div class="p-planner-content">
+                      <div class="p-planner__title">自分たちらしい結婚式を自分たちの手で</div>
+                      <div class="p-planner__area">
+                        <div class="p-planner__label c-area">エリア</div>
+                        <div class="p-planner__place">
+                          <span>東京</span>
+                          <span>神奈川</span>
+                          <span>千葉</span>
+                          <span>埼玉</span>
+                          <span>長野</span>
+                          <span>愛知</span>
+                          <span>岡山</span>
+                          <span>大阪</span>
+                          <span>広島</span>
+                          <span>福岡</span>
+                          <span>沖縄</span>
+                          <span>海外</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-planner__body">
+                    <div class="p-planner__tag-sp">
+                      <div class="c-tag">#国内</div>
+                      <div class="c-tag">#海外</div>
+                      <div class="c-tag">#レストラン</div>
+                      <div class="c-tag">#海外</div>
+                      <div class="c-tag">＃リゾートウェディング</div>
+                      <div class="c-tag">#海外</div>
+                      <div class="c-tag">＃アウトドア</div>
+                    </div>
+                    <div class="p-planner__points">
+                      <div class="p-planner__text">
+                        <div class="p-planner__textLeft">
+                          <p class="p-planner__point"> Point</p>
+                        </div>
+                        <ul class="p-planner__textRight">
+                          <li>司会もできる</li>
+                          <li>打ち合わせ回数制限なし</li>
+                          <li>海外挙式OK</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="p-planner__garally">Photo Garally</div>
+                    <div class="p-planner__pics">
+                      <div class="p-planner__pic"><img src="./assets/img/mirei1.png" alt="mirei1"></div>
+                      <div class="p-planner__pic"><img src="./assets/img/mirei2.png" alt="mirei2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-planner__card">
+                  <div class="p-planner__gold -blonde">
+                    <div class="c-ranking">03</div>
+                  </div>
+                  <div class="p-planner__head">
+                    <div class="p-planner__img"><img src="./assets/img/sasakiyui.png" alt="yui">
+                      <div class="p-plan___good">
+                        <div class="c-tag__good"></div>
+                      </div>
+                      <div class="p-planner__name">尾崎 舞</div>
+                      <div class="p-planner__job">hoihoi produce</div>
+                    </div>
+                    <div class="p-planner-content">
+                      <div class="p-planner__title">最高のプランを<br>一緒に作りましょう</div>
+                      <div class="p-planner__area">
+                        <div class="p-planner__label c-area">エリア</div>
+                        <div class="p-planner__place">
+                          <span>東京</span>
+                          <span>神奈川</span>
+                          <span>千葉</span>
+                          <span>埼玉</span>
+                          <span>長野</span>
+                          <span>愛知</span>
+                          <span>岡山</span>
+                          <span>大阪</span>
+                          <span>広島</span>
+                          <span>福岡</span>
+                          <span>沖縄</span>
+                          <span>海外</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-planner__body">
+                    <div class="p-planner__tag-sp">
+                      <div class="c-tag">#国内</div>
+                      <div class="c-tag">#海外</div>
+                      <div class="c-tag">#レストラン</div>
+                      <div class="c-tag">#海外</div>
+                      <div class="c-tag">＃リゾートウェディング</div>
+                      <div class="c-tag">#海外</div>
+                      <div class="c-tag">＃アウトドア</div>
+                    </div>
+                    <div class="p-planner__points">
+                      <div class="p-planner__text">
+                        <div class="p-planner__textLeft">
+                          <p class="p-planner__point"> Point</p>
+                        </div>
+                        <ul class="p-planner__textRight">
+                          <li>オンライン相談OK</li>
+                          <li>担当挙式数200組以上</li>
+                          <li>アウトドアウェディングが得意</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="p-planner__garally">Photo Garally</div>
+                    <div class="p-planner__pics">
+                      <div class="p-planner__pic"><img src="./assets/img/mai1.png" alt="mai1"></div>
+                      <div class="p-planner__pic"><img src="./assets/img/mai2.png" alt="mai2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+      <div class="l-planner__new">
+        <div class="l-planner__inner">
           <div class="p-new__sectionTitle">
             <h3 class="u-separate__sub-title">New in<span>新着プランナー</span></h3>
           </div>
-          <div class="p-new">
-            <div class="p-new__items">
-              <div class="swiper swipe4">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="p-new__card">
-                      <div class="p-new__head">
-                        <div class="p-new__img"><img src="./assets/img/hogehogeo.png" alt="hogeo">
-                          <div class="p-new___good">
-                            <div class="c-tag__good"></div>
-                          </div>
-                          <div class="p-new__name">鈴木 直子</div>
-                          <div class="p-new__job">株式会社mirage</div>
+        </div>
+        <div class="p-new">
+          <div class="p-new__items">
+            <div class="swiper swipe4">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="p-new__card">
+                    <div class="p-new__head">
+                      <div class="p-new__img"><img src="./assets/img/hogehogeo.png" alt="hogeo">
+                        <div class="p-new___good">
+                          <div class="c-tag__good"></div>
                         </div>
-                        <div class="p-new-content">
-                          <div class="p-new__title">心に残る<br>ウェディングを</div>
-                          <div class="p-new__area">
-                            <div class="p-new__label c-area">エリア</div>
-                            <div class="p-new__place">
-                              <span>東京</span>
-                              <span>神奈川</span>
-                              <span>千葉</span>
-                              <span>埼玉</span>
-                              <span>長野</span>
-                              <span>愛知</span>
-                              <span>岡山</span>
-                              <span>大阪</span>
-                              <span>広島</span>
-                              <span>福岡</span>
-                              <span>沖縄</span>
-                              <span>海外</span>
-                            </div>
-                          </div>
-                          <div class="p-new__tag">
-                            <div class="c-tag">#国内</div>
-                            <div class="c-tag">#海外</div>
-                            <div class="c-tag">#レストラン</div>
-                            <div class="c-tag">#海外</div>
-                            <div class="c-tag">＃リゾートウェディング</div>
-                            <div class="c-tag">#海外</div>
-                            <div class="c-tag">＃アウトドア</div>
-                          </div>
-                        </div>
+                        <div class="p-new__name">鈴木 直子</div>
+                        <div class="p-new__job">株式会社mirage</div>
                       </div>
-                      <div class="p-new__body">
-                        <div class="p-new__points">
-                          <div class="p-new__text">
-                            <div class="p-new__textLeft">
-                              <p class="p-new__point"> Point</p>
-                            </div>
-                            <ul class="p-new__textRight">
-                              <li>オンライン相談OK</li>
-                              <li>担当挙式数200組以上</li>
-                              <li>アウトドアウェディングが得意</li>
-                            </ul>
+                      <div class="p-new-content">
+                        <div class="p-new__title">心に残る<br>ウェディングを</div>
+                        <div class="p-new__area">
+                          <div class="p-new__label c-area">エリア</div>
+                          <div class="p-new__place">
+                            <span>東京</span>
+                            <span>神奈川</span>
+                            <span>千葉</span>
+                            <span>埼玉</span>
+                            <span>長野</span>
+                            <span>愛知</span>
+                            <span>岡山</span>
+                            <span>大阪</span>
+                            <span>広島</span>
+                            <span>福岡</span>
+                            <span>沖縄</span>
+                            <span>海外</span>
                           </div>
+                        </div>
+                        <div class="p-new__tag">
+                          <div class="c-tag">#国内</div>
+                          <div class="c-tag">#海外</div>
+                          <div class="c-tag">#レストラン</div>
+                          <div class="c-tag">#海外</div>
+                          <div class="c-tag">＃リゾートウェディング</div>
+                          <div class="c-tag">#海外</div>
+                          <div class="c-tag">＃アウトドア</div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="p-new__card">
-                      <div class="p-new__head">
-                        <div class="p-new__img"><img src="./assets/img/suzukinaoko.png" alt="naoko">
-                          <div class="p-new___good">
-                            <div class="c-tag__good"></div>
-                          </div>
-                          <div class="p-new__name">酒井 菜々子</div>
-                          <div class="p-new__job">marry-wedding</div>
-                        </div>
-                        <div class="p-new-content">
-                          <div class="p-new__title">心に残る<br>ウェディングを</div>
-                          <div class="p-new__area">
-                            <div class="p-new__label c-area">エリア</div>
-                            <div class="p-new__place">
-                              <span>東京</span>
-                              <span>神奈川</span>
-                              <span>千葉</span>
-                              <span>埼玉</span>
-                              <span>長野</span>
-                              <span>愛知</span>
-                              <span>岡山</span>
-                              <span>大阪</span>
-                              <span>広島</span>
-                              <span>福岡</span>
-                              <span>沖縄</span>
-                              <span>海外</span>
-                            </div>
-                          </div>
-                          <div class="p-new__tag">
-                            <div class="c-tag">#国内</div>
-                            <div class="c-tag">#海外</div>
-                            <div class="c-tag">#レストラン</div>
-                            <div class="c-tag">#海外</div>
-                            <div class="c-tag">＃リゾートウェディング</div>
-                            <div class="c-tag">#海外</div>
-                            <div class="c-tag">＃アウトドア</div>
-                          </div>
-                        </div>
+                    <div class="p-new__body">
+                      <div class="p-new__tag-sp">
+                        <div class="c-tag">#国内</div>
+                        <div class="c-tag">#海外</div>
+                        <div class="c-tag">#レストラン</div>
+                        <div class="c-tag">#海外</div>
+                        <div class="c-tag">＃リゾートウェディング</div>
+                        <div class="c-tag">#海外</div>
+                        <div class="c-tag">＃アウトドア</div>
                       </div>
-                      <div class="p-new__body">
-                        <div class="p-new__points">
-                          <div class="p-new__text">
-                            <div class="p-new__textLeft">
-                              <p class="p-new__point"> Point</p>
-                            </div>
-                            <ul class="p-new__textRight">
-                              <li>オンライン相談OK</li>
-                              <li>担当挙式数200組以上</li>
-                              <li>アウトドアウェディングが得意</li>
-                            </ul>
+                      <div class="p-new__points">
+                        <div class="p-new__text">
+                          <div class="p-new__textLeft">
+                            <p class="p-new__point"> Point</p>
                           </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="p-new__card">
-                      <div class="p-new__head">
-                        <div class="p-new__img"><img src="./assets/img/katoumirei.png" alt="mirei">
-                          <div class="p-new___good">
-                            <div class="c-tag__good"></div>
-                          </div>
-                          <div class="p-new__name">早川 智</div>
-                          <div class="p-new__job">株式会社mirage</div>
-                        </div>
-                        <div class="p-new-content">
-                          <div class="p-new__title">心に残る<br>ウェディングを</div>
-                          <div class="p-new__area">
-                            <div class="p-new__label c-area">エリア</div>
-                            <div class="p-new__place">
-                              <span>東京</span>
-                              <span>神奈川</span>
-                              <span>千葉</span>
-                              <span>埼玉</span>
-                              <span>長野</span>
-                              <span>愛知</span>
-                              <span>岡山</span>
-                              <span>大阪</span>
-                              <span>広島</span>
-                              <span>福岡</span>
-                              <span>沖縄</span>
-                              <span>海外</span>
-                            </div>
-                          </div>
-                          <div class="p-new__tag">
-                            <div class="c-tag">#国内</div>
-                            <div class="c-tag">#海外</div>
-                            <div class="c-tag">#レストラン</div>
-                            <div class="c-tag">#海外</div>
-                            <div class="c-tag">＃リゾートウェディング</div>
-                            <div class="c-tag">#海外</div>
-                            <div class="c-tag">＃アウトドア</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="p-new__body">
-                        <div class="p-new__points">
-                          <div class="p-new__text">
-                            <div class="p-new__textLeft">
-                              <p class="p-new__point"> Point</p>
-                            </div>
-                            <ul class="p-new__textRight">
-                              <li>オンライン相談OK</li>
-                              <li>担当挙式数200組以上</li>
-                              <li>アウトドアウェディングが得意</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="p-new__card">
-                      <div class="p-new__head">
-                        <div class="p-new__img"><img src="./assets/img/sasakiyui.png" alt="yui">
-                          <div class="p-new___good">
-                            <div class="c-tag__good"></div>
-                          </div>
-                          <div class="p-new__name">水野 沙彩</div>
-                          <div class="p-new__job">marry-wedding</div>
-                        </div>
-                        <div class="p-new-content">
-                          <div class="p-new__title">心に残る<br>ウェディングを</div>
-                          <div class="p-new__area">
-                            <div class="p-new__label c-area">エリア</div>
-                            <div class="p-new__place">
-                              <span>東京</span>
-                              <span>神奈川</span>
-                              <span>千葉</span>
-                              <span>埼玉</span>
-                              <span>長野</span>
-                              <span>愛知</span>
-                              <span>岡山</span>
-                              <span>大阪</span>
-                              <span>広島</span>
-                              <span>福岡</span>
-                              <span>沖縄</span>
-                              <span>海外</span>
-                            </div>
-                          </div>
-                          <div class="p-new__tag">
-                            <div class="c-tag">#国内</div>
-                            <div class="c-tag">#海外</div>
-                            <div class="c-tag">#レストラン</div>
-                            <div class="c-tag">#海外</div>
-                            <div class="c-tag">＃リゾートウェディング</div>
-                            <div class="c-tag">#海外</div>
-                            <div class="c-tag">＃アウトドア</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="p-new__body">
-                        <div class="p-new__points">
-                          <div class="p-new__text">
-                            <div class="p-new__textLeft">
-                              <p class="p-new__point"> Point</p>
-                            </div>
-                            <ul class="p-new__textRight">
-                              <li>オンライン相談OK</li>
-                              <li>担当挙式数200組以上</li>
-                              <li>アウトドアウェディングが得意</li>
-                            </ul>
-                          </div>
+                          <ul class="p-new__textRight">
+                            <li>オンライン相談OK</li>
+                            <li>担当挙式数200組以上</li>
+                            <li>アウトドアウェディングが得意</li>
+                          </ul>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-slide">
+                  <div class="p-new__card">
+                    <div class="p-new__head">
+                      <div class="p-new__img"><img src="./assets/img/suzukinaoko.png" alt="naoko">
+                        <div class="p-new___good">
+                          <div class="c-tag__good"></div>
+                        </div>
+                        <div class="p-new__name">酒井 菜々子</div>
+                        <div class="p-new__job">marry-wedding</div>
+                      </div>
+                      <div class="p-new-content">
+                        <div class="p-new__title">心に残る<br>ウェディングを</div>
+                        <div class="p-new__area">
+                          <div class="p-new__label c-area">エリア</div>
+                          <div class="p-new__place">
+                            <span>東京</span>
+                            <span>神奈川</span>
+                            <span>千葉</span>
+                            <span>埼玉</span>
+                            <span>長野</span>
+                            <span>愛知</span>
+                            <span>岡山</span>
+                            <span>大阪</span>
+                            <span>広島</span>
+                            <span>福岡</span>
+                            <span>沖縄</span>
+                            <span>海外</span>
+                          </div>
+                        </div>
+                        <div class="p-new__tag">
+                          <div class="c-tag">#国内</div>
+                          <div class="c-tag">#海外</div>
+                          <div class="c-tag">#レストラン</div>
+                          <div class="c-tag">#海外</div>
+                          <div class="c-tag">＃リゾートウェディング</div>
+                          <div class="c-tag">#海外</div>
+                          <div class="c-tag">＃アウトドア</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-new__body">
+                      <div class="p-new__tag-sp">
+                        <div class="c-tag">#国内</div>
+                        <div class="c-tag">#海外</div>
+                        <div class="c-tag">#レストラン</div>
+                        <div class="c-tag">#海外</div>
+                        <div class="c-tag">＃リゾートウェディング</div>
+                        <div class="c-tag">#海外</div>
+                        <div class="c-tag">＃アウトドア</div>
+                      </div>
+                      <div class="p-new__points">
+                        <div class="p-new__text">
+                          <div class="p-new__textLeft">
+                            <p class="p-new__point"> Point</p>
+                          </div>
+                          <ul class="p-new__textRight">
+                            <li>オンライン相談OK</li>
+                            <li>担当挙式数200組以上</li>
+                            <li>アウトドアウェディングが得意</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="p-new__card">
+                    <div class="p-new__head">
+                      <div class="p-new__img"><img src="./assets/img/katoumirei.png" alt="mirei">
+                        <div class="p-new___good">
+                          <div class="c-tag__good"></div>
+                        </div>
+                        <div class="p-new__name">早川 智</div>
+                        <div class="p-new__job">株式会社mirage</div>
+                      </div>
+                      <div class="p-new-content">
+                        <div class="p-new__title">心に残る<br>ウェディングを</div>
+                        <div class="p-new__area">
+                          <div class="p-new__label c-area">エリア</div>
+                          <div class="p-new__place">
+                            <span>東京</span>
+                            <span>神奈川</span>
+                            <span>千葉</span>
+                            <span>埼玉</span>
+                            <span>長野</span>
+                            <span>愛知</span>
+                            <span>岡山</span>
+                            <span>大阪</span>
+                            <span>広島</span>
+                            <span>福岡</span>
+                            <span>沖縄</span>
+                            <span>海外</span>
+                          </div>
+                        </div>
+                        <div class="p-new__tag">
+                          <div class="c-tag">#国内</div>
+                          <div class="c-tag">#海外</div>
+                          <div class="c-tag">#レストラン</div>
+                          <div class="c-tag">#海外</div>
+                          <div class="c-tag">＃リゾートウェディング</div>
+                          <div class="c-tag">#海外</div>
+                          <div class="c-tag">＃アウトドア</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-new__body">
+                      <div class="p-new__tag-sp">
+                        <div class="c-tag">#国内</div>
+                        <div class="c-tag">#海外</div>
+                        <div class="c-tag">#レストラン</div>
+                        <div class="c-tag">#海外</div>
+                        <div class="c-tag">＃リゾートウェディング</div>
+                        <div class="c-tag">#海外</div>
+                        <div class="c-tag">＃アウトドア</div>
+                      </div>
+                      <div class="p-new__points">
+                        <div class="p-new__text">
+                          <div class="p-new__textLeft">
+                            <p class="p-new__point"> Point</p>
+                          </div>
+                          <ul class="p-new__textRight">
+                            <li>オンライン相談OK</li>
+                            <li>担当挙式数200組以上</li>
+                            <li>アウトドアウェディングが得意</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="p-new__card">
+                    <div class="p-new__head">
+                      <div class="p-new__img"><img src="./assets/img/sasakiyui.png" alt="yui">
+                        <div class="p-new___good">
+                          <div class="c-tag__good"></div>
+                        </div>
+                        <div class="p-new__name">水野 沙彩</div>
+                        <div class="p-new__job">marry-wedding</div>
+                      </div>
+                      <div class="p-new-content">
+                        <div class="p-new__title">心に残る<br>ウェディングを</div>
+                        <div class="p-new__area">
+                          <div class="p-new__label c-area">エリア</div>
+                          <div class="p-new__place">
+                            <span>東京</span>
+                            <span>神奈川</span>
+                            <span>千葉</span>
+                            <span>埼玉</span>
+                            <span>長野</span>
+                            <span>愛知</span>
+                            <span>岡山</span>
+                            <span>大阪</span>
+                            <span>広島</span>
+                            <span>福岡</span>
+                            <span>沖縄</span>
+                            <span>海外</span>
+                          </div>
+                        </div>
+                        <div class="p-new__tag">
+                          <div class="c-tag">#国内</div>
+                          <div class="c-tag">#海外</div>
+                          <div class="c-tag">#レストラン</div>
+                          <div class="c-tag">#海外</div>
+                          <div class="c-tag">＃リゾートウェディング</div>
+                          <div class="c-tag">#海外</div>
+                          <div class="c-tag">＃アウトドア</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-new__body">
+                      <div class="p-new__tag-sp">
+                        <div class="c-tag">#国内</div>
+                        <div class="c-tag">#海外</div>
+                        <div class="c-tag">#レストラン</div>
+                        <div class="c-tag">#海外</div>
+                        <div class="c-tag">＃リゾートウェディング</div>
+                        <div class="c-tag">#海外</div>
+                        <div class="c-tag">＃アウトドア</div>
+                      </div>
+                      <div class="p-new__points">
+                        <div class="p-new__text">
+                          <div class="p-new__textLeft">
+                            <p class="p-new__point"> Point</p>
+                          </div>
+                          <ul class="p-new__textRight">
+                            <li>オンライン相談OK</li>
+                            <li>担当挙式数200組以上</li>
+                            <li>アウトドアウェディングが得意</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
           </div>
-          <div class="p-new__btn">
-            <button class="c-btn__more -planner">プランナー一覧へ</button>
-          </div>
+        </div>
+        <div class="p-new__btn">
+          <button class="c-btn__more -planner">プランナー一覧へ</button>
         </div>
       </div>
     </section>
@@ -1374,90 +1829,103 @@
           <h2 class="u-separate__sectionTitle">Voice</h2>
           <h2 class="u-separate__sectionSub">先輩花嫁からの口コミ</h2>
         </div>
-        <div class="p-voice">
-          <div class="p-voice__head">
-            <div class="p-voice__title">New voice</div>
-            <div class="p-voice__sub">新着口コミ</div>
-          </div>
-          <div class="p-voice__news">
-            <div class="swiper swipe5">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="p-voice__new">
-                    <div class="p-voice__row">
-                      <div class="p-voice__img"><img src="./assets/img/voice.png" alt="voice"></div>
-                      <div class="p-voice__contents">
-                        <div class="p-voice__content">
-                          <div class="p-voice__comment">
-                            <div class="p-voice__comment-title">最高のプランナーさんに出会えました！</div>
-                            <div class="p-voice__evaluation">
-                              <div class="p-voice__evaluation-text">プランナー満足度</div>
-                              <div class="p-voice__evaluation-star">
-                                <img src="./assets/img/goodstar.png" alt="star">
-                                <img src="./assets/img/goodstar.png" alt="star">
-                                <img src="./assets/img/goodstar.png" alt="star">
-                                <img src="./assets/img/goodstar.png" alt="star">
-                                <img src="./assets/img/nogoodstar.png" alt="nostar">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="p-voice__planner">
-                            <div class="p-voice__planner-img"><img src="./assets/img/suzukinaoko.png" alt="naoko"></div>
-                            <div class="p-voice__profile">
-                              <div class="p-voice__job">担当プランナー</div>
-                              <div class="p-voice__name">鈴木 咲</div>
-                            </div>
-                            <div class="p-voice__planner-star">
+      </div>
+      <div class="p-voice">
+        <div class="p-voice__head">
+          <div class="p-voice__title">New voice</div>
+          <div class="p-voice__sub">新着口コミ</div>
+        </div>
+        <div class="p-voice__news">
+          <div class="swiper swipe5">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="p-voice__new">
+                  <div class="p-voice__row">
+                    <div class="p-voice__img"><img src="./assets/img/voice.png" alt="voice"></div>
+                    <div class="p-voice__contents">
+                      <div class="p-voice__content">
+                        <div class="p-voice__comment">
+                          <div class="p-voice__comment-title">最高のプランナーさんに<br class="is-sp">出会えました！</div>
+                          <div class="p-voice__evaluation">
+                            <div class="p-voice__evaluation-text">プランナー満足度</div>
+                            <div class="p-voice__evaluation-star">
                               <img src="./assets/img/goodstar.png" alt="star">
                               <img src="./assets/img/goodstar.png" alt="star">
                               <img src="./assets/img/goodstar.png" alt="star">
                               <img src="./assets/img/goodstar.png" alt="star">
                               <img src="./assets/img/nogoodstar.png" alt="nostar">
                             </div>
-                            <div class="p-voice__rank">4.12<span>(20)</span></div>
                           </div>
                         </div>
-                        <div class="p-voice__text">口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。</div>
-                        <div class="p-voice__author">
-                          <div class="p-voice_author-name"> ゆりゆり さん</div>
-                          <div class="p-voice__age">28歳</div>
-                          <div class="p-voice__gender">女性</div>
-                        </div>
-                          <div class="p-voice__category">
-                            <div class="c-category__orange">フォトウェディング</div>
+                        <div class="p-voice__planner">
+                          <div class="p-voice__planner-img"><img src="./assets/img/suzukinaoko.png" alt="naoko"></div>
+                          <div class="p-voice__profile">
+                            <div class="p-voice__job">担当プランナー</div>
+                            <div class="p-voice__name">鈴木 咲</div>
                           </div>
-                          <div class="p-voice__bottom">
-                            <p class="p-voice__more">Read more</p>
+                          <div class="p-voice__planner-star">
+                            <img src="./assets/img/goodstar.png" alt="star">
+                            <img src="./assets/img/goodstar.png" alt="star">
+                            <img src="./assets/img/goodstar.png" alt="star">
+                            <img src="./assets/img/goodstar.png" alt="star">
+                            <img src="./assets/img/nogoodstar.png" alt="nostar">
                           </div>
+                          <div class="p-voice__rank">4.12<span>(20)</span></div>
                         </div>
                       </div>
+                      <div class="p-voice__text">口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。</div>
+                      <div class="p-voice__author">
+                        <div class="p-voice_author-name"> ゆりゆり さん</div>
+                        <div class="p-voice__age">28歳</div>
+                        <div class="p-voice__gender">女性</div>
+                      </div>
+                      <div class="p-voice__category">
+                        <div class="c-category__orange">フォトウェディング</div>
+                      </div>
+                      <div class="p-voice__bottom">
+                        <p class="p-voice__more">Read more</p>
+                      </div>
                     </div>
+                  </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="p-voice__new">
-                    <div class="p-voice__row">
-                      <div class="p-voice__img"><img src="./assets/img/voice.png" alt="voice"></div>
-                      <div class="p-voice__contents">
-                        <div class="p-voice__content">
-                          <div class="p-voice__comment">
-                            <div class="p-voice__comment-title">最高のプランナーさんに出会えました！</div>
-                            <div class="p-voice__evaluation">
-                              <div class="p-voice__evaluation-text">プランナー満足度</div>
-                              <div class="p-voice__evaluation-star">
-                                <img src="./assets/img/goodstar.png" alt="star">
-                                <img src="./assets/img/goodstar.png" alt="star">
-                                <img src="./assets/img/goodstar.png" alt="star">
-                                <img src="./assets/img/goodstar.png" alt="star">
-                                <img src="./assets/img/nogoodstar.png" alt="nostar">
-                              </div>
+                <div class="p-voice__new-sp">
+                  <div class="p-voice__row">
+                    <div class="p-voice__img"><img src="./assets/img/voice.png" alt="voice"></div>
+                    <div class="p-voice__contents">
+                      <div class="p-voice__content">
+                        <div class="p-voice__comment">
+                          <div class="p-voice__comment-title">最高のプランナーさんに<br class="is-sp">出会えました！</div>
+                          <div class="p-voice__evaluation">
+                            <div class="p-voice__evaluation-text">プランナー満足度</div>
+                            <div class="p-voice__evaluation-star">
+                              <img src="./assets/img/goodstar.png" alt="star">
+                              <img src="./assets/img/goodstar.png" alt="star">
+                              <img src="./assets/img/goodstar.png" alt="star">
+                              <img src="./assets/img/goodstar.png" alt="star">
+                              <img src="./assets/img/nogoodstar.png" alt="nostar">
                             </div>
                           </div>
-                          <div class="p-voice__planner">
+                        </div>
+                        <div class="p-voice__category">
+                          <div class="c-category__orange">フォトウェディング</div>
+                        </div>
+                        <div class="p-voice__text">口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。</div>
+                        <div class="p-voice__author">
+                          <div class="p-voice_author-name"> ゆりゆり さん</div>
+                          <div class="p-voice__age">28歳</div>
+                          <div class="p-voice__gender">女性</div>
+                        </div>
+                      </div>
+                      <div class="p-voice__bodySP">
+                        <div class="p-voice__planner">
+                          <div class="p-voice__plannerSp">
                             <div class="p-voice__planner-img"><img src="./assets/img/suzukinaoko.png" alt="naoko"></div>
                             <div class="p-voice__profile">
                               <div class="p-voice__job">担当プランナー</div>
                               <div class="p-voice__name">鈴木 咲</div>
                             </div>
+                          </div>
+                          <div class="p-voice__plannerSp -star">
                             <div class="p-voice__planner-star">
                               <img src="./assets/img/goodstar.png" alt="star">
                               <img src="./assets/img/goodstar.png" alt="star">
@@ -1468,180 +1936,437 @@
                             <div class="p-voice__rank">4.12<span>(20)</span></div>
                           </div>
                         </div>
-                        <div class="p-voice__text">口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。</div>
-                        <div class="p-voice__author">
-                          <div class="p-voice_author-name"> ゆりゆり さん</div>
-                          <div class="p-voice__age">28歳</div>
-                          <div class="p-voice__gender">女性</div>
-                        </div>
-                          <div class="p-voice__category">
-                            <div class="c-category__orange">フォトウェディング</div>
-                          </div>
-                          <div class="p-voice__bottom">
-                            <p class="p-voice__more">Read more</p>
-                          </div>
+                        <div class="p-voice__bottom">
+                          <p class="p-voice__more">Read more</p>
                         </div>
                       </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="p-voice__new">
-                    <div class="p-voice__row">
-                      <div class="p-voice__img"><img src="./assets/img/voice.png" alt="voice"></div>
-                      <div class="p-voice__contents">
-                        <div class="p-voice__content">
-                          <div class="p-voice__comment">
-                            <div class="p-voice__comment-title">最高のプランナーさんに出会えました！</div>
-                            <div class="p-voice__evaluation">
-                              <div class="p-voice__evaluation-text">プランナー満足度</div>
-                              <div class="p-voice__evaluation-star">
-                                <img src="./assets/img/goodstar.png" alt="star">
-                                <img src="./assets/img/goodstar.png" alt="star">
-                                <img src="./assets/img/goodstar.png" alt="star">
-                                <img src="./assets/img/goodstar.png" alt="star">
-                                <img src="./assets/img/nogoodstar.png" alt="nostar">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="p-voice__planner">
-                            <div class="p-voice__planner-img"><img src="./assets/img/suzukinaoko.png" alt="naoko"></div>
-                            <div class="p-voice__profile">
-                              <div class="p-voice__job">担当プランナー</div>
-                              <div class="p-voice__name">鈴木 咲</div>
-                            </div>
-                            <div class="p-voice__planner-star">
-                              <img src="./assets/img/goodstar.png" alt="star">
-                              <img src="./assets/img/goodstar.png" alt="star">
-                              <img src="./assets/img/goodstar.png" alt="star">
-                              <img src="./assets/img/goodstar.png" alt="star">
-                              <img src="./assets/img/nogoodstar.png" alt="nostar">
-                            </div>
-                            <div class="p-voice__rank">4.12<span>(20)</span></div>
-                          </div>
-                        </div>
-                        <div class="p-voice__text">口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。</div>
-                        <div class="p-voice__author">
-                          <div class="p-voice_author-name"> ゆりゆり さん</div>
-                          <div class="p-voice__age">28歳</div>
-                          <div class="p-voice__gender">女性</div>
-                        </div>
-                          <div class="p-voice__category">
-                            <div class="c-category__orange">フォトウェディング</div>
-                          </div>
-                          <div class="p-voice__bottom">
-                            <p class="p-voice__more">Read more</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+              <div class="swiper-slide">
+                <div class="p-voice__new">
+                  <div class="p-voice__row">
+                    <div class="p-voice__img"><img src="./assets/img/voice.png" alt="voice"></div>
+                    <div class="p-voice__contents">
+                      <div class="p-voice__content">
+                        <div class="p-voice__comment">
+                          <div class="p-voice__comment-title">1高のプランナーさんに<br class="is-sp">出会えました！</div>
+                          <div class="p-voice__evaluation">
+                            <div class="p-voice__evaluation-text">プランナー満足度</div>
+                            <div class="p-voice__evaluation-star">
+                              <img src="./assets/img/goodstar.png" alt="star">
+                              <img src="./assets/img/goodstar.png" alt="star">
+                              <img src="./assets/img/goodstar.png" alt="star">
+                              <img src="./assets/img/goodstar.png" alt="star">
+                              <img src="./assets/img/nogoodstar.png" alt="nostar">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-voice__planner">
+                          <div class="p-voice__planner-img"><img src="./assets/img/suzukinaoko.png" alt="naoko"></div>
+                          <div class="p-voice__profile">
+                            <div class="p-voice__job">担当プランナー</div>
+                            <div class="p-voice__name">鈴木 咲</div>
+                          </div>
+                          <div class="p-voice__planner-star">
+                            <img src="./assets/img/goodstar.png" alt="star">
+                            <img src="./assets/img/goodstar.png" alt="star">
+                            <img src="./assets/img/goodstar.png" alt="star">
+                            <img src="./assets/img/goodstar.png" alt="star">
+                            <img src="./assets/img/nogoodstar.png" alt="nostar">
+                          </div>
+                          <div class="p-voice__rank">4.12<span>(20)</span></div>
+                        </div>
+                      </div>
+                      <div class="p-voice__text">口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。</div>
+                      <div class="p-voice__author">
+                        <div class="p-voice_author-name"> ゆりゆり さん</div>
+                        <div class="p-voice__age">28歳</div>
+                        <div class="p-voice__gender">女性</div>
+                      </div>
+                      <div class="p-voice__category">
+                        <div class="c-category__orange">フォトウェディング</div>
+                      </div>
+                      <div class="p-voice__bottom">
+                        <p class="p-voice__more">Read more</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-voice__new-sp">
+                  <div class="p-voice__row">
+                    <div class="p-voice__img"><img src="./assets/img/voice.png" alt="voice"></div>
+                    <div class="p-voice__contents">
+                      <div class="p-voice__content">
+                        <div class="p-voice__comment">
+                          <div class="p-voice__comment-title">1高のプランナーさんに<br class="is-sp">出会えました！</div>
+                          <div class="p-voice__evaluation">
+                            <div class="p-voice__evaluation-text">プランナー満足度</div>
+                            <div class="p-voice__evaluation-star">
+                              <img src="./assets/img/goodstar.png" alt="star">
+                              <img src="./assets/img/goodstar.png" alt="star">
+                              <img src="./assets/img/goodstar.png" alt="star">
+                              <img src="./assets/img/goodstar.png" alt="star">
+                              <img src="./assets/img/nogoodstar.png" alt="nostar">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-voice__category">
+                          <div class="c-category__orange">フォトウェディング</div>
+                        </div>
+                        <div class="p-voice__text">口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。</div>
+                        <div class="p-voice__author">
+                          <div class="p-voice_author-name"> ゆりゆり さん</div>
+                          <div class="p-voice__age">28歳</div>
+                          <div class="p-voice__gender">女性</div>
+                        </div>
+                      </div>
+                      <div class="p-voice__bodySP">
+                        <div class="p-voice__planner">
+                          <div class="p-voice__plannerSp">
+                            <div class="p-voice__planner-img"><img src="./assets/img/suzukinaoko.png" alt="naoko"></div>
+                            <div class="p-voice__profile">
+                              <div class="p-voice__job">担当プランナー</div>
+                              <div class="p-voice__name">鈴木 咲</div>
+                            </div>
+                          </div>
+                          <div class="p-voice__plannerSp -star">
+                            <div class="p-voice__planner-star">
+                              <img src="./assets/img/goodstar.png" alt="star">
+                              <img src="./assets/img/goodstar.png" alt="star">
+                              <img src="./assets/img/goodstar.png" alt="star">
+                              <img src="./assets/img/goodstar.png" alt="star">
+                              <img src="./assets/img/nogoodstar.png" alt="nostar">
+                            </div>
+                            <div class="p-voice__rank">4.12<span>(20)</span></div>
+                          </div>
+                        </div>
+                        <div class="p-voice__bottom">
+                          <p class="p-voice__more">Read more</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-voice__new">
+                  <div class="p-voice__row">
+                    <div class="p-voice__img"><img src="./assets/img/voice.png" alt="voice"></div>
+                    <div class="p-voice__contents">
+                      <div class="p-voice__content">
+                        <div class="p-voice__comment">
+                          <div class="p-voice__comment-title">1高のプランナーさんに<br class="is-sp">出会えました！</div>
+                          <div class="p-voice__evaluation">
+                            <div class="p-voice__evaluation-text">プランナー満足度</div>
+                            <div class="p-voice__evaluation-star">
+                              <img src="./assets/img/goodstar.png" alt="star">
+                              <img src="./assets/img/goodstar.png" alt="star">
+                              <img src="./assets/img/goodstar.png" alt="star">
+                              <img src="./assets/img/goodstar.png" alt="star">
+                              <img src="./assets/img/nogoodstar.png" alt="nostar">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-voice__planner">
+                          <div class="p-voice__planner-img"><img src="./assets/img/suzukinaoko.png" alt="naoko"></div>
+                          <div class="p-voice__profile">
+                            <div class="p-voice__job">担当プランナー</div>
+                            <div class="p-voice__name">鈴木 咲</div>
+                          </div>
+                          <div class="p-voice__planner-star">
+                            <img src="./assets/img/goodstar.png" alt="star">
+                            <img src="./assets/img/goodstar.png" alt="star">
+                            <img src="./assets/img/goodstar.png" alt="star">
+                            <img src="./assets/img/goodstar.png" alt="star">
+                            <img src="./assets/img/nogoodstar.png" alt="nostar">
+                          </div>
+                          <div class="p-voice__rank">4.12<span>(20)</span></div>
+                        </div>
+                      </div>
+                      <div class="p-voice__text">口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。</div>
+                      <div class="p-voice__author">
+                        <div class="p-voice_author-name"> ゆりゆり さん</div>
+                        <div class="p-voice__age">28歳</div>
+                        <div class="p-voice__gender">女性</div>
+                      </div>
+                      <div class="p-voice__category">
+                        <div class="c-category__orange">フォトウェディング</div>
+                      </div>
+                      <div class="p-voice__bottom">
+                        <p class="p-voice__more">Read more</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-voice__new-sp">
+                  <div class="p-voice__row">
+                    <div class="p-voice__img"><img src="./assets/img/voice.png" alt="voice"></div>
+                    <div class="p-voice__contents">
+                      <div class="p-voice__content">
+                        <div class="p-voice__comment">
+                          <div class="p-voice__comment-title">1高のプランナーさんに<br class="is-sp">出会えました！</div>
+                          <div class="p-voice__evaluation">
+                            <div class="p-voice__evaluation-text">プランナー満足度</div>
+                            <div class="p-voice__evaluation-star">
+                              <img src="./assets/img/goodstar.png" alt="star">
+                              <img src="./assets/img/goodstar.png" alt="star">
+                              <img src="./assets/img/goodstar.png" alt="star">
+                              <img src="./assets/img/goodstar.png" alt="star">
+                              <img src="./assets/img/nogoodstar.png" alt="nostar">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-voice__category">
+                          <div class="c-category__orange">フォトウェディング</div>
+                        </div>
+                        <div class="p-voice__text">口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。口コミの本文が入ります。</div>
+                        <div class="p-voice__author">
+                          <div class="p-voice_author-name"> ゆりゆり さん</div>
+                          <div class="p-voice__age">28歳</div>
+                          <div class="p-voice__gender">女性</div>
+                        </div>
+                      </div>
+                      <div class="p-voice__bodySP">
+                        <div class="p-voice__planner">
+                          <div class="p-voice__plannerSp">
+                            <div class="p-voice__planner-img"><img src="./assets/img/suzukinaoko.png" alt="naoko"></div>
+                            <div class="p-voice__profile">
+                              <div class="p-voice__job">担当プランナー</div>
+                              <div class="p-voice__name">鈴木 咲</div>
+                            </div>
+                          </div>
+                          <div class="p-voice__plannerSp -star">
+                            <div class="p-voice__planner-star">
+                              <img src="./assets/img/goodstar.png" alt="star">
+                              <img src="./assets/img/goodstar.png" alt="star">
+                              <img src="./assets/img/goodstar.png" alt="star">
+                              <img src="./assets/img/goodstar.png" alt="star">
+                              <img src="./assets/img/nogoodstar.png" alt="nostar">
+                            </div>
+                            <div class="p-voice__rank">4.12<span>(20)</span></div>
+                          </div>
+                        </div>
+                        <div class="p-voice__bottom">
+                          <p class="p-voice__more">Read more</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="p-voice__head -satisfaction">
+          <div class="p-voice__title">Ranking</div>
+          <div class="p-voice__sub">プランナー満足度ランキング</div>
+        </div>
+        <div class="p-voice__cards">
+          <div class="p-voice__card">
+            <div class="p-voice__label">
+              <div class="c-ranking -card">01</div>
+            </div>
+            <div class="p-voice__card-head">
+              <div class="p-voice__card-img"><img src="./assets/img/katoyui.png" alt="katoyui"></div>
+              <div class="p-voice__card-profile">
+                <div class="p-voice__card-job">株式会社P-Wedding</div>
+                <div class="p-voice__card-name">佐藤 理恵</div>
+                <div class="p-voice__card-ranking">
+                  <div class="p-voice__card-star">
+                    <img src="./assets/img/goodstar.png" alt="star">
+                    <img src="./assets/img/goodstar.png" alt="star">
+                    <img src="./assets/img/goodstar.png" alt="star">
+                    <img src="./assets/img/goodstar.png" alt="star">
+                    <img src="./assets/img/nogoodstar.png" alt="nostar">
+                  </div>
+                  <div class="p-voice__rank">4.12<span>(20)</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="p-voice__card-body">
+              <div class="p-voice__card-comment">プランナーへの口コミ</div>
+              <div class="p-voice__card-title">私らしい結婚式ができました！</div>
+              <div class="p-voice__card-text">打ち合わせから当日まで親身になってわたしたちの相談に乗ってくださいました。やりとりもとてもスムーズでストレスなくやり取り</div>
+            </div>
+            <div class="p-voice__footer">
+              <p class="p-voice__footer-text">このプランナーページへ</p>
             </div>
           </div>
-          <div class="p-voice__head -satisfaction">
-            <div class="p-voice__title">Ranking</div>
-            <div class="p-voice__sub">プランナー満足度ランキング</div>
-          </div>
-            <div class="p-voice__cards">
-              <div class="p-voice__card">
-                <div class="p-voice__label">
-                  <div class="c-ranking -card">01</div>
-                </div>
-                <div class="p-voice__card-head">
-                  <div class="p-voice__card-img"><img src="./assets/img/katoyui.png" alt="katoyui"></div>
-                  <div class="p-voice__card-profile">
-                    <div class="p-voice__card-job">株式会社P-Wedding</div>
-                    <div class="p-voice__card-name">佐藤 理恵</div>
-                    <div class="p-voice__card-ranking">
-                      <div class="p-voice__card-star">
-                        <img src="./assets/img/goodstar.png" alt="star">
-                        <img src="./assets/img/goodstar.png" alt="star">
-                        <img src="./assets/img/goodstar.png" alt="star">
-                        <img src="./assets/img/goodstar.png" alt="star">
-                        <img src="./assets/img/nogoodstar.png" alt="nostar">
-                      </div>
-                      <div class="p-voice__rank">4.12<span>(20)</span></div>
-                    </div>
+          <div class="p-voice__card">
+            <div class="p-voice__label -sliver">
+              <div class="c-ranking -card">02</div>
+            </div>
+            <div class="p-voice__card-head">
+              <div class="p-voice__card-img"><img src="./assets/img/hogehogeko.png" alt="hogeko"></div>
+              <div class="p-voice__card-profile">
+                <div class="p-voice__card-job">株式会社P-Wedding</div>
+                <div class="p-voice__card-name">加藤 美玲</div>
+                <div class="p-voice__card-ranking">
+                  <div class="p-voice__card-star">
+                    <img src="./assets/img/goodstar.png" alt="star">
+                    <img src="./assets/img/goodstar.png" alt="star">
+                    <img src="./assets/img/goodstar.png" alt="star">
+                    <img src="./assets/img/goodstar.png" alt="star">
+                    <img src="./assets/img/nogoodstar.png" alt="nostar">
                   </div>
-                </div>
-                <div class="p-voice__card-body">
-                  <div class="p-voice__card-comment">プランナーへの口コミ</div>
-                  <div class="p-voice__card-title">私らしい結婚式ができました！</div>
-                  <div class="p-voice__card-text">打ち合わせから当日まで親身になってわたしたちの相談に乗ってくださいました。やりとりもとてもスムーズでストレスなくやり取り</div>
-                </div>
-                <div class="p-voice__footer">
-                  <p class="p-voice__footer-text">このプランナーページへ</p>
-                </div>
-              </div>
-              <div class="p-voice__card">
-                <div class="p-voice__label -sliver">
-                  <div class="c-ranking -card">02</div>
-                </div>
-                <div class="p-voice__card-head">
-                  <div class="p-voice__card-img"><img src="./assets/img/hogehogeko.png" alt="hogeko"></div>
-                  <div class="p-voice__card-profile">
-                    <div class="p-voice__card-job">株式会社P-Wedding</div>
-                    <div class="p-voice__card-name">加藤 美玲</div>
-                    <div class="p-voice__card-ranking">
-                      <div class="p-voice__card-star">
-                        <img src="./assets/img/goodstar.png" alt="star">
-                        <img src="./assets/img/goodstar.png" alt="star">
-                        <img src="./assets/img/goodstar.png" alt="star">
-                        <img src="./assets/img/goodstar.png" alt="star">
-                        <img src="./assets/img/nogoodstar.png" alt="nostar">
-                      </div>
-                      <div class="p-voice__rank">4.12<span>(20)</span></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="p-voice__card-body">
-                  <div class="p-voice__card-comment">プランナーへの口コミ</div>
-                  <div class="p-voice__card-title">私らしい結婚式ができました！</div>
-                  <div class="p-voice__card-text">打ち合わせから当日まで親身になってわたしたちの相談に乗ってくださいました。やりとりもとてもスムーズでストレスなくやり取り</div>
-                </div>
-                <div class="p-voice__footer">
-                  <p class="p-voice__footer-text">このプランナーページへ</p>
-                </div>
-              </div>
-              <div class="p-voice__card">
-                <div class="p-voice__label -blonde">
-                  <div class="c-ranking -card">03</div>
-                </div>
-                <div class="p-voice__card-head">
-                  <div class="p-voice__card-img"><img src="./assets/img/hogehogeo.png" alt="hogeo"></div>
-                  <div class="p-voice__card-profile">
-                    <div class="p-voice__card-job">株式会社P-Wedding</div>
-                    <div class="p-voice__card-name">鈴木  直子</div>
-                    <div class="p-voice__card-ranking">
-                      <div class="p-voice__card-star">
-                        <img src="./assets/img/goodstar.png" alt="star">
-                        <img src="./assets/img/goodstar.png" alt="star">
-                        <img src="./assets/img/goodstar.png" alt="star">
-                        <img src="./assets/img/goodstar.png" alt="star">
-                        <img src="./assets/img/nogoodstar.png" alt="nostar">
-                      </div>
-                      <div class="p-voice__rank">4.12<span>(20)</span></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="p-voice__card-body">
-                  <div class="p-voice__card-comment">プランナーへの口コミ</div>
-                  <div class="p-voice__card-title">私らしい結婚式ができました！</div>
-                  <div class="p-voice__card-text">打ち合わせから当日まで親身になってわたしたちの相談に乗ってくださいました。やりとりもとてもスムーズでストレスなくやり取り</div>
-                </div>
-                <div class="p-voice__footer">
-                  <p class="p-voice__footer-text">このプランナーページへ</p>
+                  <div class="p-voice__rank">4.12<span>(20)</span></div>
                 </div>
               </div>
             </div>
-          <div class="p-voice__btn">
-            <button class="c-btn__voice">口コミ一覧へ</button>
+            <div class="p-voice__card-body">
+              <div class="p-voice__card-comment">プランナーへの口コミ</div>
+              <div class="p-voice__card-title">私らしい結婚式ができました！</div>
+              <div class="p-voice__card-text">打ち合わせから当日まで親身になってわたしたちの相談に乗ってくださいました。やりとりもとてもスムーズでストレスなくやり取り</div>
+            </div>
+            <div class="p-voice__footer">
+              <p class="p-voice__footer-text">このプランナーページへ</p>
+            </div>
           </div>
+          <div class="p-voice__card">
+            <div class="p-voice__label -blonde">
+              <div class="c-ranking -card">03</div>
+            </div>
+            <div class="p-voice__card-head">
+              <div class="p-voice__card-img"><img src="./assets/img/hogehogeo.png" alt="hogeo"></div>
+              <div class="p-voice__card-profile">
+                <div class="p-voice__card-job">株式会社P-Wedding</div>
+                <div class="p-voice__card-name">鈴木  直子</div>
+                <div class="p-voice__card-ranking">
+                  <div class="p-voice__card-star">
+                    <img src="./assets/img/goodstar.png" alt="star">
+                    <img src="./assets/img/goodstar.png" alt="star">
+                    <img src="./assets/img/goodstar.png" alt="star">
+                    <img src="./assets/img/goodstar.png" alt="star">
+                    <img src="./assets/img/nogoodstar.png" alt="nostar">
+                  </div>
+                  <div class="p-voice__rank">4.12<span>(20)</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="p-voice__card-body">
+              <div class="p-voice__card-comment">プランナーへの口コミ</div>
+              <div class="p-voice__card-title">私らしい結婚式ができました！</div>
+              <div class="p-voice__card-text">打ち合わせから当日まで親身になってわたしたちの相談に乗ってくださいました。やりとりもとてもスムーズでストレスなくやり取り</div>
+            </div>
+            <div class="p-voice__footer">
+              <p class="p-voice__footer-text">このプランナーページへ</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-voice__cards-sp">
+          <div class="swiper swipe8">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="p-voice__card">
+                  <div class="p-voice__label">
+                    <div class="c-ranking -card">01</div>
+                  </div>
+                  <div class="p-voice__card-head">
+                    <div class="p-voice__card-img"><img src="./assets/img/katoyui.png" alt="katoyui"></div>
+                    <div class="p-voice__card-profile">
+                      <div class="p-voice__card-job">株式会社P-Wedding</div>
+                      <div class="p-voice__card-name">佐藤 理恵</div>
+                      <div class="p-voice__card-ranking">
+                        <div class="p-voice__card-star">
+                          <img src="./assets/img/goodstar.png" alt="star">
+                          <img src="./assets/img/goodstar.png" alt="star">
+                          <img src="./assets/img/goodstar.png" alt="star">
+                          <img src="./assets/img/goodstar.png" alt="star">
+                          <img src="./assets/img/nogoodstar.png" alt="nostar">
+                        </div>
+                        <div class="p-voice__rank -card">4.12<span>(20)</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-voice__card-body">
+                    <div class="p-voice__card-comment">プランナーへの口コミ</div>
+                    <div class="p-voice__card-title">私らしい結婚式ができました！</div>
+                    <div class="p-voice__card-text">打ち合わせから当日まで親身になってわたしたちの相談に乗ってくださいました。やりとりもとてもスムーズでストレスなくやり取り</div>
+                  </div>
+                  <div class="p-voice__footer">
+                    <p class="p-voice__footer-text">このプランナーページへ</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-voice__card">
+                  <div class="p-voice__label -sliver">
+                    <div class="c-ranking -card">02</div>
+                  </div>
+                  <div class="p-voice__card-head">
+                    <div class="p-voice__card-img"><img src="./assets/img/hogehogeko.png" alt="hogeko"></div>
+                    <div class="p-voice__card-profile">
+                      <div class="p-voice__card-job">株式会社P-Wedding</div>
+                      <div class="p-voice__card-name">加藤 美玲</div>
+                      <div class="p-voice__card-ranking">
+                        <div class="p-voice__card-star">
+                          <img src="./assets/img/goodstar.png" alt="star">
+                          <img src="./assets/img/goodstar.png" alt="star">
+                          <img src="./assets/img/goodstar.png" alt="star">
+                          <img src="./assets/img/goodstar.png" alt="star">
+                          <img src="./assets/img/nogoodstar.png" alt="nostar">
+                        </div>
+                        <div class="p-voice__rank">4.12<span>(20)</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-voice__card-body">
+                    <div class="p-voice__card-comment">プランナーへの口コミ</div>
+                    <div class="p-voice__card-title">私らしい結婚式ができました！</div>
+                    <div class="p-voice__card-text">打ち合わせから当日まで親身になってわたしたちの相談に乗ってくださいました。やりとりもとてもスムーズでストレスなくやり取り</div>
+                  </div>
+                  <div class="p-voice__footer">
+                    <p class="p-voice__footer-text">このプランナーページへ</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-voice__card">
+                  <div class="p-voice__label -blonde">
+                    <div class="c-ranking -card">03</div>
+                  </div>
+                  <div class="p-voice__card-head">
+                    <div class="p-voice__card-img"><img src="./assets/img/hogehogeo.png" alt="hogeo"></div>
+                    <div class="p-voice__card-profile">
+                      <div class="p-voice__card-job">株式会社P-Wedding</div>
+                      <div class="p-voice__card-name">鈴木  直子</div>
+                      <div class="p-voice__card-ranking">
+                        <div class="p-voice__card-star">
+                          <img src="./assets/img/goodstar.png" alt="star">
+                          <img src="./assets/img/goodstar.png" alt="star">
+                          <img src="./assets/img/goodstar.png" alt="star">
+                          <img src="./assets/img/goodstar.png" alt="star">
+                          <img src="./assets/img/nogoodstar.png" alt="nostar">
+                        </div>
+                        <div class="p-voice__rank">4.12<span>(20)</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-voice__card-body">
+                    <div class="p-voice__card-comment">プランナーへの口コミ</div>
+                    <div class="p-voice__card-title">私らしい結婚式ができました！</div>
+                    <div class="p-voice__card-text">打ち合わせから当日まで親身になってわたしたちの相談に乗ってくださいました。やりとりもとてもスムーズでストレスなくやり取り</div>
+                  </div>
+                  <div class="p-voice__footer">
+                    <p class="p-voice__footer-text">このプランナーページへ</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="p-voice__btn">
+          <button class="c-btn__voice">口コミ一覧へ</button>
         </div>
       </div>
     </section>
+
     <section class="l-recommend">
       <div class="l-inner">
         <div class="u-separate__section">

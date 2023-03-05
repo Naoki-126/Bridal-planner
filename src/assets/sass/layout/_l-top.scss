@@ -1,11 +1,12 @@
 @use "../global" as global;
 
 .l-top {
-  background: #fff;
   margin: 0 auto;
+  background: rgba(132, 214, 214, .2);
   margin-bottom: 117px;
 
   @include global.mq(sp) {
     margin-bottom: 40px;
+    background: transparent;
   }
 }

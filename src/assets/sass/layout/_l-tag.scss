@@ -4,4 +4,8 @@
   background: global.$sub-color;
   margin: 0 auto;
   padding: 73px 0 128px;
+
+  @include global.mq(sp) {
+    padding: 109px 0 72px;
+  }
 }

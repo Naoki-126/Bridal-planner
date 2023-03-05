@@ -5,13 +5,23 @@
   width: 1240px;
   height: 320px;
   background: #fff;
+
+  @include global.mq(sp) {
+    margin-top: 24px;
+    max-width: 100%;
+    height: auto;
+
+  }
 }
 
 .p-tag__items {
-  width: 100%;
+  max-width: 100%;
   display: flex;
-}
 
+  @include global.mq(sp) {
+    display: block;
+  }
+}
 
 .p-tag__item {
   text-align: center;
@@ -38,7 +48,7 @@
     &::after {
       content: "";
       position: absolute;
-      border-left: 1px solid global.$text-color;
+      border-right: 1px solid global.$text-color;
       height: 192px;
       top: 47px;
       right: 0;
@@ -47,12 +57,58 @@
 
   &.-form {
     width: 35.8%;
+    position: relative;
+  }
+
+  @include global.mq(sp) {
+    margin: 0 auto;
+    padding: 48px 24px;
+
+    &.-place {
+      width: 100%;
+    }
+
+    &.-style {
+      width: 100%;
+
+      &::before {
+        border-top: 1px solid global.$text-color;
+        border-left: 0;
+        height: 1x;
+        width: 229px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      &::after {
+        border-right: 0;
+      }
+    }
+
+    &.-form {
+      width: 100%;
+
+      &::before {
+        content: "";
+        position: absolute;
+        border-top: 1px solid global.$text-color;
+        border-left: 0;
+        height: 1x;
+        width: 229px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
   }
 }
 
 .p-tag__title {
   display: inline-block;
   position: relative;
+  font-size: 20px;
+  font-family: global.$ff-logo;
 
   &::before {
     content: "";
@@ -71,7 +127,6 @@
     right: -64px;
     transform: rotate(45deg);
   }
-
 }
 
 .p-tag__body {
@@ -81,4 +136,10 @@
   display: inline-flex;
   flex-wrap: wrap;
   gap: 8px;
+
+  @include global.mq(sp) {
+    margin-top: 32px;
+    padding: 0;
+
+  }
 }

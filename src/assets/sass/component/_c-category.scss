@@ -6,6 +6,10 @@
   padding: 2px 8px;
   background: #ABD07B;
   color: #fff;
+
+  @include global.mq(sp) {
+    font-size: 10px;
+  }
 }
 
 .c-category__orange {
@@ -14,6 +18,10 @@
   padding: 2px 8px;
   background: #F1B04E;
   color: #fff;
+
+  @include global.mq(sp) {
+    font-size: 10px;
+  }
 }
 
 .c-category__pink {
@@ -22,4 +30,8 @@
   padding: 2px 8px;
   background: #D684B8;
   color: #fff;
+
+  @include global.mq(sp) {
+    font-size: 10px;
+  }
 }

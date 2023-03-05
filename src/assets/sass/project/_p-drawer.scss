@@ -2,15 +2,11 @@
 
 .p-drawer {
   background: url(/public/assets/img/humberger.png)no-repeat center center /contain;
-  margin-top: 37.37px;
+  margin: 37.37px auto 0;
+  width: 37.37px;
+  height: 26.25px;
   cursor: pointer;
   position: relative;
-
-  @include global.mq(sp) {
-    top: 10px;
-    transition: transform .3s ease;
-    z-index: 23;
-  }
 
   &.is-open {
     content: "";
@@ -21,6 +17,19 @@
     top: 0;
     left: 0;
     z-index: 10;
+  }
+
+  @include global.mq(sp) {
+    margin-top: 22px;
+    width: 20px;
+    height: 15px;
+
+    &.is-open {
+      width: 46px;
+      height: 46px;
+      top: 10px;
+      right: 10px;
+    }
   }
 }
 
@@ -36,7 +45,7 @@
   transition: transform .5s ease 0s;
 
   &.is-open {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
 }
 
@@ -46,6 +55,24 @@
   max-width: 100%;
   height: 800px;
   background: #fff;
+
+  @include global.mq(sp) {
+    display: none;
+  }
+}
+
+.p-drawer__box-sp {
+  display: none;
+
+  @include global.mq(sp) {
+    display: block;
+    margin: 8px 10px;
+    width: 356px;
+    max-width: 100%;
+    height: 537px;
+    height: auto;
+    background: #fff;
+  }
 }
 
 .p-drawer__lists {
@@ -62,6 +89,7 @@
     height: 218px;
     top:-20px;
     left: 0;
+    z-index: 10;
   }
 
   &::after {
@@ -74,6 +102,38 @@
     right: 24px;
     z-index: 10;
   }
+
+  @include global.mq(sp) {
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+
+    &::before {
+      background: url(/public/assets/img/logo-sp.png) no-repeat;
+      width: 154px;
+      height: 54px;
+      top: 17px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &::after {
+      background: url(/public/assets/img/batsu-sp.png)no-repeat;
+      width: 46px;
+      height: 46px;
+      top: 10px;
+      right: 10px;
+    }
+  }
+}
+
+.p-drawer__lists {
+
+  @include global.mq(sp) {
+    padding-top: 96px;
+    padding-left: 90px;
+  }
 }
 
 .p-drawer__list-left {
@@ -81,14 +141,12 @@
   margin-top: 168px;
   margin-left: 172px;
   border-right: 1px solid global.$text-color;
-
 }
 
 .p-drawer__list-right {
   width: 50%;
   margin-top: 168px;
   margin-left: 91px;
-
 }
 
 .p-drawer__lists li {
@@ -98,15 +156,32 @@
   font-weight: 400;
   letter-spacing: .03em;;
   color: global.$text-color;
+  font-family: global.$ff-logo;
   position: relative;
 
   &:nth-child(n + 2) {
     margin-top: 32px;
   }
+
+  @include global.mq(sp) {
+    font-size: 18px;
+
+    &:nth-child(n + 2) {
+      margin-top: 24px;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
 }
 
 .p-drawer__button {
   margin-top: 64px;
+
+  @include global.mq(sp) {
+    margin-top: 46px;
+  }
 }
 
 .p-drawer__background {
@@ -151,12 +226,26 @@
     left: 52.5%;
     transform: rotate(45deg);
   }
+
+  @include global.mq(sp) {
+    margin: 0 auto;
+    padding: 17px 0;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .p-drawer__nav {
   width: inherit;
   display: flex;
   justify-content: end;
+
+  @include global.mq(sp) {
+    justify-content: center;
+  }
 }
 
 .p-drawer__item {
@@ -166,5 +255,14 @@
 
   &:last-child {
     margin-right: 174px;
+  }
+
+  @include global.mq(sp) {
+    font-size: 14px;
+    margin-left: 16px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

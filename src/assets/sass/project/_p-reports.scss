@@ -46,11 +46,25 @@
   &::before {
     content: "";
     position: absolute;
-    width: 476px;
-    height: 146px;
+    width: calc(490px - 7px * 2);
+    height: calc(160px - 7px *2);
     top: 7px;
     left: 7px;
     border: 1px solid #fff;
+  }
+
+  @include global.mq(sp) {
+    margin-top: 24px;
+    margin-left: 8px;
+    width: 371px;
+    height: 116px;
+
+    &::before {
+      width: calc(371px - 5px * 2);
+      height: calc(116px - 5px *2);
+      top: 5px;
+      left: 5px;
+    }
   }
 }
 
@@ -64,6 +78,10 @@
   background: #fff;
   padding-left: 36px;
   padding-right: 33px;
+
+  @include global.mq(sp) {
+    padding:0 8px;
+  }
 
 }
 
@@ -94,44 +112,89 @@
     top: 7px;
     right: -17px;
   }
+
+  @include global.mq(sp) {
+    margin-top: 6px;
+    font-size: 18px;
+
+    &::before {
+      width: 25px;
+      width: 25px;
+      top: 9px;
+      right: 9px;
+    }
+
+    &::after {
+      width: 13px;
+      height: 13px;
+      top: 15px;
+      right: 15px;
+    }
+  }
 }
 
 .p-reports__company {
   font-size: 12px;
   font-weight: 500;
   line-height: 1.5;
+  padding-bottom: 26px;
+  border-bottom: 1px solid global.$text-color;
+  width: 261px;
+  height: 1px;
+
+  @include global.mq(sp) {
+    width: 190px;
+    padding-bottom: 25px;
+  }
 }
 
 .p-reports__area {
-  margin-top: 8px;
-  padding-top: 16px;
-  border-top: 1px solid global.$text-color;
+  margin-top: 16px;
+  width: 100%;
   display: flex;
   align-items: start;
+
+  @include global.mq(sp) {
+    margin-top: 4px;
+    height: 1px;
+  }
 }
 
 .p-reports__label {
   width: 54px;
   display: inline;
+
+  @include global.mq(sp) {
+    width: 70px;
+  }
 }
 
 .p-reports__place {
   width: calc(332px - 91px);
   margin-left: 8px;
   font-size: 14px;
+  font-weight: 500;
   display: flex;
   flex-wrap: wrap;
   gap: 8px 4px;
+
+  @include global.mq(sp) {
+    width: 100%;
+    margin-left: 4px;
+    gap: 4px;
+    font-size: 12px;
+
+  }
 }
 
 .p-reports__head {
   margin-top: 72px;
   margin-left: 146px;
-}
 
-.p-reports__cards {
-  margin-top: 24px;
-  display: inline-flex;
+  @include global.mq(sp) {
+    margin-top: 33px;
+    margin-left: 16px;
+  }
 }
 
 .p-reports__card {
@@ -150,18 +213,41 @@
     top:12px;
     left: 12px;
   }
+
+  @include global.mq(sp) {
+    width: calc(278px + 8px * 2);
+    height: calc(415px + 11px * 2);
+    margin: 0 auto;
+
+    &::before {
+      width: 278px;
+      height: 415px;
+      top: 11px;
+      left: 8px;
+    }
+  }
 }
 
 .p-reports__card-row {
-  margin: 24px 24px 0;
+  margin: 0 24px;
   width: 368px;
   height: 216px;
+
+  @include global.mq(sp) {
+    margin: 0 17px;
+    width: 260px;
+    height: 184px;
+  }
 }
 .p-reports__c-img {
   padding-top: 24px;
   max-width: 100%;
   height: auto;
   position: relative;
+
+  @include global.mq(sp) {
+    padding-top: 21px;
+  }
 }
 
 .p-reports__like {
@@ -181,6 +267,13 @@
   padding:0 15px;
   background: #fff;
   opacity: .88;
+  color: #000;
+
+  @include global.mq(sp) {
+    width: 246px;
+    margin: 0 8px;
+    bottom: 56px;
+  }
 }
 
   .p-reports__comment {
@@ -188,16 +281,24 @@
     font-family: global.$ff-logo;
     font-size: 18px;
     line-height: 1.4;
+
+    @include global.mq(sp) {
+      font-size: 16px;
+    }
   }
 
   .p-reports__category {
     padding-top: 8px;
     border-top: 1px solid global.$text-color;
+
+    @include global.mq(sp) {
+      padding-top: 4px;
+    }
   }
 
   .p-reports__meta {
     display: inline;
-    line-height: 1.4;
+    line-height: 1.5;
   }
 
   .p-reports__text {
@@ -217,7 +318,20 @@
     gap: 5px;
   }
 
+  .p-reports__card-a {
+
+    @include global.mq(sp) {
+      width: 60px
+
+    }
+  }
 
 .p-reports__footer {
+  display: none;
 
+  @include global.mq(sp) {
+    display: block;
+    margin-top: 203px;
+    margin-left: 140px;
+  }
 }

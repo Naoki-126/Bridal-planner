@@ -6,6 +6,10 @@
 
 .p-footer__logo {
 
+  @include global.mq(sp) {
+    width: 116px;
+    height: auto;
+  }
 }
 
 .p-footer__sns {
@@ -16,6 +20,10 @@
 
   &:first-child {
     margin-left: 0;
+  }
+
+  @include global.mq(sp) {
+    margin-left: 14px;
   }
 }
 
@@ -43,15 +51,39 @@
     height: 21px;
     transform: rotate(45deg);
   }
+
+  @include global.mq(sp) {
+    margin-top: 32px;
+    font-size: 12px;
+    margin-left: 0;
+
+    &::before,
+    &::after {
+      height: 16px;
+    }
+  }
 }
 
 .p-footer__sns-icon {
   margin-right: 18px;
+
+  img {
+    width: 16px;
+    height: 16px;
+  }
+
+  @include global.mq(sp) {
+    margin-right: 8px;
+  }
 }
 
 .p-footer__nav {
   display: flex;
   flex-wrap: wrap;
+
+  @include global.mq(sp) {
+    display: block;
+  }
 
 }
 
@@ -62,6 +94,11 @@
   &:nth-child(n+5) {
     margin-top: 24px;
   }
+
+  @include global.mq(sp) {
+    margin-top: 8px;
+    font-size: 12px;
+  }
 }
 
 .p-footer__policy {
@@ -70,10 +107,23 @@
   display: flex;
   padding: 24px 67px;
   justify-content: flex-end;
+  align-items: center;
+
+  @include global.mq(sp) {
+    margin: 0 30px;
+    padding: 16px 0;
+    justify-content: center;
+  }
 }
 
 .p-footer__name {
   margin-left: 24px;
+  font-family: global.$ff-logo;
+
+  @include global.mq(sp) {
+    margin-left: 16px;
+    font-size: 11px;
+  }
 }
 
 .p-footer__copylight {
@@ -91,6 +141,18 @@
 
     &:first-child {
       padding-bottom: 8px;
+    }
+  }
+
+  @include global.mq(sp) {
+    padding: 8px 0;
+
+    p{
+      font-size: 7px;
+
+      span {
+        font-size: 10px;
+      }
     }
   }
 }

@@ -2,14 +2,26 @@
 
 .p-newReport {
   margin: 65px auto 64px;
+
+  @include global.mq(sp) {
+    margin: 48px auto 0;
+  }
 }
 
 .p-newReport__title {
   margin-left: 116px;
+
+  @include global.mq(sp) {
+    margin-left: 32px;
+  }
 }
 
 .p-newReport_items {
   padding-top: 20px;
+
+  @include global.mq(sp) {
+    padding-top: 0;
+  }
 }
 
 .p-newReport__btn {
