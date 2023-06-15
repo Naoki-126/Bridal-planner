@@ -16,10 +16,21 @@
     #fff 1px,
     #fff 20px
   );
-  padding: 74px 0 72px;
+  padding: 74px 0 0px;
+
+  &.-insta {
+    padding-top: 73px;
+    padding-left: 4px;
+  }
 
   @include global.mq(sp) {
-    padding: 69px 0 64px;
-    margin-bottom: 24px;
+    padding: 63px 0 64px;
+    margin-bottom: 11px;
+
+    &.-insta {
+      padding-top: 69px;
+      padding-left: 1px;
+    }
+
   }
 }

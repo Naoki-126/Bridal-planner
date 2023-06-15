@@ -31,15 +31,11 @@
   }
 }
 
-.p-reports__planners {
-  margin-top: 24px;
-  display: inline-flex;
-}
-
 .p-reports__planner {
-  margin-right: 55px;
   display: flex;
   width: 490px;
+  width: min(34.02778vw, 490px);
+  height: min(11.111vw, 160px);
   height: 160px;
   position: relative;
 
@@ -47,15 +43,17 @@
     content: "";
     position: absolute;
     width: calc(490px - 7px * 2);
+    width: min(33.0556vw, 476px);
+    height: min(10.13889vw, 146px);
     height: calc(160px - 7px *2);
-    top: 7px;
+    top: 5px;
     left: 7px;
     border: 1px solid #fff;
   }
 
   @include global.mq(sp) {
-    margin-top: 24px;
-    margin-left: 8px;
+    margin-top: 0px;
+    margin-left: 16px;
     width: 371px;
     height: 116px;
 
@@ -70,85 +68,102 @@
 
 .p-reports__img {
   width: 158px;
-  height: inherit;
+  width: min(10.97222vw, 158px);
+  height: auto;
+
+  @include global.mq(sp) {
+    width: 150px;
+  }
 }
 
 .p-reports__contents {
   width: calc(490px - 158px);
+  width: min(23.0556vw, 332px);
   background: #fff;
   padding-left: 36px;
+  padding-left: min(2.5vw, 36px);
   padding-right: 33px;
-
-  @include global.mq(sp) {
-    padding:0 8px;
-  }
-
-}
-
-.p-reports__name {
-  margin-top: 8px;
-  font-family: global.$ff-logo;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1.5;
+  padding-right: min(2.291667vw, 33px);
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    background: url(/public/assets/img/star1.png)no-repeat;
+    background: global.$text-color;
+    opacity: .67;
     width: 26px;
     height: 26px;
-    top: 2px;
-    right: -22px;
+    border-radius: 50%;
+    top: 13px;
+    right: 16px;
   }
 
   &::after {
     content: "";
     position: absolute;
-    background: url(/public/assets/img/star.png)no-repeat;
+    background: url(/assets/img/star.png)no-repeat;
     width: 15px;
     height: 15px;
-    top: 7px;
-    right: -17px;
+    top: 19px;
+    right: 21px;
   }
 
   @include global.mq(sp) {
-    margin-top: 6px;
-    font-size: 18px;
+    width: calc(490px - 158px);
+    padding:0 8px;
 
     &::before {
       width: 25px;
       width: 25px;
-      top: 9px;
-      right: 9px;
+      top: 14px;
+      right: 14px;
     }
 
     &::after {
       width: 13px;
       height: 13px;
-      top: 15px;
-      right: 15px;
+      top: 19px;
+      right: 21px;
     }
+  }
+}
+
+.p-reports__name {
+  margin-top: min(1.041667vw, 15px);
+  margin-top: 15px;
+  font-family: global.$ff-logo;
+  font-size: 22px;
+  font-size: min(1.52778vw, 22px);
+  font-weight: 400;
+  line-height: 1.5;
+  position: relative;
+
+  @include global.mq(sp) {
+    margin-top: 11px;
+    font-size: 18px;
   }
 }
 
 .p-reports__company {
   font-size: 12px;
+  font-size: min(.83333vw, 12px);
   font-weight: 500;
   line-height: 1.5;
-  padding-bottom: 26px;
+  padding-left: 2px;
+  padding-bottom: 24px;
   border-bottom: 1px solid global.$text-color;
   width: 261px;
+  width: min(18.125vw, 261px);
   height: 1px;
 
   @include global.mq(sp) {
     width: 190px;
-    padding-bottom: 25px;
+    padding-bottom: 24px;
   }
 }
 
 .p-reports__area {
+  margin-top: min(1.1111vw, 16px);
   margin-top: 16px;
   width: 100%;
   display: flex;
@@ -163,27 +178,25 @@
 .p-reports__label {
   width: 54px;
   display: inline;
-
-  @include global.mq(sp) {
-    width: 70px;
-  }
 }
 
 .p-reports__place {
   width: calc(332px - 91px);
+  max-width: 100%;
   margin-left: 8px;
   font-size: 14px;
+  font-size: min(.97222vw, 14px);
   font-weight: 500;
   display: flex;
   flex-wrap: wrap;
   gap: 8px 4px;
+  gap: min(.55556vw, 8px) min(.27778vw, 4px);
 
   @include global.mq(sp) {
     width: 100%;
-    margin-left: 4px;
+    margin-left: 8px;
     gap: 4px;
     font-size: 12px;
-
   }
 }
 
@@ -210,7 +223,7 @@
     border: 1px solid #84d6d6;
     width: 392px;
     height: 406px;
-    top:12px;
+    top: 9px;
     left: 12px;
   }
 
@@ -218,12 +231,13 @@
     width: calc(278px + 8px * 2);
     height: calc(415px + 11px * 2);
     margin: 0 auto;
+    margin-left: 18px;
 
     &::before {
       width: 278px;
       height: 415px;
-      top: 11px;
-      left: 8px;
+      top: 13px;
+      left: 6px;
     }
   }
 }
@@ -234,71 +248,123 @@
   height: 216px;
 
   @include global.mq(sp) {
-    margin: 0 17px;
+    margin: 0 15px;
     width: 260px;
     height: 184px;
   }
 }
 .p-reports__c-img {
-  padding-top: 24px;
+  padding-top: 22px;
   max-width: 100%;
   height: auto;
   position: relative;
 
+  .pc-img {
+    display: block;
+  }
+
+  .sp-img {
+    display: none;
+  }
+
   @include global.mq(sp) {
     padding-top: 21px;
+    // height: 184px;
+
+    .pc-img {
+      display: none;
+    }
+
+    .sp-img {
+      display: block;
+    }
   }
 }
 
 .p-reports__like {
   content: "";
   position: absolute;
-  top: 36px;
-  right: 12px;
+  top: 33px;
+  right: 9px;
 }
 
 
 .p-reports__body {
   content: "";
   position: absolute;
-  bottom: 13px;
-  margin: 0 12px;
   width: 332px;
-  padding:0 15px;
+  padding:16px 15px 0;
   background: #fff;
   opacity: .88;
   color: #000;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   @include global.mq(sp) {
     width: 246px;
-    margin: 0 8px;
-    bottom: 56px;
+    top: 46%;
+    left: 50%;
+  }
+}
+
+.p-reports__row {
+  width: 300px;
+  height: 54px;
+
+  @include global.mq(sp) {
+    width: 218px;
   }
 }
 
   .p-reports__comment {
-    margin: 16px auto 8px;
+    padding-right: 18px;
     font-family: global.$ff-logo;
     font-size: 18px;
     line-height: 1.4;
 
+    &.-waso {
+      padding-right: 0;
+
+      span {
+        color: #fff;
+      }
+    }
+
     @include global.mq(sp) {
       font-size: 16px;
+
+      &.-garden {
+        padding-right: 10px;
+      }
     }
   }
 
   .p-reports__category {
+    margin-top: 8px;
     padding-top: 8px;
     border-top: 1px solid global.$text-color;
+    width: 290px;
 
     @include global.mq(sp) {
+      margin-top: 11px;
       padding-top: 4px;
+      width: 214px;
     }
   }
 
   .p-reports__meta {
+    width: 100%;
     display: inline;
     line-height: 1.5;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 8px;
+
+    @include global.mq(sp) {
+      font-size: 10px;
+      padding:  4px 8px;
+    }
   }
 
   .p-reports__text {
@@ -306,23 +372,26 @@
   }
 
   .p-reports__area-tag {
-    margin-top: 8px;
+    margin-top: 4px;
     display: flex;
     align-items: center;
+
+    @include global.mq(sp) {
+      margin-top: 1px;
+    }
   }
 
   .p-reports__tag {
-    margin: 10px auto 13px;
+    margin: 7px auto 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 3px 8px;
   }
 
   .p-reports__card-a {
 
     @include global.mq(sp) {
-      width: 60px
-
+      width: 50px
     }
   }
 
@@ -331,7 +400,8 @@
 
   @include global.mq(sp) {
     display: block;
-    margin-top: 203px;
-    margin-left: 140px;
+    margin-top: 202px;
+    margin-left: 137px;
+    letter-spacing: .1em;
   }
 }

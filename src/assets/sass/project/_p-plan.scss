@@ -2,14 +2,14 @@
 
 .p-plan {
   margin: 0 auto;
-  width: 1240px;
+  width: min(86.111vw, 1240px);
   max-width: 100%;
   background: #fff;
   padding: 64px 20px;
 
   @include global.mq(sp) {
     width: 366px;
-    padding: 48px 0;
+    padding: 53px 0;
   }
 }
 
@@ -22,25 +22,36 @@
 }
 
 .p-plan__items {
-  margin-top: 65px;
+  margin-top: min(4.16667vw, 60px);
   background: global.$sub-color;
-  padding: 82px 0;
+  padding: min(5.69444vw, 82px) min(3.4027778vw, 49px);
   max-width: 100%;
-  padding-left: 47px;
   height: auto;
   display: flex;
 
+
+  @media screen and (max-width: 1090px) {
+    /* 1250px以下に適用されるCSS */
+    // overflow-x: scroll;
+  }
+
   @include global.mq(sp) {
-    margin: 25px auto 0;
-    padding: 31px 0 48px;
+    overflow: hidden;
+  }
+
+
+  @include global.mq(sp) {
+    margin: 22px auto 0;
+    padding: 47px 0 48px;
+    padding-left: 2px;
     width: 346px;
     display: block;
   }
 }
 
 .p-plan__item {
-  width: 348px;
-  margin-left: 30px;
+  width: min(24.16667vw, 348px);
+  margin-left: min(2.013889vw, 29px);
 
   &:first-child {
     margin-left: 0;
@@ -57,8 +68,10 @@
 }
 
 .p-plan__label {
-  margin-left: 76px;
+  margin-left: min(5.277778vw, 76px);
+  width: min(2.1527778vw, 31px);
   width: 31px;
+  height: min(2.08333vw, 30px);
   height: 30px;
   background: #D684B8;
   position: relative;
@@ -70,35 +83,70 @@
   &.-green {
     background: #ABD07B;
   }
+
+  @include global.mq(sp) {
+    margin-left: 76px;
+
+  }
 }
 
 .p-plan__title {
   content: "";
   position: absolute;
   color: #000;
+  font-size: min(1.25vw, 18px);
   font-size: 18px;
   font-family: global.$ff-logo;
+  width: min(13.8889vw, 200px);
   width: 200px;
   top: 50%;
-  left: 21px;
+  left: min(1.805556vw, 26px);
   transform: translateY(-50%);
+
+  &.-phot {
+    left: min(.763889vw, 11px);
+  }
+
+  &.-resort {
+    left: min(.902778vw, 13px);
+  }
+
+  @include global.mq(sp) {
+    left: 26px;
+
+
+    &.-phot {
+      left: 20px;
+    }
+
+    &.-resort {
+      top: 17px;
+      left: -2px;
+      text-align: center;
+      line-height: 1.5;
+    }
+  }
 }
 
 .p-plan__card {
-  margin-top: 26px;
+  margin-top: min(1.80556vw, 26px);
   background: #fff;
   width: 348px;
+  max-width: 100%;
   height: 552px;
+  max-height: 100%;
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
     width: calc(100% - 13px *2);
+    max-width: 100%;
     height: calc(100% - 9px - 14px);
+    max-height: 100%;
     border: 1px solid global.$main-color;
-    top: 9px;
-    left: 13px;
+    top: min(.625vw, 9px);
+    left: min(.902778vw, 13px);
   }
 
   @include global.mq(sp) {
@@ -112,6 +160,10 @@
       top: 10px;
       left: 9px;
     }
+
+    &.-new {
+      height: 516px;
+    }
   }
 }
 
@@ -120,18 +172,34 @@
   text-align: center;
 
   img {
-    width: 302px;
-    height: 202px;
+    width: min(20.97222vw, 302px);
+    height: min(14.027778vw, 202px);
   }
 
   @include global.mq(sp) {
+    display: none;
+  }
+
+  &.-sp {
+    display: none;
+
+    @include global.mq(sp) {
+      display: block;
+      img {
+        width: 260px;
+        height: 184px;
+      }
+    }
+  }
+
+  &.-plan {
 
     img {
-      width: 260px;
-      height: 184px;
+      width: min(21.111vw, 304px);
+      height: min(14.02778vw, 202px);
     }
-
   }
+
 }
 
 .p-plan___like {
@@ -139,84 +207,149 @@
   position: absolute;
   top: 27px;
   right: 36px;
+
+  @include global.mq(sp) {
+    top: 29px;
+    right: 25px;
+  }
 }
 
 .p-plan__body {
-  margin: 8px 29px 33px;
+  margin: min(.5556vw, 8px) min(2.013889vw, 29px) min(2.291667vw, 33px);
 
   @include global.mq(sp) {
-  content: "";
-  position: absolute;
-  background: #fff;
-  opacity: .88;
-  color: #000;
-  width: 246px;
-  top: 160px;
-  left: 24px;
-  margin: 0;
-  padding: 14px;
+    content: "";
+    position: absolute;
+    background: #fff;
+    opacity: .88;
+    color: #000;
+    width: 246px;
+    top: 175px;
+    left: 24px;
+    margin: 0;
+    padding: 14px;
+  }
+
+  &.-p2 {
+    margin: min(1.041667vw, 15px) min(2.5vw, 36px) min(2.291667vw, 33px) min(1.80556vw, 26px);
+
+    @include global.mq(sp) {
+      margin: 15px 36px 33px 26px;
+      top: 159px;
+      left: -2px;
+      padding-top: 17px;
+      padding-bottom: 0px;
+    }
   }
 }
 
 .p-plan__body-title {
-  font-size: 18px;
+  font-size: min(1.25vw, 18px);
   font-family: global.$ff-logo;
+  line-height: 1.5;
 
   @include global.mq(sp) {
     font-size: 16px;
+    margin-right: 14px;
   }
 }
 
 .p-plan__area-tag {
-  margin-top: 10px;
+  margin-top: min(.763889vw, 11px);
+  margin-left: -4px;
   display: flex;
   align-items: center;
 
   @include global.mq(sp) {
-    margin-top: 9px;
+    margin-top: 10px;
+    margin-left: 0;
+    border-top: 1px solid global.$text-color;
+    width: 210px;
+    padding-top: 2px;
   }
 
+  &.-p2 {
+    margin-top: 8px;
+    margin-left: 0px;
+  }
 }
 
 .p-plan__place {
   margin-left: 8px;
+  font-size: 12px;
 }
 
 .p-plan__tag {
   margin: 12px auto 0;
-  margin-right: 45px;
+  margin-left: -3px;
   display: flex;
   flex-wrap: wrap;
   gap: 4px 8px;
 
   @include global.mq(sp) {
-    margin-right: 0px;
+    margin-top: 5px;
+    margin-left: 0px;
+
+  }
+
+  &.-p2 {
+    margin-top: 8px;
+    margin-left: 0px;
+
+    @include global.mq(sp) {
+      margin-top: 6px;
+    }
   }
 }
 
 .p-plan__profile {
-  margin-top: 20px;
+  margin-top: 28px;
   margin-left: 8px;
 
   @include global.mq(sp) {
     margin-top: 30px;
-    margin-left: -14px;
+    margin-left: -15px;
+  }
 
+  &.-p2 {
+    margin-top: 23px;
+    margin-left: 4px;
+
+    @include global.mq(sp) {
+      margin-top: 31px;
+      margin-left: -15px;
+    }
   }
 }
 
 .p-plan__footer {
+  margin-top: min(1.73611vw, 25px);
+  margin-left: min(11.111vw, 160px);
 
-  margin-top: 23px;
-  margin-left: 160px;
+  &.-p2 {
+    margin-top: min(2.152778vw, 31px);
+    margin-left: min(11.38889vw, 164px);
+  }
+
+  &.-n1 {
+    margin-top: 28px;
+    margin-left: 164px;
+  }
 
   @include global.mq(sp) {
     display: none;
+
+    &.-new {
+      display: block;
+      margin-left: 102px;
+      margin-top: 15px;
+    }
   }
 }
 
 .p-plan__btn {
-  margin-top: 64px;
+  margin-top: 65px;
+  margin-left: 4px;
   text-align: center;
 
   @include global.mq(sp) {

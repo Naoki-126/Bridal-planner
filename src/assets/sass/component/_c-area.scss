@@ -1,10 +1,42 @@
 @use "../global" as global;
 
 .c-area {
+  text-align: center;
   font-size: 10px;
+  font-size: min(.69444vw, 10px);
   font-weight: 500;
   line-height: 1.5;
   color: global.$main-color;
-  padding: 4px 7px;
+  padding: 2px 7px;
+  padding: min(.138889vw, 2px) min(.486111vw, 7px);
   border: 1px solid global.$main-color;
+
+  &.-a {
+    padding: 4px 7px;
+  }
+
+  &.-p {
+    padding: 3px min(.83333vw, 12px);
+    font-size: min(.694444vw, 10px);
+  }
+
+  &.-r {
+    padding: 6px 7px;
+  }
+
+  @include global.mq(sp) {
+    font-size: 10px;
+    padding: 2px 6px;
+    line-height: 1.6;
+
+    &.-a {
+      padding: 2px 2px;
+    }
+
+    &.-p {
+      font-size: 10px;
+      line-height: 1.5;
+      padding: 5px 3px;
+    }
+  }
 }
