@@ -3,7 +3,9 @@
 .p-tag {
   margin: 64px auto 0;
   width: 1240px;
+  max-width: 100%;
   height: 320px;
+  height: auto;
   background: #fff;
 
   @include global.mq(sp) {
@@ -25,15 +27,15 @@
 
 .p-tag__item {
   text-align: center;
-  margin-top: 36px;
-  margin-bottom: 22px;
+  margin-top: min(2.5vw, 36px);
+  margin-bottom: min(1.527778vw, 22px);
 
   &.-place {
     width: 30%;
   }
 
   &.-style {
-    width: 34.2%;
+    width: 34.3%;
     position: relative;
 
     &::before {
@@ -66,6 +68,7 @@
 
     &.-place {
       width: 100%;
+      padding-bottom: 50px;
     }
 
     &.-style {
@@ -107,7 +110,8 @@
 .p-tag__title {
   display: inline-block;
   position: relative;
-  font-size: 20px;
+  margin-left: min(1.38889vw, 20px);
+  font-size: min(1.38889vw, 20px);
   font-family: global.$ff-logo;
 
   &::before {
@@ -115,8 +119,8 @@
     position: absolute;
     border-left: 1px solid global.$main-color;
     height: 30px;
-    left: -64px;
-    transform: rotate(-45deg);
+    left: -70px;
+    transform: rotate(-25deg);
   }
 
   &::after {
@@ -124,22 +128,55 @@
     position: absolute;
     border-left: 1px solid global.$main-color;
     height: 30px;
-    right: -64px;
-    transform: rotate(45deg);
+    right: -73px;
+    transform: rotate(25deg);
+  }
+
+  &.-place {
+    margin-left: 33px;
+  }
+
+  &.-style {
+    margin-left: -11px;
+  }
+
+  @include global.mq(sp) {
+    font-size: 20px;
+    margin-left: 0;
+    text-align: center;
+
+    &.-place {
+      margin-left: 0;
+    }
+
+    &.-form {
+      margin-left: 0;
+    }
+
   }
 }
 
 .p-tag__body {
-  margin-top: 40px;
+  margin-top: min(2.7778vw, 40px);
   width: 100%;
-  padding: 0 60px;
+  padding: 0 min(4.16667vw, 60px);
   display: inline-flex;
   flex-wrap: wrap;
   gap: 8px;
 
+  &.-place {
+    margin-top: min(4.4444vw, 64px);
+  }
+
   @include global.mq(sp) {
     margin-top: 32px;
     padding: 0;
+    justify-content: center;
+
+    &.-place {
+      margin: 30px auto 0;
+
+    }
 
   }
 }

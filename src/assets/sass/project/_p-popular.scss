@@ -1,10 +1,10 @@
 @use "../global" as global;
 
 .p-popular {
-  margin: 25px 130px 64px;
+  margin: 25px min(9.027778vw, 130px) 30px;
 
   &:nth-child(n + 2) {
-    margin-top: 25px;
+    margin-top: 24px;
     display: flex;
   }
 
@@ -18,9 +18,9 @@
 }
 
 .p-popular__ranking {
-  padding: 40px 0 30px;
+  padding: 40px 0 29px;
   width: 1180px;
-  // max-width: 100%;
+  max-width: 100%;
   height: auto;
   background: #fff;
   position: relative;
@@ -31,7 +31,7 @@
     width: calc(100% - 18px * 2);
     height: calc(100% - 14px * 2 );
     border: 1px solid global.$main-color;
-    top: 14px;
+    top: 15px;
     left: 18px;
   }
 
@@ -41,27 +41,35 @@
 }
 
 .p-popular__head {
+  margin: 0 auto;
   margin-left: 51px;
   display: flex;
 }
 
 .p-popular__img {
   img {
-    width: 540px;
+    width: 569px;
+    width: min(39.51389vw, 569px);
     height: auto;
   }
 }
 
 .p-popular__titles {
   width: calc(100% - 540px - 51px);
-  margin: 26px  49px 0 32px;
+  max-width: 100%;
+  // width: min(39.652778vw, 571px);
+  width: min(37.291678vw, 537px);
+  margin: 21px  49px 0 32px;
+  margin: min(1.458333vw, 21px) min(3.4027778vw, 49px) 0 min(2.2222vw, 32px);
   position: relative;
 }
 
 .p-popular__title {
   font-size: 22px;
+  font-size: min(1.527778vw, 22px);
   font-family: global.$ff-logo;
-  margin-bottom: 30px;
+  margin-bottom: min(1.94445vw, 28px);
+  line-height: 1.5;
 }
 
 .p-popular__category {
@@ -69,51 +77,80 @@
 }
 
 .p-popular__area-tag {
-  width: 100%;
-  margin-top: 11px;
+  max-width: 100%;
+  margin-top: 7px;
   display: flex;
   align-items: center;
 }
 
 .p-popular__place {
-  width: calc(332px - 91px);
+  // width: calc(332px - 91px);
   margin-left: 8px;
-  font-size: 14px;
+  font-size: min(.97222vw, 14px);
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 4px;
+
+
+  @include global.mq(sp) {
+    margin-left: 8px;
+    font-size: 12px;
+  }
 }
 
 .p-popular__tag {
-  margin: 25px auto;
-  margin-right: 220px;
+  margin: min(1.597222vw, 23px) auto;
+  margin-right: min(15.27778vw, 220px);
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
+
+  @media screen and (max-width: 1300px) {
+    margin-right: 0;
+  }
 }
 
 .p-popular__body {
-  margin: 16px 72px 0;
+  margin: min(1.1111vw, 16px) min(4.7222vw, 68px) 0;
   border-top: 1px solid global.$text-color;
 }
 
 .p-popular__comment {
-  margin-top: 8px;
+  margin-top: 16px;
+  margin-top: min(1.1111vw, 16px);
+  margin-left: -3px;
   color: global.$main-color;
   font-size: 20px;
+  font-size: min(1.38889vw, 20px);
   font-weight: 500;
+  line-height: 1.5;
+
+  @include global.mq(sp) {
+    
+  }
 }
 
 .p-popular__text {
-  margin-top: 8px;
+  margin-top: min(1.25vw, 18px);
+  font-size: min(1.1111vw, 16px);
   height: 47px;
+  height: min(3.263889vw, 47px);
   overflow: hidden;
 }
 
 .p-popular__footer {
-  margin-top: 12px;
+  margin-top: min(.902778vw, 13px);
   width: 100%;
   display: flex;
+
+  &.-p2 {
+    margin-top: min(1.527778vw, 22px);
+    margin-left: min(.486111vw, 7px);
+  }
+
+  &.-p3 {
+    margin-top: min(1.458333vw, 21px);
+    margin-left: min(.9027778vw, 13px);
+  }
 }
 
 .p-popular__thumbnail {
@@ -121,16 +158,16 @@
 }
 
 .p-popular__readmore {
-  margin-top: 42px;
+  margin-top: 45px;
   width: 50%;
-  margin-right: 46px;
+  margin-right: 50px;
   text-align: right;
 }
 
 .p-popular__gold {
   content: "";
   position: absolute;
-  background: url(/public/assets/img/gold.png) no-repeat;
+  background: url(/assets/img/gold.png) no-repeat;
   width: 46px;
   height: 60px;
   top: 0;
@@ -143,16 +180,20 @@
   top: 26px;
   right: 36px;
 
+  &.-p2 {
+    top: 30px;
+    right: 26px;
+  }
+
   @include global.mq(sp) {
     top: 29px;
     right: 25px;
-
   }
 }
 
 .p-popular__left {
   width: 50%;
-  margin-right: 6px;
+  margin-right: min(1.59722vw, 23px);
 }
 
 .p-popular__right {
@@ -161,21 +202,26 @@
 }
 
 .p-popular__ranking-2 {
-  padding: 34px 0 30px;
+  margin-left: -2px;
+  padding: 38px 0 30px;
   width: calc(549px + 14px * 2);
-  // max-width: 100%;
-  height: calc(514px + 14px *2);
-  // max-height: 100%;
+  max-width: 100%;
+  // width: min(40.069444vw,  577px);
+  height: auto;
+  height: min(38.3333vw, 552px);
+  height: calc(514px + 19px *2);
+  max-height: 100%;
   background: #fff;
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    width: 549px;
-    height: 514px;
+    width: calc(100% - 14px * 2);
+    height: calc(100% - 19px *2);
+    max-width: 100%;
     border: 1px solid global.$main-color;
-    top: 14px;
+    top: 16px;
     left: 14px;
   }
 
@@ -191,68 +237,80 @@
 
 .p-popular__img-2 {
   img {
-    width: 236px;
-    height: 226px;
+    width: min(16.458333vw, 237px);
+    height: min(15.69444vw, 226px);
   }
 }
 
 .p-popular__titles-2 {
-  margin: 0px 24px;
+  margin: min(1.6667vw, 24px) min(1.6667vw, 24px) 0;
   width: calc(100% - 236px - 44px);
+  width: min(17.5vw, 252px);
 }
 
 .p-popular__title-2 {
-  margin: 13px 0;
-  font-size: 20px;
+  font-size: min(1.38889vw, 20px);
   font-family: global.$ff-logo;
+  line-height: 1.5;
+  margin-bottom: min(1.25vw, 18px);
 }
 
 .p-popular__place-2 {
   width: calc(100% - 88px);
-  margin-left: 8px;
-  font-size: 14px;
+  margin-left: 9px;
+  font-size: min(.97222vw, 14px);
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 4px;
 }
 
 .p-popular__tag-2 {
-  margin: 24px auto 0;
-  margin-right: 110px;
+  margin: 16px auto 0;
+  margin-right: 51px;
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
+
+  @media screen and (max-width: 1300px) {
+    margin-right: 0;
+  }
 }
 
 .p-popular__body-2 {
-  margin: 27px 41px 40px;
+  margin: min(1.59vw, 23px) min(3.263889vw, 47px) min(2.7778vw, 40px);
+  margin: min(1.59vw, 23px) auto min(2.7778vw, 40px);
+
   border-top: 1px solid global.$text-color;
+  width: min(33.6805vw, 485px);
+  max-width: 100%;
 }
 
 .p-popular__comment-2 {
   margin-top: 8px;
   color: global.$main-color;
-  font-size: 20px;
+  font-size: min(1.38889vw, 20px);
   font-weight: 500;
 }
 
 .p-popular__text-2 {
-  margin-top: 8px;
-  height: 54px;
+  margin-top: min(.5556vw, 8px);
+  margin-left: -3px;
+  height: min(3.75vw, 54px);
+  font-size: min(1.1111vw, 16px);
   overflow: hidden;
 }
 
 .p-popular__readmore-2 {
-  margin-top: 40px;
+  margin-top: min(2.5vw, 36px);
   width: 50%;
-  margin-right: 30px;
+  margin-right: min(2.5vw, 36px);
+  margin-right: 36px;
   text-align: right;
 }
 
 .p-popular__silver {
   content: "";
   position: absolute;
-  background: url(/public/assets/img/silver.png) no-repeat;
+  background: url(/assets/img/silver.png) no-repeat;
   width: 46px;
   height: 60px;
   top: 0;
@@ -262,12 +320,12 @@
 .p-popular__like-2 {
   content: "";
   position: absolute;
-  top: 26px;
+  top: 29px;
   right: 25px;
 }
 
 .p-popular__btn {
-  margin: 64px auto 58px;
+  margin: 61px auto 58px;
   text-align: center;
 
   @include global.mq(sp) {
@@ -278,7 +336,7 @@
 .p-popular__blonde {
   content: "";
   position: absolute;
-  background: url(/public/assets/img/blonde.png) no-repeat;
+  background: url(/assets/img/blonde.png) no-repeat;
   width: 46px;
   height: 60px;
   top: 0;
@@ -338,14 +396,14 @@
 }
 
 .p-popular__comment-sp {
-  margin: 2px auto 6px;
+  margin: 2px auto 10px;
   font-family: global.$ff-logo;
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .p-popular__category-sp {
-  padding-top: 4px;
+  padding-top: 1px;
   border-top: 1px solid global.$text-color;
 }
 
@@ -355,46 +413,50 @@
   }
 
 .p-popular__area-tagSp {
-  margin-top: 6px;
+  margin-top: 3px;
   display: flex;
   align-items: center;
 }
 
   .p-popular__tagSp {
-    margin: 10px auto 0;
+    margin: 5px auto 0;
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
   }
 
   .p-popular__card-aSp{
-    width: 70px
+    width: 65px;
+
+    @include global.mq(sp) {
+      width: 39px;
+    }
   }
 
 .p-popular__profile-sp {
-  margin-top: 191px;
+  margin-top: 181px;
   margin-left: 23px;
 }
 
 .p-popular__footer-sp {
-  margin-top: 10px;
-  margin-left: 132px;
+  margin-top: 15px;
+  margin-left: 139px;
 }
 
 .p-popular__label-sp {
   content: "";
   position: absolute;
-  background: url(/public/assets/img/gold-sm.png) no-repeat;
+  background: url(/assets/img/gold-sm.png) no-repeat;
   width: 46px;
   height: 60px;
   top: 0;
   left: 16px;
 
   &.-silver {
-    background: url(/public/assets/img/sliver-sm.png) no-repeat;
+    background: url(/assets/img/sliver-sm.png) no-repeat;
   }
 
   &.-blonde {
-    background: url(/public/assets/img/blonde-sm.png) no-repeat;
+    background: url(/assets/img/blonde-sm.png) no-repeat;
   }
 }

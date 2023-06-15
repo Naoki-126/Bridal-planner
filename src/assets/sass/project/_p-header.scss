@@ -27,7 +27,7 @@
   position: relative;
 
   &::before {
-    background: url(/public/assets/img/beginner.png)no-repeat center center /contain;
+    background: url(/assets/img/beginner.png)no-repeat center center /contain;
     content: "";
     position: absolute;
     width: 23px;
@@ -46,6 +46,11 @@
   margin-top: 58px;
   font-size: 12px;
   text-align: center;
+  line-height: 1.3333;
+
+  &.-login {
+    margin-top: 69px;
+  }
 
   @include global.mq(sp) {
     display: none;
@@ -65,13 +70,13 @@
   position: relative;
 
   &::before {
-    background: url(/public/assets/img/login.png)no-repeat center center /contain;
+    background: url(/assets/img/login.png)no-repeat center center /contain;
     content: "";
     position: absolute;
-    width: 23px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
     top: 21px;
-    left: 50%;
+    left: 43%;
     transform: translateX(-50%);
   }
 
@@ -92,11 +97,11 @@
   position: relative;
 
   &::before {
-    background: url(/public/assets/img/likes.png)no-repeat center center /contain;
+    background: url(/assets/img/likes.png)no-repeat center center /contain;
     content: "";
     position: absolute;
-    width: 23px;
-    height: 32px;
+    width: 34px;
+    height: 31px;
     top: 21px;
     left: 50%;
     transform: translateX(-50%);

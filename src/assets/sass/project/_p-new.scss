@@ -1,8 +1,8 @@
 @use "../global" as global;
 
 .p-new {
-  margin: 32px auto 64px;
-  // width: 1243px;
+  margin: 32px auto 0;
+  width: 1243px;
   max-width: 100%;
   height: 504px;
   background: global.$sub-color;
@@ -34,12 +34,12 @@
 }
 
 .p-new__items {
-  padding-top: 49px;
+  padding-top: 22px;
   width: 100%;
   display: flex;
 
   @include global.mq(sp) {
-    padding-top: 48px;
+    margin-left: 6px;
   }
 
 }
@@ -60,9 +60,9 @@
 }
 
 .p-new__head {
-  width: inherit;
-  padding-top: 28px;
-  margin-left: 30px;
+  max-width: 100%;
+  padding-top: min(1.94444vw, 28px);
+  margin-left: 31px;
   display: flex;
 
   @include global.mq(sp) {
@@ -76,12 +76,14 @@
 }
 
 .p-new__img {
-  width: 140px;
+  // width: 140px;
   position: relative;
 
   img {
-    width: 140px;
-    height: 160px;
+    width: 148px;
+    max-width: 100%;
+    height: 163px;
+    max-height: 100%;
   }
 
   @include global.mq(sp) {
@@ -97,42 +99,54 @@
 .p-new___good {
   content: "";
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 4px;
+  right: 4px;
+
+  @include global.mq(sp) {
+    top: 7px;
+    right: 6px;
+  }
 }
 
 .p-new__name {
   margin-top: 18px;
-  font-size: 22px;
+  font-size: min(1.527778vw, 22px);
   line-height: 1.1;
   font-family: global.$ff-logo;
   color: #000;
 
   @include global.mq(sp) {
-    margin-top: 5.5px;
+    margin-top: 8px;
     font-size: 20px;
   }
 }
 
 .p-new__job {
   margin-top: 2px;
-  font-size: 12px;
+  font-size: min(.83333vw, 12px);
   color: #000;
+
+  @include global.mq(sp) {
+    font-size: 12px;
+  }
 }
 
-.p-new-content {
+.p-new__content {
   width: calc(100% - 140px - 30px);
+  width: 228px;
+  max-width: 100%;
   margin-left: 9px;
 
   @include global.mq(sp) {
     width: calc(100% - 134px - 8px);
+    margin-top: -3px;
   }
 }
 
 .p-new__title {
-  margin-top: 2px;
+  margin-top: 14px;
   width: 100%;
-  font-size: 18px;
+  font-size: min(1.25vw, 18px);
   line-height: 1.33;
   font-family: global.$ff-logo;
 
@@ -143,8 +157,12 @@
 }
 
 .p-new__area {
-  margin-top: 18px;
+  margin-top: min(1.6667vw, 24px);
   width: 100%;
+
+  @include global.mq(sp) {
+    margin-top: 27px;
+  }
 }
 
 .p-new__label {
@@ -154,20 +172,22 @@
 
 .p-new__place {
   margin-top:4px;
-  width: inherit;
-  font-size: 14px;
+  max-width: 100%;
+  font-size: min(.97222vw, 14px);
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
+  padding-right: 10px;
 
   @include global.mq(sp) {
     font-size: 12px;
+    padding-right: 19px;
   }
 }
 
 .p-new__tag {
   width: 100%;
-  padding-right: 27px;
+  padding-right: min(1.875vw, 27px);
   margin: 8px auto 0;
   display: flex;
   flex-wrap: wrap;
@@ -182,7 +202,8 @@
   display: none;
 
   @include global.mq(sp) {
-    margin: 10px;
+    margin: 0 10px 9px;
+    padding-right: 10px;
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
@@ -190,11 +211,11 @@
 }
 
 .p-new__body {
-  margin-top: 16px;
-  margin-bottom: 33px;
+  margin-top: min(.902778vw, 13px);
+  margin-bottom: min(2.291667vw, 33px);
 
   @include global.mq(sp) {
-    margin-top: 10px;
+    margin-top: 9px;
     margin-bottom: 48px;
   }
 }
@@ -202,8 +223,9 @@
 .p-new__points {
   margin: 0 auto;
   width: 336px;
-  height: 93px;
   max-width: 100%;
+  height: 93px;
+  max-height: 100%;
   background: #75767624;
 
   @include global.mq(sp) {
@@ -214,18 +236,21 @@
 
 .p-new__text {
   color: #000;
-  padding-top: 11px;
+  padding-top: 6px;
+  margin-left: -7px;
   display: flex;
   align-items: flex-start;
 
   @include global.mq(sp) {
     display: block;
-    padding-top: 10px;
+    padding-top: 9px;
+    margin-left: -1px;
   }
 }
 
 .p-new__textLeft {
   width: 30px;
+  max-width: 100%;
   margin-left: 42px;
 
   @include global.mq(sp) {
@@ -234,7 +259,7 @@
 }
 
 .p-new__point {
-  font-size: 12px;
+  font-size: min(.83333vw, 12px);
   line-height: 1.5;
   font-family: global.$ff-logo;
   position: relative;
@@ -242,35 +267,51 @@
   &::before {
     content: "";
     position: absolute;
-    background: url(/public/assets/img/horn.png) no-repeat;
+    background: url(/assets/img/horn.png) no-repeat;
     width: 13px;
     height: 13px;
     top: 50%;
     left: -15px;
     transform: translateY(-50%);
   }
+
+  @include global.mq(sp) {
+    font-size: 12px;
+
+  }
 }
 
 .p-new__textRight {
   width: calc(100% - 30px);
-  margin-left: 8px;
+  max-width: 100%;
+  margin-left: 39px;
+  margin-top: 3px;
 
   li {
-    font-size: 14px;
+    font-size: min(.97222vw, 14px);
     font-weight: 500;
-    margin-left: 16px;
     list-style: disc;
     line-height: 1.8;
     font-family: global.$ff-base;
   }
 
   @include global.mq(sp) {
-    margin-top: 10px;
-    margin-left: 16px;
+    margin-top: 7px;
+    margin-left: 39px;
+
+    li {
+      font-size: 14px;
+    }
   }
 }
 
 .p-new__btn {
-  margin-top: 64px;
+  margin-top: 61px;
+  margin-left: 15px;
   text-align: center;
+
+  @include global.mq(sp) {
+    margin-top: 63px;
+    margin-left: 0px;
+  }
 }

@@ -4,7 +4,7 @@
   margin: 65px auto 64px;
 
   @include global.mq(sp) {
-    margin: 48px auto 0;
+    margin: 41px auto 0;
   }
 }
 
@@ -12,19 +12,27 @@
   margin-left: 116px;
 
   @include global.mq(sp) {
-    margin-left: 32px;
+    margin-left: 15px;
   }
 }
 
 .p-newReport_items {
-  padding-top: 20px;
+  padding-top: 14px;
+  margin-left: 14px;
 
   @include global.mq(sp) {
     padding-top: 0;
+    margin-top: -15px;
+    margin-left: 6px;
   }
 }
 
 .p-newReport__btn {
-  margin-top: 63px;
+  margin-top: 61px;
+  margin-left: 69px;
   text-align: center;
+
+  @include global.mq(sp) {
+    margin: 36px auto 64px;
+  }
 }

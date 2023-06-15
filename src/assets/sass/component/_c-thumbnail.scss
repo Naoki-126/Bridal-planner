@@ -10,7 +10,7 @@
     background: global.$main-color;
     width: 19px;
     height: 19px;
-    top: -3px;
+    top: -2px;
     left: -2px;
   }
 }
@@ -28,6 +28,35 @@
     top: -3.75px;
     left: -7px;
   }
+
+  &.-plan {
+    &::before {
+      width: 19px;
+      height: 19px;
+      top: -4px;
+      left: -8px;
+    }
+  }
+
+  &.-n1 {
+    &::before {
+      width: 19px;
+      height: 19px;
+      top: -7px;
+      left: -12px;
+    }
+  }
+
+  @include global.mq(sp) {
+    &.-plan {
+      &::before {
+        width: 19px;
+        height: 19px;
+        top: -4px;
+        left: -8px;
+      }
+    }
+  }
 }
 
 .c-thumbnail__img {
@@ -42,11 +71,38 @@
     width: 65px;
     height: 65px;
   }
+
+  &.-plan {
+    img {
+      width: 68px;
+      height: 65px;
+    }
+  }
+
+  @include global.mq(sp) {
+    &.-plan {
+      img {
+        width: 65px;
+        height: 65px;
+      }
+    }
+
+  }
 }
 
 .c-thumbnail__content {
   margin-left: 16px;
   margin-top: 3px;
+
+  &.-plan {
+    margin-top: 0;
+  }
+
+  @include global.mq(sp) {
+    &.-plan {
+      margin-top: 7px;
+    }
+  }
 }
 
 .c-thumbnail__post {
@@ -57,8 +113,22 @@
 .c-thumbnail__name {
   margin-top: 2px;
   color: #000;
-  font-size: 14px;
   font-weight: 500;
+  line-height: 1.5;
+
+  &.-plan {
+    margin-top: -1px;
+  }
+
+  &.-n1 {
+    margin-top: 0;
+  }
+
+  @include global.mq(sp) {
+    &.-plan {
+      margin-left: -2px;
+    }
+  }
 }
 
 .c-thumbnail__job {
@@ -66,4 +136,8 @@
   color: #000;
   font-size: 12px;
   font-weight: 500;
+
+  &.-p2 {
+    margin-top: -1px;
+  }
 }

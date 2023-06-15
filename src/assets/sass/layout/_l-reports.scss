@@ -2,9 +2,9 @@
 
 .l-reports {
   background: global.$sub-color;
-  padding: 73px 0;
+  padding: 73px 0 63px;
 
   @include global.mq(sp) {
-    padding: 69px 0 21px;
+    padding: 69px 0 24px;
   }
 }

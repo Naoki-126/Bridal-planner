@@ -2,7 +2,9 @@
 
 .c-btn__plan {
   width: calc(367px + 16px * 2);
+  width: min(27.70833vw, 399px);
   height: calc(102px + 15px * 2);
+  height: min(9.16667vw, 132px);
   background: global.$text-color;
   color: #fff;
   position: relative;
@@ -12,18 +14,24 @@
     position: absolute;
     border: 1px solid #fff;
     width: 367px;
+    width: min(25.48611vw, 367px);
     height: 102px;
+    height: min(7.08333vw, 102px);
     top: 15px;
+    top: min(1.041667vw, 15px);
     left: 16px;
+    left: min(1.1111vw, 16px);
     }
 
   &::after {
     content: "";
     position: absolute;
-    background: url(/public/assets/img/arrow-next.png) no-repeat center center /contain;
+    background: url(/assets/img/arrow-next.png) no-repeat center center /contain;
     width: 44px;
+    width: min(3.05556vw, 44px);
     height: 24px;
-    right: 40px;
+    height: min(1.6667vw, 24px);
+    right: min(5.069444vw, 73px);
     top: 50%;
     transform: translateY(-50%);
   }
@@ -43,32 +51,37 @@
     &::after {
       width: 28px;
       height: 14px;
-      right: 7px;
+      right: 19px;
     }
   }
 }
 
 .c-btn__text {
+  padding-top: 1px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: .08;
+  letter-spacing: .08em;
+  font-size: min(1.1111vw, 16px);
 
   @include global.mq(sp) {
     display: block;
-    text-align: center;
+    margin-left: min(5.989583vw, -46px);
+    margin-left: -21%;
     font-size: 14px;
-    letter-spacing: .05;
-
+    letter-spacing: .05em;
+    line-height: 1.4;
   }
 }
 
 .c-btn__accent {
   font-size: 20px;
+  font-size: min(1.388889vw, 20px);
   font-weight: 500;
 
   span {
     font-family: global.$ff-logo;
     font-size: 24px;
+    font-size: min(1.6667vw, 24px);
     font-weight: 700;
   }
 
@@ -83,7 +96,9 @@
 
   .c-btn__area {
   width: calc(367px + 16px * 2);
+  width: min(27.70833vw, 399px);
   height: calc(102px + 15px * 2);
+  height: min(9.16667vw, 132px);
   background: global.$main-color;
   color: #fff;
   position: relative;
@@ -93,18 +108,24 @@
     position: absolute;
     border: 1px solid #fff;
     width: 367px;
+    width: min(25.48611vw, 367px);
     height: 102px;
+    height: min(7.08333vw, 102px);
     top: 16px;
-    left: 15px;
+    top: min(1.041667vw, 15px);
+    left: 16px;
+    left: min(1.1111vw, 16px);
     }
 
     &::after {
       content: "";
       position: absolute;
-      background: url(/public/assets/img/arrow-next.png) no-repeat center center /contain;
+      background: url(/assets/img/arrow-next.png) no-repeat center center /contain;
       width: 44px;
+      width: min(3.05556vw, 44px);
       height: 24px;
-      right: 24px;
+      height: min(1.6667vw, 24px);
+      right: min(5vw, 72px);
       top: 50%;
       transform: translateY(-50%);
     }
@@ -125,7 +146,15 @@
           width: 28px;
           max-width: 100%;
         height: 14px;
-        right: 7px;
+        right: 19px;
+      }
+    }
+
+    &.-area {
+
+      @include global.mq(sp) {
+        margin-left: -21%;
+
       }
     }
   }
@@ -134,7 +163,7 @@
   background: global.$main-color;
   color: #fff;
   font-size: 20px;
-  letter-spacing: .08;
+  letter-spacing: .08em;
   text-align: center;
   padding: 16px 64px;
 
@@ -153,15 +182,11 @@
   padding-right: 115px;
   position: relative;
 
-  &.-planner {
-    padding-right: 103px;
-  }
-
   &::before {
     content: "";
     position: absolute;
-    top: 50%;
-    right: 28px;
+    top: 55%;
+    right: 24px;
     transform: translateY(-50%);
     border-top: 1px solid #fff;
     width: 27px;
@@ -172,9 +197,21 @@
     position: absolute;
     border-bottom: 1px solid #fff;
     width: 12px;
-    top: 43%;
-    right: 27px;
-    transform: rotate(45deg);
+    top: 49%;
+    right: 22px;
+    transform: rotate(30deg);
+  }
+
+  &.-planner {
+    padding-right: 103px;
+
+    &::before {
+      right: 10px;
+    }
+
+    &::after {
+      right: 10px;
+    }
   }
 
   @include global.mq(sp) {
@@ -183,6 +220,11 @@
     padding-right: 48px;
     font-size: 16px;
     text-align-last: left;
+    line-height: 1.5;
+
+    &::before {
+      top: 52%;
+    }
 
     &.-plan {
       width: 298px;
@@ -193,8 +235,21 @@
     }
 
     &.-planner {
-      width: 255px;
+      width: 252px;
+      height: 56px;
+      padding: 10px 23px;
+
+      &::before {
+        top: 56%;
+        right: 25px;
+      }
+
+      &::after {
+        top: 51%;
+        right: 23px;
+      }
     }
+
   }
 }
 
@@ -210,8 +265,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 50%;
-    right: 28px;
+    top: 53%;
+    right: 13px;
     transform: translateY(-50%);
     border-top: 1px solid #fff;
     width: 27px;
@@ -222,13 +277,28 @@
     position: absolute;
     border-bottom: 1px solid #fff;
     width: 12px;
-    top: 43%;
-    right: 27px;
-    transform: rotate(45deg);
+    top: 46%;
+    right: 12px;
+    transform: rotate(30deg);
   }
 
   @include global.mq(sp) {
+    font-size: 16px;
+    padding: 15px 24px;
     padding-right: 99px;
+
+    &::before {
+      top: 55%;
+      right: 25px;
+
+    }
+
+    &::after {
+      top: 50%;
+      right: 23px;
+
+    }
+
   }
 }
 
@@ -237,15 +307,17 @@
   color: #fff;
   font-size: 20px;
   font-family: global.$ff-logo;
-  padding: 16px 24px;
-  padding-right: 103px;
+  padding: 19px 26px;
+  padding-right: 100px;
   position: relative;
+  line-height: 1.5;
+  letter-spacing: .2em;
 
   &::before {
     content: "";
     position: absolute;
-    top: 50%;
-    right: 28px;
+    top: 53%;
+    right: 12px;
     transform: translateY(-50%);
     border-top: 1px solid #fff;
     width: 27px;
@@ -256,13 +328,16 @@
     position: absolute;
     border-bottom: 1px solid #fff;
     width: 12px;
-    top: 43%;
-    right: 27px;
-    transform: rotate(45deg);
+    top: 47%;
+    right: 11px;
+    transform: rotate(30deg);
   }
 
   @include global.mq(sp) {
     font-size: 18px;
-    
+    padding: 16px 26px;
+    padding-right: 103px;
+    letter-spacing: 0;
+
   }
 }

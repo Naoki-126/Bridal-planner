@@ -1,7 +1,7 @@
 @use "../global" as global;
 
 .l-planner {
-  margin: 73px auto 64px;
+  margin: 72px auto 64px;
 
   @include global.mq(sp) {
     margin: 69px auto 128px;
@@ -10,17 +10,17 @@
 
 .l-planner__title {
   margin-top: 60px;
-  margin-left: 103px;
+  margin-left: 117px;
 
   @include global.mq(sp) {
     margin-top: 24px;
-    margin-left: 26px;
+    margin-left: 17px;
 
   }
 }
 
 .l-planner__new {
-  margin: 64px auto 0;
+  margin: 63px auto 0;
 
   @include global.mq(sp) {
     margin-top: 51px;

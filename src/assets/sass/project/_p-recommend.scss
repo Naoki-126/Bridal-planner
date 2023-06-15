@@ -1,14 +1,15 @@
 @use "../global" as global;
 
 .p-recommend {
-  margin: 64px auto 70px;
+  margin: 64px auto 62px;
   width: 1240px;
   max-width: 100%;
   height: 390px;
+  height: auto;
   background: global.$sub-color;
 
   @include global.mq(sp) {
-    margin: 48px auto 0;
+    margin: 46px auto 0;
     width: 337px;
     height: auto;
   }
@@ -20,15 +21,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: min(2.916667vw, 42px) min(4.86111vw, 70px);
 
   @include global.mq(sp) {
     display: block;
-    padding: 38px auto 25px;
+    padding: 38px 25px 25px;
   }
 }
 
 .p-recommend__plan {
-  margin-right: 70px;
   width: 342px;
   height: 125px;
   display: flex;
@@ -45,18 +46,13 @@
     z-index: 1;
   }
 
-  &:nth-child(3n) {
-    margin-right: 0px;
+  &:first-child {
+    margin-top: 0;
   }
 
   &:nth-child(4) {
-    margin-right: 81px;
+    margin-right: min(.83333vw, 12px);
   }
-
-  &:nth-child(n + 4) {
-    margin-top: 42px;
-  }
-
 
   @include global.mq(sp) {
     width: 292px;
@@ -64,13 +60,9 @@
     margin-top: 38px;
     margin-right: 0px;
 
-
-    &:first-child {
-      margin-top: 0;
-    }
-
     &:nth-child(4) {
       margin-right: 0;
+      margin-top: 40px;
     }
 
     &::before {
@@ -124,6 +116,13 @@
     height: 41px;
     top: -16px;
     left: -13px;
+
+    @include global.mq(sp) {
+      width: 35px;
+      height: 35px;
+      top: -13px;
+      left: -11px;
+    }
 }
 
 .p-recommend__ribbon4 {
@@ -183,8 +182,8 @@
     position: absolute;
     border-bottom: 1px solid global.$text-color;
     width: 45px;
-    bottom: 16px;
-    right: 16px;
+    bottom: 18px;
+    right: 19px;
   }
 
   &::after {
@@ -192,19 +191,38 @@
     position: absolute;
     border-bottom: 1px solid global.$text-color;
     width: 10px;
-    bottom: 19px;
-    right: 14px;
+    bottom: 21px;
+    right: 18px;
     transform: rotate(45deg);
+  }
+
+  @include global.mq(sp) {
+    &::before {
+      width: 38px;
+      bottom: 13px;
+      right: 14px;
+    }
+
+    &::after {
+      width: 8px;
+      bottom: 15px;
+      right: 13px;
+      transform: rotate(30deg);
+    }
   }
 }
 
 .p-recommend__text {
   font-size: 20px;
+  // font-size: min(1.388889vw, 20px);
   line-height: 1.35;
   font-weight: 500;
+  margin-left: -14px;
 
   @include global.mq(sp) {
     font-size: 16px;
+    margin-left: 17px;
+    line-height: 1.68;
   }
 }
 

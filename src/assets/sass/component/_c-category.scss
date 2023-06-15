@@ -1,37 +1,39 @@
 @use "../global" as global;
 
 .c-category__green {
-  font-size: 12px;
-  font-weight: 500;
-  padding: 2px 8px;
   background: #ABD07B;
   color: #fff;
+  padding: 5px 4px;
+  line-height: 1.5;
+  font-size: min(.97222vw, 14px);
 
   @include global.mq(sp) {
     font-size: 10px;
+    padding: 5px 8px;
   }
 }
 
 .c-category__orange {
-  font-size: 12px;
-  font-weight: 500;
-  padding: 2px 8px;
   background: #F1B04E;
   color: #fff;
+  padding: 5px 4px;
+  line-height: 1.5;
+  font-size: min(.97222vw, 14px);
 
-  @include global.mq(sp) {
-    font-size: 10px;
+  &.-voice {
+    font-size: min(.83333vw, 12px);
+    padding: 2px 8px;
+
+    @include global.mq(sp) {
+      font-size: 12px;
+    }
   }
 }
 
 .c-category__pink {
-  font-size: 12px;
-  font-weight: 500;
-  padding: 2px 8px;
   background: #D684B8;
   color: #fff;
-
-  @include global.mq(sp) {
-    font-size: 10px;
-  }
+  padding: 5px 5px;
+  line-height: 1.5;
+  font-size: min(.97222vw, 14px);
 }
