@@ -111,8 +111,8 @@
   gap: 24px;
 
   @include global.mq(sp) {
-    display: block;
-
+    flex-direction: column;
+    gap: 0px
   }
 }
 

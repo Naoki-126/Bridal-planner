@@ -70,6 +70,10 @@
     font-size: 14px;
     letter-spacing: .05em;
     line-height: 1.4;
+
+    &.-g {
+      padding-top: 11px;
+    }
   }
 }
 
@@ -171,15 +175,22 @@
     font-size: 16px;
     padding: 16px 32px;
   }
+
+  &.is-active {
+    border: 1px solid global.$main-color;
+    background: #fff;
+    color: global.$main-color;
+  }
 }
 
 .c-btn__more {
   background: global.$text-color;
+  border: 1px solid global.$text-color;
   color: #fff;
   font-size: 20px;
   font-family: global.$ff-logo;
-  padding: 16px 24px;
-  padding-right: 115px;
+  padding: 14px 24px;
+  padding-right: 114px;
   position: relative;
 
   &::before {
@@ -200,6 +211,19 @@
     top: 49%;
     right: 22px;
     transform: rotate(30deg);
+  }
+
+  &.is-active {
+    background: #fff;
+    color: global.$text-color;
+
+    &::before {
+      border-top: 1px solid global.$text-color;
+    }
+
+    &::after {
+      border-bottom: 1px solid global.$text-color;
+    }
   }
 
   &.-planner {
@@ -290,15 +314,16 @@
     &::before {
       top: 55%;
       right: 25px;
-
     }
 
     &::after {
       top: 50%;
       right: 23px;
-
     }
+  }
 
+  &.is-active {
+    background: global.$main-color;
   }
 }
 

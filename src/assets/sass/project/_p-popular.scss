@@ -125,7 +125,7 @@
   line-height: 1.5;
 
   @include global.mq(sp) {
-    
+
   }
 }
 
@@ -177,12 +177,12 @@
 .p-popular__like {
   content: "";
   position: absolute;
-  top: 26px;
+  top: 21px;
   right: 36px;
 
   &.-p2 {
-    top: 30px;
-    right: 26px;
+    top: 24px;
+    right: 24px;
   }
 
   @include global.mq(sp) {
@@ -276,7 +276,7 @@
 }
 
 .p-popular__body-2 {
-  margin: min(1.59vw, 23px) min(3.263889vw, 47px) min(2.7778vw, 40px);
+  margin: min(1.59vw, 23px) min(1.6667vw, 24px) min(2.7778vw, 40px);
   margin: min(1.59vw, 23px) auto min(2.7778vw, 40px);
 
   border-top: 1px solid global.$text-color;
@@ -302,8 +302,7 @@
 .p-popular__readmore-2 {
   margin-top: min(2.5vw, 36px);
   width: 50%;
-  margin-right: min(2.5vw, 36px);
-  margin-right: 36px;
+  margin-right: min(2.291667vw, 33px);
   text-align: right;
 }
 
@@ -317,15 +316,8 @@
   left: 24px;
 }
 
-.p-popular__like-2 {
-  content: "";
-  position: absolute;
-  top: 29px;
-  right: 25px;
-}
-
 .p-popular__btn {
-  margin: 61px auto 58px;
+  margin: 62px auto 58px;
   text-align: center;
 
   @include global.mq(sp) {

@@ -41,10 +41,10 @@
   @include global.mq(sp) {
     margin-left: 6px;
   }
-
 }
 
 .p-new__card {
+  margin-top: 2px;
   width: 397px;
   max-width: 100%;
   height: 412px;
@@ -96,7 +96,7 @@
   }
 }
 
-.p-new___good {
+.p-new__good {
   content: "";
   position: absolute;
   top: 4px;
@@ -306,7 +306,7 @@
 }
 
 .p-new__btn {
-  margin-top: 61px;
+  margin-top: 65px;
   margin-left: 15px;
   text-align: center;
 

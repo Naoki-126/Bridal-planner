@@ -14,7 +14,7 @@
 </head>
 
 <body>
-	<header class="l-header">
+	<header class="l-header -sp">
 		<div class="l-header__logo"><img src="./assets/img/logo-sp.png" alt="logo"></div>
 		<div class="l-header__nav">
 			<div class="p-header">
@@ -95,7 +95,7 @@
 			</div>
 			<div class="p-top__btn">
 				<div class="p-top__btn-plan">
-					<a href="#recommend">
+					<a href="#" class="js-openModal" data-plan=".plan-modal">
 						<button class="c-btn__plan">
 							<div class="c-btn__text">
 								おすすめの<br>
@@ -105,7 +105,7 @@
 					</a>
 				</div>
 				<div class="p-top__btn-area">
-					<a href="#">
+					<a href="#" class="js-open" data-target=".target-modal">
 						<button class="c-btn__area">
 							<div class="c-btn__text">
 								希望の<br>
@@ -126,7 +126,7 @@
 			</div>
 			<div class="p-top__btn-sp">
 				<div class="p-top__btn-plan">
-					<a href="#">
+					<a href="#" class="js-openModal" data-plan=".plan-modal">
 						<button class="c-btn__plan">
 							<div class="c-btn__text">
 								おすすめの<br>
@@ -136,17 +136,68 @@
 					</a>
 				</div>
 				<div class="p-top__btn-area">
-					<a href="#">
-						<button class="c-btn__area">
-							<div class="c-btn__text">
+					<a href="" class="js-open" data-target=".target-modal">
+						<div class="c-btn__area">
+							<div class="c-btn__text -g">
 								希望の<br>
 								<div class="c-btn__accent"><span>エリア</span>から</div>プランナーを探す
-						</button>
+							</div>
+						</div>
+					</a>
 				</div>
-				</a>
 			</div>
 		</div>
-		</div>
+
+		<a href="" class="js-closeModal" data-plan=".plan-modal">
+			<div class="p-modal plan-modal">
+				<div class="p-modal__plan">
+					<div class="p-modal__plan1">
+						<div class="p-modal__item">
+							<div class="p-modal__img"><img src="./assets/img/modal1.png" alt="modal1"></div>
+							<div class="p-modal__content">国内挙式・披露宴</div>
+						</div>
+						<div class="p-modal__item">
+							<div class="p-modal__img"><img src="./assets/img/modal2.png" alt="modal2"></div>
+							<div class="p-modal__content">海外ウェディング</div>
+						</div>
+						<div class="p-modal__item">
+							<div class="p-modal__img"><img src="./assets/img/modal3.png" alt="modal3"></div>
+							<div class="p-modal__content">フォトウェディング</div>
+						</div>
+					</div>
+					<div class="p-modal__plan2">
+						<div class="p-modal__item">
+							<div class="p-modal__img"><img src="./assets/img/modal4.png" alt="modal4"></div>
+							<div class="p-modal__content -c4">家族・少人数<br>ウェディング</div>
+						</div>
+						<div class="p-modal__item">
+							<div class="p-modal__img"><img src="./assets/img/modal5.png" alt="modal5"></div>
+							<div class="p-modal__content -c5">リゾート・ビーチ<br>アウトドア<br>ウェディング</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="p-modal__background plan-modal"></div>
+		</a>
+
+		<a href="" class="js-close" data-target=".target-modal">
+			<div class="p-modal2 target-modal">
+				<div class="p-modal__area">
+					<div class="p-modal__area1">
+						<div class="p-modal__area-place">北海道・東北 (15)</div>
+						<div class="p-modal__area-place">関東・甲信越 (35)</div>
+						<div class="p-modal__area-place">北陸・東海 (25)</div>
+						<div class="p-modal__area-place">関西・中国 (18)</div>
+					</div>
+					<div class="p-modal__area2">
+						<div class="p-modal__area-place">四国・九州 (16)</div>
+						<div class="p-modal__area-place">沖縄 (19)</div>
+						<div class="p-modal__area-place">海外 (10)</div>
+					</div>
+				</div>
+			</div>
+			<div class="p-modal__background target-modal"></div>
+		</a>
 	</section>
 	<section id="report" class="l-reports">
 		<div class="l-inner">
@@ -164,6 +215,9 @@
 					<div class="p-reports__planner">
 						<img src="./assets/img/sasakiyui.png" alt="sasakiyui" class="p-reports__img">
 						<div class="p-reports__contents">
+							<div class="p-reports__good">
+								<button class="c-tag__good"></button>
+							</div>
 							<div class="p-reports__name">佐々木 結</div>
 							<div class="p-reports__company">オリオンウェディング</div>
 							<div class="p-reports__area">
@@ -190,6 +244,9 @@
 					<div class="p-reports__planner">
 						<img src="./assets/img/suzukinaoko.png" alt="suzukinaoko" class="p-reports__img">
 						<div class="p-reports__contents">
+							<div class="p-reports__good">
+								<button class="c-tag__good"></button>
+							</div>
 							<div class="p-reports__name">鈴木 直子</div>
 							<div class="p-reports__company">Orange wedding</div>
 							<div class="p-reports__area">
@@ -216,6 +273,9 @@
 					<div class="p-reports__planner">
 						<img src="./assets/img/katoumirei.png" alt="katomirei" class="p-reports__img">
 						<div class="p-reports__contents">
+							<div class="p-reports__good">
+								<button class="c-tag__good"></button>
+							</div>
 							<div class="p-reports__name">加藤 美玲</div>
 							<div class="p-reports__company">株式会社best wedding</div>
 							<div class="p-reports__area">
@@ -254,7 +314,7 @@
 						<div class="p-reports__card-row">
 							<div class="p-reports__c-img">
 								<div class="p-reports__like">
-									<div class="c-tag__like"></div>
+									<button class="c-tag__like"></button>
 								</div>
 								<img class="pc-img" src="./assets/img/naturalWedding.png" alt="report2">
 								<img class="sp-img" src="./assets/img/Ishigaki.png" alt="report1">
@@ -293,7 +353,7 @@
 						<div class="p-reports__card-row">
 							<div class="p-reports__c-img">
 								<div class="p-reports__like">
-									<div class="c-tag__like"></div>
+									<button class="c-tag__like"></button>
 								</div>
 								<img class="pc-img" src="./assets/img/naturalWedding.png" alt="report2">
 								<img class="sp-img" src="./assets/img/natural-weddingSp.png" alt="report2sp">
@@ -332,20 +392,20 @@
 						<div class="p-reports__card-row">
 							<div class="p-reports__c-img">
 								<div class="p-reports__like">
-									<div class="c-tag__like"></div>
+									<button class="c-tag__like"></button>
 								</div>
 								<img class="pc-img" src="./assets/img/naturalWedding.png" alt="report2">
 								<img class="sp-img" src="./assets/img/toyokawa.png" alt="report2">
 							</div>
 							<div class="p-reports__body">
 								<div class="p-reports__row">
-									<p class="p-reports__comment -waso">美しい紅葉と和装フォトウェディング<br><span>blank</span> </p>
-									<div class="p-reports__category">
-										<div class="p-reports__meta c-category__orange">フォトアウェディング</div>
+									<p class="p-reports__comment -waso">美しい紅葉と和装フォトウェディング<br><br></p>
+									<div class="p-reports__category -waso">
+										<div class="p-reports__meta c-category__orange">フォトウェディング</div>
 									</div>
 									<div class="p-reports__area-tag">
 										<div class="p-reports__card-a">
-											<div class="c-area">エリア</div>
+											<div class="c-area -a">エリア</div>
 										</div>
 										<div class="p-reports__place">
 											<div class="p-reports__spot">関西</div>
@@ -370,7 +430,7 @@
 						<div class="p-reports__card-row">
 							<div class="p-reports__c-img">
 								<div class="p-reports__like">
-									<div class="c-tag__like"></div>
+									<button class="c-tag__like"></button>
 								</div>
 								<img class="pc-img" src="./assets/img/naturalWedding.png" alt="report2">
 								<img class="sp-img" src="./assets/img/resort-sp.png" alt="report3">
@@ -379,11 +439,11 @@
 								<div class="p-reports__row">
 									<p class="p-reports__comment">思い出の海辺で二人だけのウェディング</p>
 									<div class="p-reports__category">
-										<div class="p-reports__meta c-category__orange">フォトアウェディング</div>
+										<div class="p-reports__meta c-category__orange">フォトウェディング</div>
 									</div>
 									<div class="p-reports__area-tag">
 										<div class="p-reports__card-a">
-											<div class="c-area">エリア</div>
+											<div class="c-area -a">エリア</div>
 										</div>
 										<div class="p-reports__place">
 											<div class="p-reports__spot">関東</div>
@@ -414,24 +474,24 @@
 				<h2 class="u-separate__sectionTitle -best">What’s Best Planner ?</h2>
 				<h2 class="u-separate__sectionSub -best">ベストプランナーとは</h2>
 			</div>
-			<p class="p-best"><span>結</span>婚式を創るのはヒト。<br>ふたりの理想の結婚式を<br class="is-sp">一緒に創ってくれる<br>ヒトから探しませんか。</p>
-			<div class="p-best__content">
-				<div class="p-best__text">ふたりの理想を叶えてくれるプランナーを<br>
-					自分達の目で見てお願いしたい。<br>
-					海外では当たり前のことが、<br class="is-sp">日本では式場からが基本になっています。<br><br>
-					ふたりの希望に寄り添い、<br class="is-sp">しっかり受け止めて、<br>
-					親身に叶えようとしてくれる<br class="is-sp">プランナーがいます。<br class="is-blank">
-					そして、<br>
-					「自分たちにとって最高の結婚式だった！」<br>
-					「この方にお願いして本当に良かった！」<br>
-					こんな声を増やしていきたいと思っています。
-				</div>
-				<div class="p-best__footer">
-					<div class="p-best__footer-text">初めてご利用される方へ</div>
-				</div>
-				<div class="p-best__button">
-					<button class="c-btn__best">ベストプランナーの使い方をみる</button>
-				</div>
+		</div>
+		<p class="p-best"><span>結</span>婚式を創るのはヒト。<br>ふたりの理想の結婚式を<br class="is-sp">一緒に創ってくれる<br>ヒトから探しませんか。</p>
+		<div class="p-best__content">
+			<div class="p-best__text">ふたりの理想を叶えてくれるプランナーを<br>
+				自分達の目で見てお願いしたい。<br>
+				海外では当たり前のことが、<br class="is-sp">日本では式場からが基本になっています。<br><br>
+				ふたりの希望に寄り添い、<br class="is-sp">しっかり受け止めて、<br>
+				親身に叶えようとしてくれる<br class="is-sp">プランナーがいます。<br class="is-blank">
+				そして、<br>
+				「自分たちにとって最高の結婚式だった！」<br>
+				「この方にお願いして本当に良かった！」<br>
+				こんな声を増やしていきたいと思っています。
+			</div>
+			<div class="p-best__footer">
+				<div class="p-best__footer-text">初めてご利用される方へ</div>
+			</div>
+			<div class="p-best__button">
+				<button class="c-btn__best">ベストプランナーの使い方をみる</button>
 			</div>
 		</div>
 		<div class="p-best__gallery">
@@ -459,46 +519,46 @@
 			</div>
 			<div class="p-recommend">
 				<div class="p-recommend__box">
-					<div class="p-recommend__plan">
+					<button class="p-recommend__plan">
 						<span class="p-recommend__ribbon"></span>
 						<div class="p-recommend__img"><img src="./assets/img/kokunai.png" alt="kokunai"></div>
 						<div class="p-recommend__content">
 							<div class="p-recommend__text">国内<br>挙式・披露宴</div>
 							<div class="p-recommend__footer"></div>
 						</div>
-					</div>
-					<div class="p-recommend__plan">
+					</button>
+					<button class="p-recommend__plan">
 						<span class="p-recommend__ribbon2"></span>
 						<div class="p-recommend__img"><img src="./assets/img/oversea.png" alt="oversea"></div>
 						<div class="p-recommend__content">
 							<div class="p-recommend__text">海外<br>ウェディング</div>
 							<div class="p-recommend__footer"></div>
 						</div>
-					</div>
-					<div class="p-recommend__plan">
+					</button>
+					<button class="p-recommend__plan">
 						<span class="p-recommend__ribbon3"></span>
 						<div class="p-recommend__img"><img src="./assets/img/photo.png" alt="photo"></div>
 						<div class="p-recommend__content">
 							<div class="p-recommend__text">フォト<br>ウェディング</div>
 							<div class="p-recommend__footer"></div>
 						</div>
-					</div>
-					<div class="p-recommend__plan">
+					</button>
+					<button class="p-recommend__plan">
 						<span class="p-recommend__ribbon4"></span>
 						<div class="p-recommend__img"><img src="./assets/img/kazoku.png" alt="kazoku"></div>
 						<div class="p-recommend__content">
 							<div class="p-recommend__text">家族・少人数<br>ウェディング</div>
 							<div class="p-recommend__footer"></div>
 						</div>
-					</div>
-					<div class="p-recommend__plan">
+					</button>
+					<button class="p-recommend__plan">
 						<span class="p-recommend__ribbon5"></span>
 						<div class="p-recommend__img"><img src="./assets/img/resort.png" alt="resort"></div>
-						<div class="p-recommend__content">
+						<div class="p-recommend__content -outdoor">
 							<div class="p-recommend__text">リゾート・ビーチ<br>アウトドア<br>ウェディング</div>
 							<div class="p-recommend__footer"></div>
 						</div>
-					</div>
+					</button>
 				</div>
 			</div>
 		</div>
@@ -519,7 +579,7 @@
 					</div>
 					<div class="p-popular__head">
 						<div class="p-popular__like">
-							<div class="c-tag__like"></div>
+							<button class="c-tag__like"></button>
 						</div>
 						<div class="p-popular__img"><img src="./assets/img/popular1.png" alt="popular1"></div>
 						<div class="p-popular__titles">
@@ -570,7 +630,7 @@
 						</div>
 						<div class="p-popular__head-2">
 							<div class="p-popular__like -p2">
-								<div class="c-tag__like"></div>
+								<button class="c-tag__like"></button>
 							</div>
 							<div class="p-popular__img-2"><img src="./assets/img/popular2.png" alt="popular2"></div>
 							<div class="p-popular__titles-2">
@@ -618,8 +678,8 @@
 							<div class="c-ranking">03</div>
 						</div>
 						<div class="p-popular__head-2">
-							<div class="p-popular__like-2">
-								<div class="c-tag__like"></div>
+							<div class="p-popular__like -p2">
+								<button class="c-tag__like"></button>
 							</div>
 							<div class="p-popular__img-2"><img src="./assets/img/popular3.png" alt="popular3"></div>
 							<div class="p-popular__titles-2">
@@ -674,7 +734,7 @@
 								</div>
 								<div class="p-popular__head-sp">
 									<div class="p-popular__like">
-										<div class="c-tag__like"></div>
+										<button class="c-tag__like"></button>
 									</div>
 									<div class="p-popular__img-sp"><img src="./assets/img/popular1-sp.png" alt="popular1"></div>
 								</div>
@@ -721,7 +781,7 @@
 								</div>
 								<div class="p-popular__head-sp">
 									<div class="p-popular__like">
-										<div class="c-tag__like"></div>
+										<button class="c-tag__like"></button>
 									</div>
 									<div class="p-popular__img-sp"><img src="./assets/img/popular2-sp.png" alt="popular2"></div>
 								</div>
@@ -768,7 +828,7 @@
 								</div>
 								<div class="p-popular__head-sp">
 									<div class="p-popular__like">
-										<div class="c-tag__like"></div>
+										<button class="c-tag__like"></button>
 									</div>
 									<div class="p-popular__img-sp"><img src="./assets/img/popular3-sp.png" alt="popular3"></div>
 								</div>
@@ -829,7 +889,7 @@
 							<div class="p-plan__img"><img src="./assets/img/report-kokunai.png" alt="kokunai"></div>
 							<div class="p-plan__img -sp"><img src="./assets/img/report-kokunai-sp.png" alt="kokunai"></div>
 							<div class="p-plan___like">
-								<div class="c-tag__like"></div>
+								<button class="c-tag__like"></button>
 							</div>
 							<div class="p-plan__body">
 								<div class="p-plan__body-title">100名のゲストに囲まれた<br>2年越しの結婚式</div>
@@ -870,7 +930,7 @@
 							<div class="p-plan__img -plan"><img src="./assets/img/toyokawa.png" alt="toyokawa"></div>
 							<div class="p-plan__img -plan -sp"><img src="./assets/img/toyokawa-sp.png" alt="toyokawa"></div>
 							<div class="p-plan___like">
-								<div class="c-tag__like"></div>
+								<button class="c-tag__like"></button>
 							</div>
 							<div class="p-plan__body -p2">
 								<div class="p-plan__body-title">ふたりの地元の豊川稲荷でフォトウェディング</div>
@@ -912,7 +972,7 @@
 							<div class="p-plan__img"><img src="./assets/img/outdoor.png" alt="kokunai"></div>
 							<div class="p-plan__img -sp"><img src="./assets/img/outdoor-sp.png" alt="kokunai"></div>
 							<div class="p-plan___like">
-								<div class="c-tag__like"></div>
+								<button class="c-tag__like"></button>
 							</div>
 							<div class="p-plan__body -p2">
 								<div class="p-plan__body-title">唯一無二の水中ウェディング<br>幻想的な沖縄の海で</div>
@@ -970,7 +1030,7 @@
 								<div class="p-plan__img"><img src="./assets/img/casual.png" alt="casual"></div>
 								<div class="p-plan__img -sp"><img src="./assets/img/casual-sp.png" alt="casual"></div>
 								<div class="p-plan___like">
-									<div class="c-tag__like"></div>
+									<button class="c-tag__like"></button>
 								</div>
 								<div class="p-plan__body">
 									<div class="p-plan__body-title">ドレスコードなしの<br>カジュアルウェディング</div>
@@ -1009,7 +1069,7 @@
 								<div class="p-plan__img"><img src="./assets/img/toyokawa.png" alt="toyokawa"></div>
 								<div class="p-plan__img -sp"><img src="./assets/img/toyokawa-sp.png" alt="toyokawa"></div>
 								<div class="p-plan___like">
-									<div class="c-tag__like"></div>
+									<button class="c-tag__like"></button>
 								</div>
 								<div class="p-plan__body -p2">
 									<div class="p-plan__body-title">ふたりの地元の豊川稲荷でフォトウェディング</div>
@@ -1027,18 +1087,18 @@
 										<div class="c-tag">＃家族婚</div>
 										<div class="c-tag">＃ロケーション</div>
 									</div>
-									<div class="p-plan__profile -p2">
+									<div class="p-plan__profile -n2">
 										<div class="c-thumbnail-2">
 											<div class="c-thumbnail__img-2"><img src="./assets/img/hogehogeo.png" alt="hogeo"></div>
 											<div class="c-thumbnail__content -plan">
 												<div class="c-thumbnail__post">担当プランナー</div>
 												<div class="c-thumbnail__name">鈴木 直子</div>
-												<div class="c-thumbnail__job -p2">株式会社Orange Wedding</div>
+												<div class="c-thumbnail__job -n2">株式会社Orange Wedding</div>
 											</div>
 										</div>
 									</div>
-									<div class="p-plan__footer -p2">
-										<div class="c-readmore-plan">Read more</div>
+									<div class="p-plan__footer -new">
+										<div class="c-readmore-plan -new">Read more</div>
 									</div>
 								</div>
 							</div>
@@ -1048,7 +1108,7 @@
 								<div class="p-plan__img"><img src="./assets/img/outdoor.png" alt="kokunai"></div>
 								<div class="p-plan__img -sp"><img src="./assets/img/outdoor-sp.png" alt="kokunai"></div>
 								<div class="p-plan___like">
-									<div class="c-tag__like"></div>
+									<button class="c-tag__like"></button>
 								</div>
 								<div class="p-plan__body -p2">
 									<div class="p-plan__body-title">唯一無二の水中ウェディング<br>幻想的な沖縄の海で</div>
@@ -1065,20 +1125,18 @@
 										<div class="c-tag">＃リゾートウェディング</div>
 										<div class="c-tag">＃前撮り</div>
 									</div>
-									<div class="p-plan__profile -p2">
-										<div class="p-plan__profile -p2">
-											<div class="c-thumbnail-2">
-												<div class="c-thumbnail__img-2"><img src="./assets/img/hogehogeo.png" alt="hogeo"></div>
-												<div class="c-thumbnail__content -plan">
-													<div class="c-thumbnail__post">担当プランナー</div>
-													<div class="c-thumbnail__name">鈴木 直子</div>
-													<div class="c-thumbnail__job -p2">株式会社Orange Wedding</div>
-												</div>
+									<div class="p-plan__profile -n2">
+										<div class="c-thumbnail-2">
+											<div class="c-thumbnail__img-2"><img src="./assets/img/hogehogeo.png" alt="hogeo"></div>
+											<div class="c-thumbnail__content -plan">
+												<div class="c-thumbnail__post">担当プランナー</div>
+												<div class="c-thumbnail__name">鈴木 直子</div>
+												<div class="c-thumbnail__job -n2">株式会社Orange Wedding</div>
 											</div>
 										</div>
 									</div>
-									<div class="p-plan__footer -p2">
-										<div class="c-readmore-plan">Read more</div>
+									<div class="p-plan__footer -new">
+										<div class="c-readmore-plan -new">Read more</div>
 									</div>
 								</div>
 							</div>
@@ -1088,7 +1146,7 @@
 								<div class="p-plan__img"><img src="./assets/img/100people.png" alt="100"></div>
 								<div class="p-plan__img -sp"><img src="./assets/img/report-kokunai-sp.png" alt="kokunai"></div>
 								<div class="p-plan___like">
-									<div class="c-tag__like"></div>
+									<button class="c-tag__like"></button>
 								</div>
 								<div class="p-plan__body">
 									<div class="p-plan__body-title">100名のゲストに囲まれた<br>2年越しの結婚式</div>
@@ -1104,8 +1162,9 @@
 										<div class="c-tag">＃前撮り</div>
 										<div class="c-tag">＃和婚</div>
 										<div class="c-tag">＃前撮り</div>
+										<div class="c-tag">＃アウトドアウェディング</div>
 									</div>
-									<div class="p-plan__profile">
+									<div class="p-plan__profile -n2">
 										<div class="c-thumbnail-2">
 											<div class="c-thumbnail__img-2"><img src="./assets/img/katoumirei.png" alt="mirei"></div>
 											<div class="c-thumbnail__content">
@@ -1115,8 +1174,8 @@
 											</div>
 										</div>
 									</div>
-									<div class="p-plan__footer -n1">
-										<div class="c-readmore-plan">Read more</div>
+									<div class="p-plan__footer -new">
+										<div class="c-readmore-plan -new">Read more</div>
 									</div>
 								</div>
 							</div>
@@ -1147,8 +1206,8 @@
 					</div>
 					<div class="p-planner__head">
 						<div class="p-planner__img"><img src="./assets/img/nao.png" alt="naoko">
-							<div class="p-plan___good">
-								<div class="c-tag__good"></div>
+							<div class="p-planner__good">
+								<button class="c-tag__good"></button>
 							</div>
 							<div class="p-planner__name">鈴木 直子</div>
 							<div class="p-planner__job">株式会社mirage</div>
@@ -1209,8 +1268,8 @@
 					</div>
 					<div class="p-planner__head">
 						<div class="p-planner__img"><img src="./assets/img/mirei3.png" alt="mirei">
-							<div class="p-plan___good">
-								<div class="c-tag__good"></div>
+							<div class="p-planner__good">
+								<button class="c-tag__good"></button>
 							</div>
 							<div class="p-planner__name">加藤 美玲</div>
 							<div class="p-planner__job">株式会社Pwedding</div>
@@ -1270,8 +1329,8 @@
 					</div>
 					<div class="p-planner__head">
 						<div class="p-planner__img"><img src="./assets/img/mai3.png" alt="yui">
-							<div class="p-plan___good">
-								<div class="c-tag__good"></div>
+							<div class="p-planner__good">
+								<button class="c-tag__good"></button>
 							</div>
 							<div class="p-planner__name">尾崎 舞</div>
 							<div class="p-planner__job">hoihoi produce</div>
@@ -1336,8 +1395,8 @@
 								</div>
 								<div class="p-planner__head">
 									<div class="p-planner__img"><img src="./assets/img/suzukinaoko.png" alt="naoko">
-										<div class="p-plan___good">
-											<div class="c-tag__good"></div>
+										<div class="p-planner__good">
+											<button class="c-tag__good"></button>
 										</div>
 										<div class="p-planner__name">鈴木 直子</div>
 										<div class="p-planner__job">株式会社mirage</div>
@@ -1400,8 +1459,8 @@
 								</div>
 								<div class="p-planner__head">
 									<div class="p-planner__img"><img src="./assets/img/katoumirei.png" alt="mirei">
-										<div class="p-plan___good">
-											<div class="c-tag__good"></div>
+										<div class="p-planner__good">
+											<button class="c-tag__good"></button>
 										</div>
 										<div class="p-planner__name">加藤 美玲</div>
 										<div class="p-planner__job">株式会社Pwedding</div>
@@ -1464,8 +1523,8 @@
 								</div>
 								<div class="p-planner__head">
 									<div class="p-planner__img"><img src="./assets/img/sasakiyui.png" alt="yui">
-										<div class="p-plan___good">
-											<div class="c-tag__good"></div>
+										<div class="p-planner__good">
+											<button class="c-tag__good"></button>
 										</div>
 										<div class="p-planner__name">尾崎 舞</div>
 										<div class="p-planner__job">hoihoi produce</div>
@@ -1541,8 +1600,8 @@
 								<div class="p-new__card">
 									<div class="p-new__head">
 										<div class="p-new__img"><img src="./assets/img/hogeo.png" alt="hogeo">
-											<div class="p-new___good">
-												<div class="c-tag__good"></div>
+											<div class="p-new__good">
+												<button class="c-tag__good"></button>
 											</div>
 											<div class="p-new__name">鈴木 直子</div>
 											<div class="p-new__job">株式会社mirage</div>
@@ -1560,17 +1619,13 @@
 													<span>愛知</span>
 													<span>岡山</span>
 													<span>大阪</span>
-													<span>広島</span>
-													<span>福岡</span>
 													<span>沖縄</span>
-													<span>海外</span>
 												</div>
 											</div>
 											<div class="p-new__tag">
 												<div class="c-tag">#国内</div>
 												<div class="c-tag">#海外</div>
 												<div class="c-tag">#レストラン</div>
-												<div class="c-tag">#海外</div>
 												<div class="c-tag">＃リゾートウェディング</div>
 												<div class="c-tag">#海外</div>
 												<div class="c-tag">＃アウトドア</div>
@@ -1605,9 +1660,9 @@
 							<div class="swiper-slide">
 								<div class="p-new__card">
 									<div class="p-new__head">
-										<div class="p-new__img"><img src="./assets/img/suzukinaoko.png" alt="naoko">
-											<div class="p-new___good">
-												<div class="c-tag__good"></div>
+										<div class="p-new__img"><img src="./assets/img/new-img1.png" alt="naoko">
+											<div class="p-new__good">
+												<button class="c-tag__good"></button>
 											</div>
 											<div class="p-new__name">酒井 菜々子</div>
 											<div class="p-new__job">marry-wedding</div>
@@ -1625,17 +1680,13 @@
 													<span>愛知</span>
 													<span>岡山</span>
 													<span>大阪</span>
-													<span>広島</span>
-													<span>福岡</span>
 													<span>沖縄</span>
-													<span>海外</span>
 												</div>
 											</div>
 											<div class="p-new__tag">
 												<div class="c-tag">#国内</div>
 												<div class="c-tag">#海外</div>
 												<div class="c-tag">#レストラン</div>
-												<div class="c-tag">#海外</div>
 												<div class="c-tag">＃リゾートウェディング</div>
 												<div class="c-tag">#海外</div>
 												<div class="c-tag">＃アウトドア</div>
@@ -1670,9 +1721,9 @@
 							<div class="swiper-slide">
 								<div class="p-new__card">
 									<div class="p-new__head">
-										<div class="p-new__img"><img src="./assets/img/katoumirei.png" alt="mirei">
-											<div class="p-new___good">
-												<div class="c-tag__good"></div>
+										<div class="p-new__img"><img src="./assets/img/new-img2.png" alt="mirei">
+											<div class="p-new__good">
+												<button class="c-tag__good"></button>
 											</div>
 											<div class="p-new__name">早川 智</div>
 											<div class="p-new__job">株式会社mirage</div>
@@ -1690,17 +1741,13 @@
 													<span>愛知</span>
 													<span>岡山</span>
 													<span>大阪</span>
-													<span>広島</span>
-													<span>福岡</span>
 													<span>沖縄</span>
-													<span>海外</span>
 												</div>
 											</div>
 											<div class="p-new__tag">
 												<div class="c-tag">#国内</div>
 												<div class="c-tag">#海外</div>
 												<div class="c-tag">#レストラン</div>
-												<div class="c-tag">#海外</div>
 												<div class="c-tag">＃リゾートウェディング</div>
 												<div class="c-tag">#海外</div>
 												<div class="c-tag">＃アウトドア</div>
@@ -1735,9 +1782,9 @@
 							<div class="swiper-slide">
 								<div class="p-new__card">
 									<div class="p-new__head">
-										<div class="p-new__img"><img src="./assets/img/sasakiyui.png" alt="yui">
-											<div class="p-new___good">
-												<div class="c-tag__good"></div>
+										<div class="p-new__img"><img src="./assets/img/mai3.png" alt="yui">
+											<div class="p-new__good">
+												<button class="c-tag__good"></button>
 											</div>
 											<div class="p-new__name">水野 沙彩</div>
 											<div class="p-new__job">marry-wedding</div>
@@ -1755,17 +1802,13 @@
 													<span>愛知</span>
 													<span>岡山</span>
 													<span>大阪</span>
-													<span>広島</span>
-													<span>福岡</span>
 													<span>沖縄</span>
-													<span>海外</span>
 												</div>
 											</div>
 											<div class="p-new__tag">
 												<div class="c-tag">#国内</div>
 												<div class="c-tag">#海外</div>
 												<div class="c-tag">#レストラン</div>
-												<div class="c-tag">#海外</div>
 												<div class="c-tag">＃リゾートウェディング</div>
 												<div class="c-tag">#海外</div>
 												<div class="c-tag">＃アウトドア</div>
@@ -1866,6 +1909,7 @@
 				<h2 class="u-separate__sectionTitle">Voice</h2>
 				<h2 class="u-separate__sectionSub">先輩花嫁からの口コミ</h2>
 			</div>
+
 			<div class="p-voice">
 				<div class="p-voice__head">
 					<div class="p-voice__title">New voice</div>
@@ -2403,7 +2447,6 @@
 			</div>
 		</div>
 	</section>
-
 	<section class="l-recommend -insta">
 		<div class="l-inner">
 			<div class="u-separate__section">
@@ -2412,14 +2455,14 @@
 			</div>
 			<div class="p-insta">
 				<div class="p-insta__img">
-					<img src="./assets/img/insta1.png" alt="insta1">
-					<img src="./assets/img/insta2.png" alt="insta2">
-					<img src="./assets/img/insta3.png" alt="insta3">
-					<img src="./assets/img/insta4.png" alt="insta4">
-					<img src="./assets/img/insta5.png" alt="insta5">
-					<img src="./assets/img/insta6.png" alt="insta6">
-					<img src="./assets/img/insta7.png" alt="insta7">
-					<img src="./assets/img/insta8.png" alt="insta8">
+					<a href="https://www.instagram.com/"><img src="./assets/img/insta1.png" alt="insta1"></a>
+					<a href="https://www.instagram.com/"><img src="./assets/img/insta2.png" alt="insta1"></a>
+					<a href="https://www.instagram.com/"><img src="./assets/img/insta3.png" alt="insta1"></a>
+					<a href="https://www.instagram.com/"><img src="./assets/img/insta4.png" alt="insta1"></a>
+					<a href="https://www.instagram.com/"><img src="./assets/img/insta5.png" alt="insta1"></a>
+					<a href="https://www.instagram.com/"><img src="./assets/img/insta6.png" alt="insta1"></a>
+					<a href="https://www.instagram.com/"><img src="./assets/img/insta7.png" alt="insta1"></a>
+					<a href="https://www.instagram.com/"><img src="./assets/img/insta8.png" alt="insta1"></a>
 				</div>
 			</div>
 		</div>
@@ -2448,10 +2491,10 @@
 							<a href="#planner" class="p-footer__item">プランナーを探す</a>
 							<a href="#report" class="p-footer__item">シンデレラレポ</a>
 							<a href="#recommend" class="p-footer__item">お気に入りレポート</a>
-							<div class="p-footer__item">ログイン</div>
+							<a href="#" class="p-footer__item">ログイン</a>
 							<a href="#best" class="p-footer__item">初めてご利用される方へ</a>
-							<div class="p-footer__item">よくあるご質問</div>
-							<div class="p-footer__item">お問い合わせ</div>
+							<a href="#" class="p-footer__item">よくあるご質問</a>
+							<a href="#" class="p-footer__item">お問い合わせ</a>
 						</div>
 					</div>
 				</div>
