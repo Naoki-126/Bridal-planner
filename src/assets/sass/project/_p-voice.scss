@@ -485,9 +485,10 @@
     position: absolute;
     border-bottom: 1px solid global.$text-color;
     width: min(9.375vw, 135px);
+    max-width: 100%;
     height: 1px;
     bottom: 0px;
-    right: -42px;
+    right: min(2.916667vw, -42px);
   }
 
   &::after {
@@ -496,7 +497,7 @@
     border-right: 1px solid global.$text-color;
     width: 1px;
     height: min(1.319444vw, 19px);
-    right: -34px;
+    right: min(2.36111vw, -34px);
     top: 33%;
     transform: rotate(-60deg);
   }

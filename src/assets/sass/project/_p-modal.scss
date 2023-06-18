@@ -1,0 +1,242 @@
+@use "../global" as global;
+
+.p-modal {
+  position: fixed;
+  z-index: 11;
+  width: min(52.08333vw, 750px);
+  height: min(20.97222vw, 302px);
+  height: auto;
+  background: #fff;
+  border: 1px solid global.$text-color;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+
+  @include global.mq(sp) {
+    width: calc(100% - 24px *2);
+    height: auto;
+  }
+}
+
+.p-modal__plan {
+  margin: min(1.736111vw, 25px) min(4.236111vw, 61px);
+  display: flex;
+  align-items: flex-start;
+  gap: min(4.65527778vw, 67px);
+
+  @include global.mq(sp) {
+    display: block;
+    margin: 25px 32px;
+  }
+}
+
+.p-model__plan1 {
+  width: 50%;
+
+  @include global.mq(sp) {
+    width: 100%;
+  }
+}
+
+.p-model__plan2 {
+  width: 50%;
+
+  @include global.mq(sp) {
+    width: 100%;
+  }
+}
+
+.p-modal__item {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  width: min(19.444vw, 280px);
+  gap: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid global.$text-color;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  @include global.mq(sp) {
+    width: 100%;
+
+    &:nth-child(3) {
+      border-bottom: 1px solid global.$text-color;
+    }
+  }
+}
+
+.p-modal__img {
+
+  img {
+    width: min(4.7222vw, 68px);
+    width: 68px;
+    height: min(4.444vw, 64px);
+    height: 64px;
+
+
+    @include global.mq(sp) {
+
+    }
+  }
+}
+
+.p-modal__content {
+  width: calc(100% - 64px - 14px);
+  font-size: min(1.111vw, 16px);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-top: 1px solid global.$text-color;
+    width: min(3.125vw, 45px);
+    top: 50%;
+    right: 4px;
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-top: 1px solid global.$text-color;
+    width: 10px;
+    top: 40%;
+    right: 4px;
+    transform: rotate(30deg);
+  }
+
+  &.-c4 {
+    &::after {
+      top: 44%;
+    }
+  }
+
+  &.-c5 {
+    &::after {
+      top: 45%;
+    }
+  }
+
+  @include global.mq(sp) {
+    width: 100%;
+    font-size: 16px;
+    margin-top: 16px;
+    padding-bottom: 14px;
+
+    &::before {
+      width: 45px;
+    }
+  }
+}
+
+
+.p-modal2 {
+  position: fixed;
+  z-index: 11;
+  width: min(52.08333vw, 750px);
+  height: min(20.97222vw, 302px);
+  background: #fff;
+  border: 1px solid global.$main-color;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+
+  @include global.mq(sp) {
+    width: calc(100% - 24px *2);
+    height: auto;
+  }
+}
+
+.p-modal__area {
+  margin: min(3.125vw, 45px) min(4.375vw, 63px);
+  display: flex;
+  align-items: flex-start;
+  gap: 64px;
+
+  @include global.mq(sp) {
+    margin: 48px 32px;
+    display: block;
+  }
+}
+
+.p-modal__area1 {
+  width: 50%;
+
+  @include global.mq(sp) {
+    width: 100%;
+  }
+}
+
+.p-modal__area2 {
+  width: 50%;
+
+  @include global.mq(sp) {
+    width: 100%;
+    margin-top: 16px;
+  }
+}
+
+.p-modal__area-place {
+  font-size: min(1.111vw, 16px);
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: min(1.111vw, 16px);
+  padding-bottom: min(.97222vw, 14px);
+  border-bottom: 1px solid global.$main-color;
+  position: relative;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-top: 1px solid global.$text-color;
+    width: min(3.125vw, 45px);
+    top: 31%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-top: 1px solid global.$text-color;
+    width: 10px;
+    top: 21%;
+    right: 0;
+    transform: rotate(30deg);
+  }
+
+  @include global.mq(sp) {
+    width: 100%;
+    font-size: 16px;
+    margin-top: 16px;
+    padding-bottom: 14px;
+
+    &::before {
+      width: 45px;
+    }
+  }
+}
+
+.p-modal__background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(#000, .49);
+  z-index: 10;
+  display: none;
+}

@@ -1,6 +1,7 @@
 @use "../global" as global;
 
 .p-insta {
+
 }
 
 .p-insta__img {
@@ -23,10 +24,11 @@
 
   @include global.mq(sp) {
     margin: 19px auto 16px;
-    padding-left: 22px;
-    gap: 16px 24px;
+    // padding-left: 22px;
+    justify-content: center;
+    gap: 16px;
 
-    img {
+    a,img {
       width: 96px;
       height: 96px;
 

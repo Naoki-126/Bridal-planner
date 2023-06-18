@@ -90,14 +90,14 @@
   }
 }
 
-.p-plan___good {
+.p-planner__good {
   content: "";
   position: absolute;
-  top: 8px;
+  top: 4px;
   right: 8px;
 
   @include global.mq(sp) {
-    top: 6px;
+    top: -2px;
     right: 5px;
   }
 }
@@ -126,6 +126,7 @@
   @include global.mq(sp) {
     margin-top: 3px;
     margin-left: 1px;
+    font-size: 12px;
   }
 }
 

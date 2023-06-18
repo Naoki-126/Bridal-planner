@@ -40,6 +40,13 @@
     left: 50%;
     transform: translate(-55%, -50%);
   }
+
+  &.is-active {
+
+    &::after {
+      background: url(/assets/img/pink.png) no-repeat;
+    }
+  }
 }
 
 .c-tag__good {
@@ -55,7 +62,16 @@
     width: 15px;
     height: 15px;
     top: 50%;
-    left: 50%;
+    left: 54%;
     transform: translate(-55%, -50%);
+  }
+
+  &.is-active {
+
+    &::after {
+      background: url(/assets/img/yellow.png) no-repeat;
+      top: 53%;
+      left: 58%;
+    }
   }
 }

@@ -16,6 +16,7 @@ $('#js-drawer').on('click', function(e) {
   // $('.c-drawer').toggleClass('is-open');
   $('.p-drawer').toggleClass('is-open');
   $('.p-drawer__content').toggleClass('is-open');
+  $('.p-drawer__footer').toggleClass('is-open');
   $('.p-drawer__background').toggleClass('is-open');
   return false;
 });
@@ -25,6 +26,7 @@ $('.p-drawer__list').on('click', function(e) {
   // $('.c-drawer').removeClass('is-open');
   $('.p-drawer').removeClass('is-open');
   $('.p-drawer__content').removeClass('is-open');
+  $('.p-drawer__footer').removeClass('is-open');
   $('.p-drawer__background').removeClass('is-open');
   return false;
 });
@@ -311,5 +313,81 @@ const swipe8 = new Swiper('.swipe8', {
   },
 });
 
-/*  ハンバーガーメニュー実装
+/* smoothscroll
 =========================== */
+$(function () {
+  // ヘッダーの高さを取得
+  const height = $(".l-header").height();
+  // ヘッダーの高さ分コンテンツを下げる
+  $("main").css("margin-top", height);
+  // ページ内スクロール
+  $('a[href^="#"]').click(function () {
+    const speed = 600;
+    let href = $(this).attr("href");
+    let target = $(href == "#" || href == "" ? "html" : href);
+    // ヘッダーの高さ分下げる
+    let position = target.offset().top - height;
+    $("body,html").animate({ scrollTop: position }, speed, "swing");
+    return false;
+  });
+});
+
+/* クリックイベント
+=========================== */
+$('.c-btn__more').click(function() {
+  $(this).toggleClass( 'is-active' );
+  return false;
+});
+
+$('.c-btn__best').click(function() {
+  $(this).toggleClass( 'is-active' );
+  return false;
+});
+
+$('.c-btn__voice').click(function() {
+  $(this).toggleClass( 'is-active' );
+  return false;
+});
+
+$('.c-tag__like').click(function() {
+  $(this).toggleClass( 'is-active' );
+  return false;
+});
+
+$('.c-tag__good').click(function() {
+  $(this).toggleClass( 'is-active' );
+  return false;
+});
+
+$('.p-recommend__plan').on('click', function(e) {
+  e.preventDefault();
+  $('.p-recommend__plan').removeClass( 'is-active');
+  $('.p-recommend__content').removeClass( 'is-active');
+  $(this).addClass( 'is-active');
+  $('.p-recommend__content').addClass( 'is-active');
+  return false;
+});
+
+$('.js-closeModal').on('click', function(e){
+  e.preventDefault();
+  var plan = $(this).data('plan');
+  $(plan).fadeOut();
+});
+
+$('.js-openModal').on('click', function(e){
+  e.preventDefault();
+  var plan = $(this).data('plan');
+  $(plan).fadeIn();
+});
+
+$('.js-close').on('click', function(e){
+  e.preventDefault();
+  var target = $(this).data('target');
+  $(target).fadeOut();
+});
+
+$('.js-open').on('click', function(e){
+  e.preventDefault();
+  var target = $(this).data('target');
+  $(target).fadeIn();
+});

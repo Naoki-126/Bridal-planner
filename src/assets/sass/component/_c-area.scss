@@ -7,12 +7,11 @@
   font-weight: 500;
   line-height: 1.5;
   color: global.$main-color;
-  padding: 2px 7px;
-  padding: min(.138889vw, 2px) min(.486111vw, 7px);
+  padding: min(.27778vw, 4px) min(.486111vw, 7px);
   border: 1px solid global.$main-color;
 
   &.-a {
-    padding: 4px 7px;
+    padding: 3px 3px;
   }
 
   &.-p {

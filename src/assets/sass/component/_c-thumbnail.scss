@@ -43,7 +43,7 @@
       width: 19px;
       height: 19px;
       top: -7px;
-      left: -12px;
+      left: -7px;
     }
   }
 
@@ -139,5 +139,9 @@
 
   &.-p2 {
     margin-top: -1px;
+  }
+
+  &.-n2 {
+    margin-top: -3px;
   }
 }
