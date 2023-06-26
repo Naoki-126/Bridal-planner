@@ -35,7 +35,7 @@
 
 .p-new__items {
   padding-top: 22px;
-  width: 100%;
+  max-width: 100%;
   display: flex;
 
   @include global.mq(sp) {

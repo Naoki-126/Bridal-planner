@@ -33,6 +33,7 @@
     position: relative;
     color: #202020;
     margin-left: -9px;
+    overflow: hidden;
 
     &::before {
       content: "";
@@ -53,8 +54,7 @@
         width: 398px;
         height: 215px;
         top: 304px;
-        left: 27px;
-        overflow: hidden;
+        right: -26px;
       }
     }
   }
