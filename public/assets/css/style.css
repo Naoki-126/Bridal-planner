@@ -115,10 +115,12 @@ a {
 }
 
 .l-header__nav {
+	content: "";
 	display: flex;
 	flex-direction: column;
+	position: absolute;
 	position: fixed;
-	right: 0px;
+	right: 0;
 	top: 0;
 	z-index: 20;
 }
@@ -1818,6 +1820,7 @@ a {
 	height: auto;
 	margin-left: -9px;
 	margin-top: 14px;
+	overflow: hidden;
 	position: relative;
 	width: 100%;
 }
@@ -2936,8 +2939,8 @@ a {
 
 .p-new__items {
 	display: flex;
+	max-width: 100%;
 	padding-top: 22px;
-	width: 100%;
 }
 
 .p-new__card {
@@ -4871,8 +4874,7 @@ a {
 .p-best__content::before {
 	background: transparent url(/assets/img/backlogo-sp.png) no-repeat;
 	height: 215px;
-	left: 27px;
-	overflow: hidden;
+	right: -26px;
 	top: 304px;
 	width: 398px;
 }

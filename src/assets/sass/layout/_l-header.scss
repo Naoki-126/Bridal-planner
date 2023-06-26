@@ -11,18 +11,17 @@
     height: 60px;
     background: #fff;
     z-index: 10;
-
-    &.-sp {
-    }
   }
 }
 
 
 .l-header__nav {
+  content: "";
+  position: absolute;
   z-index: 20;
   position: fixed;
   top: 0;
-  right: 0px;
+  right: 0;
   display: flex;
   flex-direction: column;
 }
